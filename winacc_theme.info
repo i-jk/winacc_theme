@@ -1,0 +1,6 @@
+name = WinACC
+description = A responsive, Panopoly-enhanced sub-theme of Kalatheme for WinACC.
+core = 7.x
+base theme = kalatheme
+
+stylesheets[all][] = css/colors.css
