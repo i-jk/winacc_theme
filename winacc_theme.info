@@ -1,6 +1,6 @@
 name = WinACC
-description = A responsive, Panopoly-enhanced sub-theme of Kalatheme for WinACC.
+description = A responsive, Panopoly-enhanced sub-theme of Radix for WinACC.
 core = 7.x
-base theme = kalatheme
+base theme = radix
 
 stylesheets[all][] = css/colors.css
