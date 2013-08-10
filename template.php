@@ -4,7 +4,7 @@
  * Theme functions
  */
 
-$theme_path = drupal_get_path('theme', 'radix_starter');
+$theme_path = drupal_get_path('theme', 'winacc_theme');
 require_once $theme_path . '/includes/structure.inc';
 require_once $theme_path . '/includes/form.inc';
 require_once $theme_path . '/includes/menu.inc';
