@@ -15,7 +15,7 @@ require_once $theme_path . '/includes/node.inc';
 /**
  * Implements hook_css_alter().
  */
-function wincc_theme_js_alter(&$js) {
+function winacc_theme_js_alter(&$js) {
   // Unset some panopoly css.
   $radix_path = drupal_get_path('theme', 'radix');
   if (isset($js[$radix_path . '/assets/javascripts/radix-script.js'])) {
