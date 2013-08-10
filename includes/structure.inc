@@ -79,6 +79,25 @@ function winacc_theme_process_page(&$variables) {
 }
 
 /**
+ * HTML for all local actions (rendered as dropdown).
+ */
+function winacc_theme_menu_local_actions($variables) {
+  $container_attributes = isset($variables['attributes']['container']) ? drupal_attributes($variables['attributes']['container']) : FALSE;
+  $toggle_attributes = isset($variables['attributes']['toggle']) ? drupal_attributes($variables['attributes']['toggle']) : FALSE;
+  $content_attributes = isset($variables['attributes']['content']) ? drupal_attributes($variables['attributes']['content']) : FALSE;
+
+  // Render the dropdown.
+  $output = $container_attributes ?  '<li' . $container_attributes . '>' : '<li>';
+  $output .= $toggle_attributes ?  '<a' . $toggle_attributes . '><i class="icon-wrench"></i> Actions <b class="caret"></b></a>' : '<a>Actions <b class="caret"></b></a>';
+  $output .= $content_attributes ? '<ul' . $content_attributes . '>' : '<ul>';
+  $output .= drupal_render($variables['menu_actions']);
+  $output .= '</ul>';
+  $output .= '</li>';
+
+  return $output;
+}
+
+/**
  * Implements hook_preprocess_views_view_table().
  */
 function winacc_theme_preprocess_views_view_table(&$variables) {
