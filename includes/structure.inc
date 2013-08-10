@@ -21,7 +21,7 @@ function winacc_theme_theme($existing, $type, $theme, $path) {
  *
  * Implements template_process_page().
  */
-/*function winacc_theme_process_page(&$variables) {
+function winacc_theme_process_page(&$variables) {
   // Hook into color.module.
   if (module_exists('color')) {
     _color_page_alter($variables);
@@ -93,7 +93,7 @@ function winacc_theme_theme($existing, $type, $theme, $path) {
 /**
  * HTML for all local actions (rendered as dropdown).
  */
-/*function winacc_theme_menu_local_actions($variables) {
+function winacc_theme_menu_local_actions($variables) {
   $container_attributes = isset($variables['attributes']['container']) ? drupal_attributes($variables['attributes']['container']) : FALSE;
   $toggle_attributes = isset($variables['attributes']['toggle']) ? drupal_attributes($variables['attributes']['toggle']) : FALSE;
   $content_attributes = isset($variables['attributes']['content']) ? drupal_attributes($variables['attributes']['content']) : FALSE;
@@ -107,12 +107,12 @@ function winacc_theme_theme($existing, $type, $theme, $path) {
   $output .= '</li>';
 
   return $output;
-}*/
+}
 
 /**
  * HTML for individual local actions.
  */
-/*function winacc_theme_menu_local_action($variables) {
+function winacc_theme_menu_local_action($variables) {
   $link = $variables['element']['#link'];
 
   $output = '<li>';
@@ -128,12 +128,12 @@ function winacc_theme_theme($existing, $type, $theme, $path) {
   $output .= "</li>\n";
 
   return $output;
-}*/
+}
 
 /**
  * Implements hook_preprocess_views_view_table().
  */
-/*function winacc_theme_preprocess_views_view_table(&$variables) {
+function winacc_theme_preprocess_views_view_table(&$variables) {
   $rows = array();
   foreach ($variables['row_classes'] as $row) {
     // This assume the first element of any row will be the odd/even class which we no longer need
@@ -144,7 +144,7 @@ function winacc_theme_theme($existing, $type, $theme, $path) {
   
   // Add in bootstrap classes
   $variables['classes_array'] = array('table', 'table-striped', 'table-bordered', 'table-hover');
-}*/
+}
 
 /**
  * Override or insert variables into the page template.
