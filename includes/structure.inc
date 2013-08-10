@@ -5,6 +5,18 @@
  */
 
 /**
+ * Implements hook_theme().
+ */
+function winacc_theme_theme($existing, $type, $theme, $path) {
+  return array(
+    'menu_local_actions' => array(
+      'variables' => array('menu_actions' => NULL, 'attributes' => NULL),
+      'file' => 'includes/theme.inc',
+    ),
+  );
+}
+
+/**
  * Override or insert variables into the page template.
  *
  * Implements template_process_page().
@@ -93,6 +105,27 @@ function winacc_theme_menu_local_actions($variables) {
   $output .= drupal_render($variables['menu_actions']);
   $output .= '</ul>';
   $output .= '</li>';
+
+  return $output;
+}
+
+/**
+ * HTML for individual local actions.
+ */
+function winacc_theme_menu_local_action($variables) {
+  $link = $variables['element']['#link'];
+
+  $output = '<li>';
+  if (isset($link['href'])) {
+    $output .= l($link['title'], $link['href'], isset($link['localized_options']) ? $link['localized_options'] : array());
+  }
+  elseif (!empty($link['localized_options']['html'])) {
+    $output .= $link['title'];
+  }
+  else {
+    $output .= check_plain($link['title']);
+  }
+  $output .= "</li>\n";
 
   return $output;
 }
