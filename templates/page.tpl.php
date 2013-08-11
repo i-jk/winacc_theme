@@ -36,10 +36,23 @@
 
           <div class="nav-collapse nav-menu-collapse">
             <div class="inner">
-              <?php if ($main_menu): ?>
-                <nav id="main-menu" class="main-menu pull-left" role="navigation">
-                  <?php print render($main_menu); ?>
-                </nav> <!-- /#main-menu -->
+              <?php if ($main_menu_expanded): ?>
+                <?php print theme('links__system_main_menu', array(
+                  'links' => $main_menu_expanded,
+                  'attributes' => array(
+                    'class' => array('main-menu nav pull-right'),
+                    'id' => array('main-menu'),
+                  ),
+                  'heading' => array(
+                    'text' => t('Main menu'),
+                    'level' => 'h2',
+                    'class' => array('element-invisible'),
+                  ),
+                )); ?>
+            <?php endif; ?>
+                <!--nav id="main-menu" class="main-menu pull-left" role="navigation">
+                  <?php //print render($main_menu); ?>
+                </nav--> <!-- /#main-menu -->
               <?php endif; ?>
             </div>
           </div>
