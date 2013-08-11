@@ -7,12 +7,14 @@
 // --------------------------------------------------
 @import "global/variable";
 @import "global/mixin";
-@import "global/font";
 
 // Radix
 // --------------------------------------------------
 @import "compass_radix";
 @import "compass_radix_responsive";
+
+// Font overrides
+@import "global/font";
 
 // Theme CSS
 // --------------------------------------------------
