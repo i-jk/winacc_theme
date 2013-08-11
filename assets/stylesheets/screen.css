@@ -1,3 +1,39 @@
+@import url("http://fonts.googleapis.com/css?family=Lato:400,700,900,400italic");
+h1 {
+  font-size: 48px;
+  font-weight: 900;
+}
+
+h2 {
+  font-size: 36px;
+  font-weight: 700;
+}
+
+h3 {
+  font-size: 28px;
+  font-weight: 700;
+}
+
+h4 {
+  font-size: 24px;
+  font-weight: 500;
+}
+
+h5 {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+h6 {
+  font-size: 13px;
+  font-weight: 500;
+  text-transform: none;
+}
+
+p {
+  margin-bottom: 1em;
+}
+
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -8781,4 +8817,142 @@ html.js input.throbbing {
     display: block;
     width: 85%;
   }
+}
+.page-header {
+  border-bottom: none;
+}
+
+.navbar .brand {
+  text-shadow: none;
+}
+.navbar .brand:hover {
+  color: #1dd2af;
+}
+.navbar .navbar-inner {
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+}
+.navbar .nav > li > a {
+  text-shadow: none;
+}
+.navbar .nav > .active > a,
+.navbar .nav > .active > a:hover,
+.navbar .nav > .active > a:focus {
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+}
+.navbar .navbar-search .search-query {
+  border: none;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  line-height: normal;
+}
+.navbar .btn-navbar {
+  background-image: none;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+}
+.navbar .navbar-inverse .brand:hover {
+  color: #2c3e50;
+}
+.navbar .navbar-inverse .navbar-search .search-query {
+  border-color: transparent;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  line-height: normal;
+  color: #2c3e50;
+}
+.navbar .navbar-inverse .navbar-search .search-query:focus {
+  padding: 4px 14px;
+  color: #2c3e50;
+}
+
+div.subnav {
+  border-color: transparent;
+  background-image: none;
+  background-color: #ecf0f1;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+}
+div.subnav div.subnav-fixed {
+  top: 50px;
+}
+div.subnav .nav > li > a {
+  border-color: transparent;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  color: #2c3e50;
+}
+div.subnav .nav > .active > a,
+div.subnav .nav > .active > a:hover {
+  border-color: transparent;
+  background-color: #cfd9db;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  color: #2c3e50;
+}
+
+.nav-list > li > a, .nav-list > .active > a,
+.nav-list .nav-header {
+  text-shadow: none;
+}
+.nav-list .divider {
+  background: none;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.2);
+}
+
+.nav-pills .open .dropdown-toggle {
+  background-color: #2c3e50;
+}
+
+.pagination ul {
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+}
+.pagination ul > li > a {
+  background-color: #18bc9c;
+  border-color: transparent;
+  color: white;
+}
+.pagination ul > li > a:hover {
+  background-color: #24e3be;
+}
+.pagination ul > .active > a, .pagination ul > .active > a:hover {
+  background-color: #ecf0f1;
+  color: #2c3e50;
+}
+.pagination ul > .disabled > a, .pagination ul > .disabled > a:hover {
+  background-color: #24e3be;
+  color: white;
+}
+
+.pager li > a,
+.pager li > span {
+  background-color: #18bc9c;
+  border: none;
+  color: white;
+}
+.pager li > a:hover,
+.pager li > span:hover {
+  background-color: #24e3be;
+}
+.pager .disabled > a,
+.pager .disabled > span,
+.pager .disabled > a:hover,
+.pager .disabled > span:hover {
+  background-color: #24e3be;
+  color: white;
+}
+
+.breadcrumb > li {
+  text-shadow: none;
 }

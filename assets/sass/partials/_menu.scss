@@ -1,3 +1,179 @@
 // Menu
 // Styles for Menus and Navs
 // --------------------------------------------------
+
+// SCAFFOLDING
+// --------------------------------------------------
+
+.page-header {
+	border-bottom: none;
+}
+
+
+// NAVBAR
+// --------------------------------------------------
+
+.navbar {
+
+	.brand {
+
+		text-shadow: none;
+
+		&:hover {
+			color: $linkColorHover;
+		}
+	}
+
+	.navbar-inner {
+		@include box-shadow(none);
+	}
+
+	.nav > li > a {
+		text-shadow: none;
+	}
+
+	.nav > .active > a,
+	.nav > .active > a:hover,
+	.nav > .active > a:focus {
+		@include box-shadow(none);
+	}
+
+	.navbar-search .search-query {
+		border: none;
+		@include box-shadow(none);
+		line-height: normal;
+	}
+
+	.btn-navbar {
+		background-image: none;
+		@include box-shadow(none);
+	}
+
+	.navbar-inverse {
+
+		.brand:hover {
+			color: $blueDark;
+		}
+
+		.navbar-search .search-query {
+			border-color: transparent;
+			@include box-shadow(none);
+			line-height: normal;
+			color: $textColor;
+
+			&:focus {
+				padding: 4px 14px;
+				color: $textColor;
+			}
+		}
+	}
+}
+
+div.subnav {
+
+	border-color: transparent;
+	background-image: none;
+	background-color: $grayLighter;
+	@include box-shadow(none);
+
+	div.subnav-fixed {
+		top: $navbarHeight;
+	}
+
+	.nav > li > a {
+		border-color: transparent;
+		@include box-shadow(none);
+		color: $textColor;
+	}
+
+	.nav > .active > a,
+	.nav > .active > a:hover {
+		border-color: transparent;
+		background-color: darken($grayLighter, 10%);
+		@include box-shadow(none);
+		color: $textColor;
+	}
+}
+
+// NAVIGATION
+// --------------------------------------------------
+
+.nav-list {
+
+	& > li > a,
+	& > .active > a,
+	.nav-header {
+		text-shadow: none;
+	}
+
+	.divider {
+		background: none;
+		border-bottom: 2px solid $dropdownDividerBottom;
+	}
+}
+
+.nav-pills {
+
+	.open .dropdown-toggle {
+		background-color: $blueDark;
+	}
+}
+
+.pagination {
+
+	ul {
+
+		@include box-shadow(none);
+
+		& > li > a {
+			background-color: $green;
+			border-color: transparent;
+			color: $white;
+
+			&:hover {
+				background-color: lighten($green, 10%);
+			}
+		}
+
+		& > .active > a,
+		& > .active > a:hover {
+			background-color: $paginationActiveBackground;
+			color: $textColor;
+		}
+
+		& > .disabled > a,
+		& > .disabled > a:hover {
+			background-color: lighten($green, 10%);
+			color: $white;
+		}
+	}
+}
+
+.pager {
+
+	li > a,
+	li > span {
+		background-color: $green;
+		border: none;
+		color: $white;
+
+		&:hover {
+			background-color: lighten($green, 10%);
+		}
+	}
+
+	.disabled > a,
+	.disabled > span,
+	.disabled > a:hover,
+	.disabled > span:hover {
+		background-color: lighten($green, 10%);
+		color: $white;
+	}
+}
+
+.breadcrumb {
+
+	& > li {
+		text-shadow: none;
+	}
+}
