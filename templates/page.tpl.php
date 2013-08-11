@@ -11,7 +11,7 @@
  */
 ?>
 <header id="header" class="header" role="header">
-  <nav class='navbar navbar-fixed-top'>
+  <nav class='navbar'>
     <div class="navbar-inner">
       <div class="container clearfix">
         <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
