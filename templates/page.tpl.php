@@ -11,9 +11,9 @@
  */
 ?>
 <header id="header" class="header" role="header">
-  <nav class='navbar'>
-    <div class="navbar-inner">
-      <div class="container clearfix">
+  <div class="container clearfix">
+    <nav class='navbar'>
+      <div class="navbar-inner">
         <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
         <a class="btn btn-navbar btn-navbar-menu" data-toggle="collapse" data-target=".nav-menu-collapse">
           <span class="icon-bar"></span>
@@ -65,8 +65,8 @@
         </div>
 
       </div>
-    </div>
-  </nav> <!-- /#navigation -->
+    </nav> <!-- /#navigation -->
+  </div>
 </header>
 
 <div id="main-wrapper">
