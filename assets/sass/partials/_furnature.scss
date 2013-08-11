@@ -1,0 +1,114 @@
+//
+// Layout
+// Styles for misc page objects (alerts, badges, labels)
+// -----------------------------------------------------
+
+
+// ALERTS, LABELS, BADGES
+// --------------------------------------------------
+
+.alert {
+	background-color: $orange;
+	color: $white;
+	text-shadow: none;
+
+	h1, h2, h3, h4, h5, h6 {
+		color: $white;
+	}
+
+	.alert-error {
+		background-color: $red;
+	}
+
+	.alert-success {
+		background-color: $green;
+	}
+
+	.alert-info {
+		background-color: $blue;
+	}
+}
+
+.label {
+	padding: 6px 10px;
+	text-shadow: none;
+}
+
+.badge {
+	padding: 6px 10px;
+	@include border-radius($borderRadiusLarge);
+	text-shadow: none;
+}
+
+
+// MISC
+// --------------------------------------------------
+
+.well {
+	border: none;
+	@include box-shadow(none);
+
+}
+
+.progress {
+
+	background: $grayLighter;
+	border-radius: 32px;
+	height: 12px;
+	@include box-shadow(none);
+
+	.bar {
+		background: $textColor;
+		@include box-shadow(none);
+	}
+
+	.progress-success .bar, progress-success.progress-striped .bar {
+		background-color: $green;
+	}
+
+	.progress-warning .bar, progress-warning.progress-striped .bar {
+		background-color: $yellow;
+	}
+
+	.progress-danger .bar, progress-danger.progress-striped .bar {
+		background-color: $red;
+	}
+
+	.progress-info .bar, progress-info.progress-striped .bar {
+		background-color: $blue;
+	}
+}
+
+.tooltip {
+
+	&.in {
+		opacity: 1;
+	}
+}
+
+.popover {
+	color: $white;
+
+	.popover-title {
+		border-bottom: 2px solid $dropdownDividerBottom;
+	}
+}
+
+.modal {
+
+	.modal-header {
+		background-color: $navbarBackground;
+		border-bottom: none;
+		color: $white;
+	}
+
+	.modal-footer {
+		background-color: $grayLighter;
+		border-top: 2px solid $dropdownDividerTop;
+		@include box-shadow(none);
+	}
+}
+
+.close {
+	text-shadow: none;
+}

@@ -2,3 +2,50 @@
 // Structure
 // Styles for Tabs, Messages, ..etc
 // --------------------------------------------------
+
+// BUTTONS
+// --------------------------------------------------
+
+.btn {
+	padding: 8px 20px;
+	border: none;
+	background-image: none;
+	color: $white;
+	text-decoration: none;
+	text-shadow: none;
+	@include box-shadow(none);
+	-webkit-transition: 0.25s;
+	-moz-transition: 0.25s;
+	transition: 0.25s;
+
+	&:hover,
+	&:focus {
+		color: white;
+		-webkit-transition: 0.25s;
+		-moz-transition: 0.25s;
+		transition: 0.25s;
+	}
+
+	&:active,
+	&.active {
+		@include box-shadow(none);
+		color: rgba(255, 255, 255, 0.75);
+	}
+
+	&.disabled,
+	&[disabled] {
+		color: white;
+	}
+
+	.btn-large {
+		padding: $paddingLarge;
+	}
+
+	.btn-small {
+		padding: $paddingSmall;
+	}
+
+	.btn-mini {
+		padding: $paddingMini;
+	}
+}
