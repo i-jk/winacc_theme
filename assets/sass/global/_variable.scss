@@ -55,8 +55,8 @@ $baseLineHeight:        21px !default;
 $altFontFamily:         $serifFontFamily !default;
 
 $headingsFontFamily:    "BorisBlackBloxxRegular", Georgia !default; // empty to use BS default, $baseFontFamily
-$headingsFontWeight:    bold !default;    // instead of browser default, bold
-$headingsColor:         inherit !default; // empty to use BS default, $textColor
+$headingsFontWeight:    normal !default;    // instead of browser default, bold
+$headingsColor:         $green !default; // empty to use BS default, $textColor
 
 
 // Component sizing
