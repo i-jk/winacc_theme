@@ -1,7 +1,13 @@
 //
 // Layout
-// Styles for misc page objects (alerts, badges, labels)
-// -----------------------------------------------------
+// Styles for misc page objects (headings, alerts, badges, labels)
+// ---------------------------------------------------------------
+
+// HEADINGS
+h1, h2, h3, h4, h5, h6 {
+  font-family: $headingsFontFamily;
+  color: $green;
+}
 
 
 // ALERTS, LABELS, BADGES

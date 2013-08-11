@@ -8885,6 +8885,11 @@ html.js input.throbbing {
   padding: 0 6px;
 }
 
+h1, h2, h3, h4, h5, h6 {
+  font-family: inherit;
+  color: #4fa800;
+}
+
 .alert {
   background-color: #f39c12;
   color: white;
