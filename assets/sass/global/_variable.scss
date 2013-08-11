@@ -54,10 +54,12 @@ $baseFontFamily:        $sansFontFamily !default;
 $baseLineHeight:        21px !default;
 $altFontFamily:         $serifFontFamily !default;
 
-$headingsFontFamily:    "BorisBlackBloxxRegular", "Helvetica Neue", "Arial Black", Verdana, sans-serif !default; // empty to use BS default, $baseFontFamily
+$headingsFontFamily:    $baseFontFamily; // empty to use BS default, $baseFontFamily
 $headingsFontWeight:    normal !default;    // instead of browser default, bold
 $headingsColor:         $green !default; // empty to use BS default, $textColor
 
+// JK - use another name since headingsFontFamily isn't working...
+$headingFontFamily:      "BorisBlackBloxxRegular", "Helvetica Neue", "Arial Black", Verdana, sans-serif !default;
 
 // Component sizing
 // -------------------------
