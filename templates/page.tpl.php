@@ -12,6 +12,16 @@
 ?>
 <header id="header" class="header" role="header">
   <div class="container clearfix">
+        <?php if ($logo || $site_name): ?>
+          <a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>" rel="home" id="logo" class="pull-left brand">
+            <?php if ($logo): ?>
+              <img src="<?php print $logo; ?>" alt="<?php print t('Home'); ?>" />
+            <?php endif; ?>
+            <?php if ($site_name): ?>
+              <?php print $site_name; ?>
+            <?php endif; ?>
+          </a>
+        <?php endif; ?>
     <nav class='navbar'>
       <div class="navbar-inner">
         <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
@@ -24,17 +34,6 @@
         <?php if ($search_form): ?>
           <a class="btn btn-navbar btn-navbar-search" data-toggle="collapse" data-target=".nav-search-collapse">
             <span class="icon-search"></span>
-          </a>
-        <?php endif; ?>
-
-        <?php if ($logo || $site_name): ?>
-          <a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>" rel="home" id="logo" class="pull-left brand">
-            <?php if ($logo): ?>
-              <img src="<?php print $logo; ?>" alt="<?php print t('Home'); ?>" />
-            <?php endif; ?>
-            <?php if ($site_name): ?>
-              <?php print $site_name; ?>
-            <?php endif; ?>
           </a>
         <?php endif; ?>
 
