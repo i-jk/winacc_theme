@@ -20,8 +20,10 @@ $white:                 #fff !default;
 // Accent colors
 // -------------------------
 $blue:                  #3498DB !default;
-$blueDark:              #2C3E50 !default;
-$green:                 #18BC9C !default;
+$greenDarker:           #043022 !default;
+$greenDark:             #005C40 !default;
+$green:                 #4FA800 !default;
+$greenLight:            #CAEBAC !default;
 $red:                   #E74C3C !default;
 $yellow:                #e6bb0d !default;
 $orange:                #F39C12 !default;
@@ -32,12 +34,12 @@ $purple:                #8E44AD !default;
 // Scaffolding
 // -------------------------
 $bodyBackground:        $white !default;
-$textColor:             $blueDark !default;
+$textColor:             $greenDarker !default;
 
 
 // Links
 // -------------------------
-$linkColor:             #1ABC9C !default;
+$linkColor:             #4fa800 !default;
 $linkColorHover:        lighten($linkColor, 5%) !default;
 
 
@@ -118,7 +120,7 @@ $inputHeight:                   $baseLineHeight + 10px !default; // base line-he
 
 // Dropdowns
 // -------------------------
-$dropdownBackground:            $blueDark !default;
+$dropdownBackground:            $greenDark !default;
 $dropdownBorder:                rgba(0,0,0,0) !default;
 $dropdownDividerTop:            rgba(0,0,0,0.2) !default;
 $dropdownDividerBottom:         rgba(0,0,0,0.2) !default;
@@ -200,8 +202,8 @@ $navbarInverseBorder:                    darken($green, 5%) !default;
 
 $navbarInverseText:                      $white !default;
 $navbarInverseLinkColor:                 $white !default;
-$navbarInverseLinkColorHover:            $blueDark !default;
-$navbarInverseLinkColorActive:           $blueDark !default;
+$navbarInverseLinkColorHover:            $greenLight !default;
+$navbarInverseLinkColorActive:           $greenLight !default;
 $navbarInverseLinkBackgroundHover:       transparent !default;
 $navbarInverseLinkBackgroundActive:      darken($navbarInverseBackground, 5%) !default;
 
@@ -249,14 +251,14 @@ $infoBorder:              transparent !default;
 // Tooltips and popovers
 // -------------------------
 $tooltipColor:            #fff !default;
-$tooltipBackground:       $blueDark !default;
+$tooltipBackground:       $greenDark !default;
 $tooltipArrowWidth:       5px !default;
 $tooltipArrowColor:       $tooltipBackground !default;
 
-$popoverBackground:       $blueDark !default;
+$popoverBackground:       $greenDark !default;
 $popoverArrowWidth:       10px !default;
-$popoverArrowColor:       $blueDark !default;
-$popoverTitleBackground:  $blueDark !default;
+$popoverArrowColor:       $greenDark !default;
+$popoverTitleBackground:  $greenDark !default;
 
 // Special enhancement for popovers
 $popoverArrowOuterWidth:  $popoverArrowWidth + 1 !default;
