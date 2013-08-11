@@ -4920,15 +4920,15 @@ input[type="submit"].btn.btn-mini {
   min-height: 50px;
   padding-left: 20px;
   padding-right: 20px;
-  background-color: white;
-  background-image: -moz-linear-gradient(top, white, white);
-  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(white), to(white));
-  background-image: -webkit-linear-gradient(top, white, white);
-  background-image: -o-linear-gradient(top, white, white);
-  background-image: linear-gradient(to bottom, #ffffff, #ffffff);
+  background-color: #005c40;
+  background-image: -moz-linear-gradient(top, #005c40, #005c40);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#005c40), to(#005c40));
+  background-image: -webkit-linear-gradient(top, #005c40, #005c40);
+  background-image: -o-linear-gradient(top, #005c40, #005c40);
+  background-image: linear-gradient(to bottom, #005c40, #005c40);
   background-repeat: repeat-x;
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fcfcfc', endColorstr='#fcfcfc', GradientType=0);
-  border: 1px solid #f2f2f2;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00573c', endColorstr='#00573c', GradientType=0);
+  border: 1px solid #00432e;
   -webkit-border-radius: 6px;
   -moz-border-radius: 6px;
   border-radius: 6px;
@@ -4963,7 +4963,7 @@ input[type="submit"].btn.btn-mini {
   font-size: 20px;
   font-weight: 200;
   color: white;
-  text-shadow: 0 1px 0 white;
+  text-shadow: 0 1px 0 #005c40;
 }
 .navbar .brand:hover, .navbar .brand:focus {
   text-decoration: none;
@@ -4985,8 +4985,8 @@ input[type="submit"].btn.btn-mini {
 .navbar .divider-vertical {
   height: 50px;
   margin: 0 9px;
-  border-left: 1px solid white;
-  border-right: 1px solid white;
+  border-left: 1px solid #005c40;
+  border-right: 1px solid #005c40;
 }
 
 .navbar .btn,
@@ -5144,7 +5144,7 @@ input[type="submit"].btn.btn-mini {
   padding: 14.5px 15px 14.5px;
   color: white;
   text-decoration: none;
-  text-shadow: 0 1px 0 white;
+  text-shadow: 0 1px 0 #005c40;
 }
 
 .navbar .nav .dropdown-toggle .caret {
@@ -5163,7 +5163,7 @@ input[type="submit"].btn.btn-mini {
 .navbar .nav > .active > a:focus {
   color: #4fa800;
   text-decoration: none;
-  background-color: #f2f2f2;
+  background-color: #00432e;
   -webkit-box-shadow: inset 0 3px 8px rgba(0, 0, 0, 0.125);
   -moz-box-shadow: inset 0 3px 8px rgba(0, 0, 0, 0.125);
   box-shadow: inset 0 3px 8px rgba(0, 0, 0, 0.125);
@@ -5177,17 +5177,17 @@ input[type="submit"].btn.btn-mini {
   margin-right: 5px;
   color: white;
   text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
-  background-color: #f2f2f2;
-  background-image: -moz-linear-gradient(top, #f2f2f2, #f2f2f2);
-  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#f2f2f2), to(#f2f2f2));
-  background-image: -webkit-linear-gradient(top, #f2f2f2, #f2f2f2);
-  background-image: -o-linear-gradient(top, #f2f2f2, #f2f2f2);
-  background-image: linear-gradient(to bottom, #f2f2f2, #f2f2f2);
+  background-color: #00432e;
+  background-image: -moz-linear-gradient(top, #00432e, #00432e);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#00432e), to(#00432e));
+  background-image: -webkit-linear-gradient(top, #00432e, #00432e);
+  background-image: -o-linear-gradient(top, #00432e, #00432e);
+  background-image: linear-gradient(to bottom, #00432e, #00432e);
   background-repeat: repeat-x;
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f0f0f0', endColorstr='#f0f0f0', GradientType=0);
-  border-color: #f2f2f2 #f2f2f2 #cccccc;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#003d2b', endColorstr='#003d2b', GradientType=0);
+  border-color: #00432e #00432e black;
   border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
-  *background-color: #f2f2f2;
+  *background-color: #00432e;
   /* Darken IE7 buttons by default so they stand out more given they won't have borders */
   filter: progid:DXImageTransform.Microsoft.gradient(enabled=false);
   -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1), 0 1px 0 rgba(255, 255, 255, 0.075);
@@ -5196,11 +5196,11 @@ input[type="submit"].btn.btn-mini {
 }
 .navbar .btn-navbar:hover, .navbar .btn-navbar:focus, .navbar .btn-navbar:active, .navbar .btn-navbar.active, .navbar .btn-navbar.disabled, .navbar .btn-navbar[disabled] {
   color: white;
-  background-color: #f2f2f2;
-  *background-color: #e6e6e6;
+  background-color: #00432e;
+  *background-color: #00291d;
 }
 .navbar .btn-navbar:active, .navbar .btn-navbar.active {
-  background-color: #d9d9d9 \9;
+  background-color: #00100b \9;
 }
 
 .navbar .btn-navbar .icon-bar {
@@ -5265,7 +5265,7 @@ input[type="submit"].btn.btn-mini {
 .navbar .nav li.dropdown.open > .dropdown-toggle,
 .navbar .nav li.dropdown.active > .dropdown-toggle,
 .navbar .nav li.dropdown.open.active > .dropdown-toggle {
-  background-color: #f2f2f2;
+  background-color: #00432e;
   color: #4fa800;
 }
 
@@ -6958,7 +6958,7 @@ ul.dropdown-menu li {
 #main-menu > ul.menu > li > a:focus, #main-menu > ul.menu > li > a.active {
   color: #4fa800;
   text-decoration: none;
-  background-color: #f2f2f2;
+  background-color: #00432e;
   -webkit-box-shadow: inset 0 3px 8px rgba(0, 0, 0, 0.125);
   -moz-box-shadow: inset 0 3px 8px rgba(0, 0, 0, 0.125);
   box-shadow: inset 0 3px 8px rgba(0, 0, 0, 0.125);
@@ -7045,7 +7045,7 @@ ul.dropdown-menu li {
 #main-menu > ul.menu > li.open > a {
   color: #4fa800;
   text-decoration: none;
-  background-color: #f2f2f2;
+  background-color: #00432e;
 }
 #main-menu > ul.menu > li.open > a .caret {
   border-top-color: #777777;
@@ -8598,7 +8598,7 @@ html.js input.throbbing {
   .nav-collapse .nav > li > a:focus,
   .nav-collapse .dropdown-menu a:hover,
   .nav-collapse .dropdown-menu a:focus {
-    background-color: white;
+    background-color: #005c40;
   }
 
   .navbar-inverse .nav-collapse .nav > li > a,
@@ -8659,8 +8659,8 @@ html.js input.throbbing {
     float: none;
     padding: 10.5px 15px;
     margin: 10.5px 0;
-    border-top: 1px solid white;
-    border-bottom: 1px solid white;
+    border-top: 1px solid #005c40;
+    border-bottom: 1px solid #005c40;
     -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1), 0 1px 0 rgba(255, 255, 255, 0.1);
     -moz-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1), 0 1px 0 rgba(255, 255, 255, 0.1);
     box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1), 0 1px 0 rgba(255, 255, 255, 0.1);
@@ -8955,7 +8955,7 @@ html.js input.throbbing {
 }
 
 .modal .modal-header {
-  background-color: white;
+  background-color: #005c40;
   border-bottom: none;
   color: white;
 }
