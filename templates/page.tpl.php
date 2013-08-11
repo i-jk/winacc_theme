@@ -53,7 +53,6 @@
                 <!--nav id="main-menu" class="main-menu pull-left" role="navigation">
                   <?php //print render($main_menu); ?>
                 </nav--> <!-- /#main-menu -->
-              <?php endif; ?>
             </div>
           </div>
 
