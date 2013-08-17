@@ -4912,14 +4912,14 @@ input[type="submit"].btn.btn-mini {
   min-height: 50px;
   padding-left: 20px;
   padding-right: 20px;
-  background-color: #b5d89e;
-  background-image: -moz-linear-gradient(top, #8ac265, white);
-  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#8ac265), to(white));
-  background-image: -webkit-linear-gradient(top, #8ac265, white);
-  background-image: -o-linear-gradient(top, #8ac265, white);
-  background-image: linear-gradient(to bottom, #8ac265, #ffffff);
+  background-color: white;
+  background-image: -moz-linear-gradient(top, white, white);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(white), to(white));
+  background-image: -webkit-linear-gradient(top, white, white);
+  background-image: -o-linear-gradient(top, white, white);
+  background-image: linear-gradient(to bottom, #ffffff, #ffffff);
   background-repeat: repeat-x;
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#87c161', endColorstr='#fcfcfc', GradientType=0);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fcfcfc', endColorstr='#fcfcfc', GradientType=0);
   border: 1px solid #f2f2f2;
   -webkit-border-radius: 6px;
   -moz-border-radius: 6px;
@@ -4955,7 +4955,7 @@ input[type="submit"].btn.btn-mini {
   font-size: 20px;
   font-weight: 200;
   color: #005c40;
-  text-shadow: 0 1px 0 #8ac265;
+  text-shadow: 0 1px 0 white;
 }
 .navbar .brand:hover, .navbar .brand:focus {
   text-decoration: none;
@@ -4978,7 +4978,7 @@ input[type="submit"].btn.btn-mini {
   height: 50px;
   margin: 0 9px;
   border-left: 1px solid white;
-  border-right: 1px solid #8ac265;
+  border-right: 1px solid white;
 }
 
 .navbar .btn,
@@ -5136,7 +5136,7 @@ input[type="submit"].btn.btn-mini {
   padding: 14.5px 15px 14.5px;
   color: #005c40;
   text-decoration: none;
-  text-shadow: 0 1px 0 #8ac265;
+  text-shadow: 0 1px 0 white;
 }
 
 .navbar .nav .dropdown-toggle .caret {
@@ -5169,14 +5169,14 @@ input[type="submit"].btn.btn-mini {
   margin-right: 5px;
   color: white;
   text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
-  background-color: #a8cf8e;
-  background-image: -moz-linear-gradient(top, #7cbb53, #f2f2f2);
-  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#7cbb53), to(#f2f2f2));
-  background-image: -webkit-linear-gradient(top, #7cbb53, #f2f2f2);
-  background-image: -o-linear-gradient(top, #7cbb53, #f2f2f2);
-  background-image: linear-gradient(to bottom, #7cbb53, #f2f2f2);
+  background-color: #f2f2f2;
+  background-image: -moz-linear-gradient(top, #f2f2f2, #f2f2f2);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#f2f2f2), to(#f2f2f2));
+  background-image: -webkit-linear-gradient(top, #f2f2f2, #f2f2f2);
+  background-image: -o-linear-gradient(top, #f2f2f2, #f2f2f2);
+  background-image: linear-gradient(to bottom, #f2f2f2, #f2f2f2);
   background-repeat: repeat-x;
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#79b94f', endColorstr='#f0f0f0', GradientType=0);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f0f0f0', endColorstr='#f0f0f0', GradientType=0);
   border-color: #f2f2f2 #f2f2f2 #cccccc;
   border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
   *background-color: #f2f2f2;
@@ -8852,11 +8852,11 @@ body {
 }
 body div#primary-page {
   background-color: #fff;
-  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #90ceff), color-stop(100%, #ffffff));
-  background-image: -webkit-linear-gradient(top, #90ceff 0%, #ffffff 100%);
-  background-image: -moz-linear-gradient(top, #90ceff 0%, #ffffff 100%);
-  background-image: -o-linear-gradient(top, #90ceff 0%, #ffffff 100%);
-  background-image: linear-gradient(top, #90ceff 0%, #ffffff 100%);
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #90ceff), color-stop(20%, #adddff), color-stop(50%, #dbf0ff), color-stop(100%, #f9f9f9));
+  background-image: -webkit-linear-gradient(top, #90ceff 0%, #adddff 20%, #dbf0ff 50%, #f9f9f9 100%);
+  background-image: -moz-linear-gradient(top, #90ceff 0%, #adddff 20%, #dbf0ff 50%, #f9f9f9 100%);
+  background-image: -o-linear-gradient(top, #90ceff 0%, #adddff 20%, #dbf0ff 50%, #f9f9f9 100%);
+  background-image: linear-gradient(top, #90ceff 0%, #adddff 20%, #dbf0ff 50%, #f9f9f9 100%);
   padding-bottom: 50px;
 }
 

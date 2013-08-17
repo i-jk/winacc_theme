@@ -8,9 +8,9 @@ body {
 
   div#primary-page {
     background-color: #fff; // Old browsers
-    @include background-image(linear-gradient(top, #90ceff 0%,#fff 100%));
-      padding-bottom: 50px;
-    }
+    @include background-image(linear-gradient(top, #90ceff 0%,#adddff 20%,#dbf0ff 50%,#f9f9f9 100%));
+    padding-bottom: 50px;
+  }
 }
 
 body #footer {
