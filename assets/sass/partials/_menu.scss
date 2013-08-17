@@ -26,6 +26,7 @@
 
   .navbar-inner {
     @include box-shadow(none);
+    @include bg-trans-white();
   }
 
   .nav > li > a {
@@ -172,8 +173,7 @@ div.subnav {
 }
 
 .breadcrumb {
-
-  background: rgba(255, 255, 255, 0.75);
+  @include bg-trans-white();
 
   & > li {
     text-shadow: none;

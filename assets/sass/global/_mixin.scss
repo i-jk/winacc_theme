@@ -34,3 +34,13 @@
   text-overflow: ellipsis;
   white-space: nowrap;
 }
+
+@mixin bg-trans-white($opacity: 0.75) {
+  background: white;
+  background: rgba(255, 255, 255, $opacity);
+}
+
+@mixin bg-trans-black($opacity: 0.75) {
+  background: black;
+  background: rgba(0, 0, 0, $opacity);
+}

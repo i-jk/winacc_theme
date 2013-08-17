@@ -9022,6 +9022,8 @@ body #footer {
   -webkit-box-shadow: none;
   -moz-box-shadow: none;
   box-shadow: none;
+  background: white;
+  background: rgba(255, 255, 255, 0.75);
 }
 .navbar .nav > li > a {
   text-shadow: none;
@@ -9144,6 +9146,7 @@ div.subnav .nav > .active > a:hover {
 }
 
 .breadcrumb {
+  background: white;
   background: rgba(255, 255, 255, 0.75);
 }
 .breadcrumb > li {
