@@ -6,7 +6,7 @@
 // --------------------------------------------------
 
 .page-header {
-	border-bottom: none;
+  border-bottom: none;
 }
 
 
@@ -15,84 +15,84 @@
 
 .navbar {
 
-	.brand {
+  .brand {
 
-		text-shadow: none;
+    text-shadow: none;
 
-		&:hover {
-			color: $linkColorHover;
-		}
-	}
+    &:hover {
+      color: $linkColorHover;
+    }
+  }
 
-	.navbar-inner {
-		@include box-shadow(none);
-	}
+  .navbar-inner {
+    @include box-shadow(none);
+  }
 
-	.nav > li > a {
-		text-shadow: none;
-	}
+  .nav > li > a {
+    text-shadow: none;
+  }
 
-	.nav > .active > a,
-	.nav > .active > a:hover,
-	.nav > .active > a:focus {
-		@include box-shadow(none);
-	}
+  .nav > .active > a,
+  .nav > .active > a:hover,
+  .nav > .active > a:focus {
+    @include box-shadow(none);
+  }
 
-	.navbar-search .search-query {
-		border: none;
-		@include box-shadow(none);
-		line-height: normal;
-	}
+  .navbar-search .search-query {
+    border: none;
+    @include box-shadow(none);
+    line-height: normal;
+  }
 
-	.btn-navbar {
-		background-image: none;
-		@include box-shadow(none);
-	}
+  .btn-navbar {
+    background-image: none;
+    @include box-shadow(none);
+  }
 
-	.navbar-inverse {
+  .navbar-inverse {
 
-		.brand:hover {
-			color: $blueDark;
-		}
+    .brand:hover {
+      color: $blueDark;
+    }
 
-		.navbar-search .search-query {
-			border-color: transparent;
-			@include box-shadow(none);
-			line-height: normal;
-			color: $textColor;
+    .navbar-search .search-query {
+      border-color: transparent;
+      @include box-shadow(none);
+      line-height: normal;
+      color: $textColor;
 
-			&:focus {
-				padding: 4px 14px;
-				color: $textColor;
-			}
-		}
-	}
+      &:focus {
+        padding: 4px 14px;
+        color: $textColor;
+      }
+    }
+  }
 }
 
 div.subnav {
 
-	border-color: transparent;
-	background-image: none;
-	background-color: $grayLighter;
-	@include box-shadow(none);
+  border-color: transparent;
+  background-image: none;
+  background-color: $grayLighter;
+  @include box-shadow(none);
 
-	div.subnav-fixed {
-		top: $navbarHeight;
-	}
+  div.subnav-fixed {
+    top: $navbarHeight;
+  }
 
-	.nav > li > a {
-		border-color: transparent;
-		@include box-shadow(none);
-		color: $textColor;
-	}
+  .nav > li > a {
+    border-color: transparent;
+    @include box-shadow(none);
+    color: $textColor;
+  }
 
-	.nav > .active > a,
-	.nav > .active > a:hover {
-		border-color: transparent;
-		background-color: darken($grayLighter, 10%);
-		@include box-shadow(none);
-		color: $textColor;
-	}
+  .nav > .active > a,
+  .nav > .active > a:hover {
+    border-color: transparent;
+    background-color: darken($grayLighter, 10%);
+    @include box-shadow(none);
+    color: $textColor;
+  }
 }
 
 // NAVIGATION
@@ -100,80 +100,82 @@ div.subnav {
 
 .nav-list {
 
-	& > li > a,
-	& > .active > a,
-	.nav-header {
-		text-shadow: none;
-	}
+  & > li > a,
+  & > .active > a,
+  .nav-header {
+    text-shadow: none;
+  }
 
-	.divider {
-		background: none;
-		border-bottom: 2px solid $dropdownDividerBottom;
-	}
+  .divider {
+    background: none;
+    border-bottom: 2px solid $dropdownDividerBottom;
+  }
 }
 
 .nav-pills {
 
-	.open .dropdown-toggle {
-		background-color: $blueDark;
-	}
+  .open .dropdown-toggle {
+    background-color: $blueDark;
+  }
 }
 
 .pagination {
 
-	ul {
+  ul {
 
-		@include box-shadow(none);
+    @include box-shadow(none);
 
-		& > li > a {
-			background-color: $green;
-			border-color: transparent;
-			color: $white;
+    & > li > a {
+      background-color: $green;
+      border-color: transparent;
+      color: $white;
 
-			&:hover {
-				background-color: lighten($green, 10%);
-			}
-		}
+      &:hover {
+        background-color: lighten($green, 10%);
+      }
+    }
 
-		& > .active > a,
-		& > .active > a:hover {
-			background-color: $paginationActiveBackground;
-			color: $textColor;
-		}
+    & > .active > a,
+    & > .active > a:hover {
+      background-color: $paginationActiveBackground;
+      color: $textColor;
+    }
 
-		& > .disabled > a,
-		& > .disabled > a:hover {
-			background-color: lighten($green, 10%);
-			color: $white;
-		}
-	}
+    & > .disabled > a,
+    & > .disabled > a:hover {
+      background-color: lighten($green, 10%);
+      color: $white;
+    }
+  }
 }
 
 .pager {
 
-	li > a,
-	li > span {
-		background-color: $green;
-		border: none;
-		color: $white;
+  li > a,
+  li > span {
+    background-color: $green;
+    border: none;
+    color: $white;
 
-		&:hover {
-			background-color: lighten($green, 10%);
-		}
-	}
+    &:hover {
+      background-color: lighten($green, 10%);
+    }
+  }
 
-	.disabled > a,
-	.disabled > span,
-	.disabled > a:hover,
-	.disabled > span:hover {
-		background-color: lighten($green, 10%);
-		color: $white;
-	}
+  .disabled > a,
+  .disabled > span,
+  .disabled > a:hover,
+  .disabled > span:hover {
+    background-color: lighten($green, 10%);
+    color: $white;
+  }
 }
 
 .breadcrumb {
 
-	& > li {
-		text-shadow: none;
-	}
+  background: rgba(255, 255, 255, 0.75);
+
+  & > li {
+    text-shadow: none;
+  }
 }
