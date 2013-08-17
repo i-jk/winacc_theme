@@ -2,8 +2,23 @@
 // Typography
 // --------------------------------------------------
 
+
 // Headings
 // -------------------------
+
+h1, h2, h3, h4, h5, h6 {
+  margin: ($baseLineHeight / 2) 0;
+  font-family: $headingFontFamily;
+  font-weight: normal;
+  line-height: $baseLineHeight;
+  color: $green;
+  text-rendering: optimizelegibility; // Fix the character spacing for headings
+  small {
+    font-weight: normal;
+    line-height: 1;
+    color: $grayLight;
+  }
+}
 
 h1,
 h2,
