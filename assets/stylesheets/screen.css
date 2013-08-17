@@ -8820,13 +8820,13 @@ body {
 }
 body div#primary-page {
   background: white;
+  padding-bottom: 50px;
 }
 
 body #footer {
-  background: #8ac265 url('../images/bg-grass.png?1376751152') center top repeat-x;
+  background: #8ac265 url('../images/bg-grass.png?1376751506') center top repeat-x;
   min-height: 200px;
   margin-top: 0;
-  padding-top: 50px;
 }
 
 .btn {

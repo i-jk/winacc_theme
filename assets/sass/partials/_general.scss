@@ -8,6 +8,7 @@ body {
 
   div#primary-page {
     background: white;
+    padding-bottom: 50px;
   }
 }
 
@@ -15,5 +16,4 @@ body #footer {
   @include background($greenLight image-url("bg-grass.png") center top repeat-x);
   min-height: 200px;
   margin-top: 0;
-  padding-top: 50px;
 }
