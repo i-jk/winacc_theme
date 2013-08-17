@@ -5,32 +5,48 @@
 
 // Global values
 // --------------------------------------------------
+/*
+  COLOUR TWEAKS: http://colorschemedesigner.com/#2.61Tw0nAw0w0
+
+  Primary Color:
+  4FA800	4C7E20	336D00	80D335	96D35F
+
+  Secondary Color A:
+  008247	186140	00542E	30C07F	57C090
+
+  Secondary Color B:
+  99B600	788822	637600	C0DA37	C7DA62
+
+  Complementary Color:
+  A70035	7D1F3D	6C0023	D33567	D35F84
+
+*/
 
 // Grays
 // -------------------------
 $black:                 #000 !default;
 $grayDarker:            #222 !default;
-$grayDark:              #7b8a8b !default;
-$gray:                  #95A5A6 !default;
-$grayLight:             #b4bcc2 !default;
-$grayLighter:           #ECF0F1 !default;
+$grayDark:              #7B7C70 !default;
+$gray:                  #9C9E8D !default;
+$grayLight:             #B8BBA7 !default;
+$grayLighter:           #EFF0E4 !default;
 $white:                 #fff !default;
 
 
 // Accent colors
 // -------------------------
-$blue:                  #3498DB;
+$blue:                  #34A6DB;
 $greenDarker:           #043022;
 $greenDark:             #005C40;
 $green:                 #4FA800;
 $greenLight:            #8ac265;
 $greenLighter:          #CAEBAC;
 $greenWash:             #E9F5DF;
-$red:                   #E74C3C;
-$yellow:                #e6bb0d;
-$orange:                #F39C12;
-$pink:                  #ff6699;
-$purple:                #8E44AD;
+$red:                   #EB1842;
+$yellow:                #E4D316;
+$orange:                #E4A216;
+$pink:                  #E969C5;
+$purple:                #8950EE;
 
 
 // Scaffolding
@@ -114,10 +130,10 @@ $btnInverseBackgroundHighlight:     lighten($btnInverseBackground, 10%) !default
 // Forms
 // -------------------------
 $inputBackground:               $white !default;
-$inputBorder:                   #dce4ec !default;
+$inputBorder:                   $greenLighter;
 $inputBorderRadius:             $baseBorderRadius !default;
-$inputDisabledBackground:       #eaeded !default;
-$formActionsBackground:         #f5f5f5 !default;
+$inputDisabledBackground:       $grayLight !default;
+$formActionsBackground:         $greenWash !default;
 $inputHeight:                   $baseLineHeight + 10px !default; // base line-height + 8px vertical padding + 2px top/bottom border
 
 
