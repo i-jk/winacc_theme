@@ -18,7 +18,7 @@ body #logo {
 }
 
 #content {
-  background: rgba(255, 255, 255, 0.75);
+  @include bg-trans-white();
   padding: $paddingLarge;
   border-radius: $baseBorderRadius;
 }

@@ -26,7 +26,8 @@
 
   .navbar-inner {
     @include box-shadow(none);
-    @include bg-trans-white();
+    @include bg-trans-white(0.85);
+    border: none;
   }
 
   .nav > li > a {
@@ -173,7 +174,7 @@ div.subnav {
 }
 
 .breadcrumb {
-  @include bg-trans-white();
+  @include bg-trans-white(0.80);
 
   & > li {
     text-shadow: none;
