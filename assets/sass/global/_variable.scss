@@ -203,14 +203,14 @@ $navbarCollapseDesktopWidth:      $navbarCollapseWidth + 1 !default;
 $navbarHeight:                    50px !default;
 $navbarBackgroundHighlight:       $white;
 $navbarBackground:                $white;
-$navbarBorder:                    darken($navbarBackground, 5%) !default;
+$navbarBorder:                    $white;
 
 $navbarText:                      $grayDarker !default;
 $navbarLinkColor:                 $greenDark !default;
-$navbarLinkColorHover:            $red !default;
-$navbarLinkColorActive:           $red !default;
-$navbarLinkBackgroundHover:       $greenWash !default;
-$navbarLinkBackgroundActive:      darken($navbarBackground, 5%) !default;
+$navbarLinkColorHover:            $white !default;
+$navbarLinkColorActive:           $greenDark !default;
+$navbarLinkBackgroundHover:       $green !default;
+$navbarLinkBackgroundActive:      $greenLight !default;
 
 $navbarBrandColor:                $navbarLinkColor !default;
 
@@ -238,7 +238,7 @@ $navbarInverseBrandColor:                $navbarInverseLinkColor !default;
 // -------------------------
 $paginationBackground:                #fff !default;
 $paginationBorder:                    #ddd !default;
-$paginationActiveBackground:          $grayLighter !default;
+$paginationActiveBackground:          $greenLighter !default;
 
 
 // Hero unit

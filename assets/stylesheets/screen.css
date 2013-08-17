@@ -4920,7 +4920,7 @@ input[type="submit"].btn.btn-mini {
   background-image: linear-gradient(to bottom, #ffffff, #ffffff);
   background-repeat: repeat-x;
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fcfcfc', endColorstr='#fcfcfc', GradientType=0);
-  border: 1px solid #f2f2f2;
+  border: 1px solid white;
   -webkit-border-radius: 6px;
   -moz-border-radius: 6px;
   border-radius: 6px;
@@ -4971,7 +4971,7 @@ input[type="submit"].btn.btn-mini {
   color: #005c40;
 }
 .navbar-link:hover, .navbar-link:focus {
-  color: #eb1842;
+  color: white;
 }
 
 .navbar .divider-vertical {
@@ -5145,17 +5145,17 @@ input[type="submit"].btn.btn-mini {
 
 .navbar .nav > li > a:focus,
 .navbar .nav > li > a:hover {
-  background-color: #e9f5df;
-  color: #eb1842;
+  background-color: #4fa800;
+  color: white;
   text-decoration: none;
 }
 
 .navbar .nav > .active > a,
 .navbar .nav > .active > a:hover,
 .navbar .nav > .active > a:focus {
-  color: #eb1842;
+  color: #005c40;
   text-decoration: none;
-  background-color: #f2f2f2;
+  background-color: #8ac265;
   -webkit-box-shadow: inset 0 3px 8px rgba(0, 0, 0, 0.125);
   -moz-box-shadow: inset 0 3px 8px rgba(0, 0, 0, 0.125);
   box-shadow: inset 0 3px 8px rgba(0, 0, 0, 0.125);
@@ -5250,15 +5250,15 @@ input[type="submit"].btn.btn-mini {
 
 .navbar .nav li.dropdown > a:hover .caret,
 .navbar .nav li.dropdown > a:focus .caret {
-  border-top-color: #eb1842;
-  border-bottom-color: #eb1842;
+  border-top-color: white;
+  border-bottom-color: white;
 }
 
 .navbar .nav li.dropdown.open > .dropdown-toggle,
 .navbar .nav li.dropdown.active > .dropdown-toggle,
 .navbar .nav li.dropdown.open.active > .dropdown-toggle {
-  background-color: #f2f2f2;
-  color: #eb1842;
+  background-color: #8ac265;
+  color: #005c40;
 }
 
 .navbar .nav li.dropdown > .dropdown-toggle .caret {
@@ -5269,8 +5269,8 @@ input[type="submit"].btn.btn-mini {
 .navbar .nav li.dropdown.open > .dropdown-toggle .caret,
 .navbar .nav li.dropdown.active > .dropdown-toggle .caret,
 .navbar .nav li.dropdown.open.active > .dropdown-toggle .caret {
-  border-top-color: #eb1842;
-  border-bottom-color: #eb1842;
+  border-top-color: #005c40;
+  border-bottom-color: #005c40;
 }
 
 .navbar .pull-right > li > .dropdown-menu,
@@ -5486,7 +5486,7 @@ input[type="submit"].btn.btn-mini {
 .pagination ul > li > a:focus,
 .pagination ul > .active > a,
 .pagination ul > .active > span {
-  background-color: #eff0e4;
+  background-color: #caebac;
 }
 
 .pagination ul > .active > a,
@@ -6943,14 +6943,14 @@ ul.dropdown-menu li {
   display: block;
 }
 #main-menu > ul.menu > li > a:hover {
-  color: #eb1842;
+  color: white;
   text-decoration: none;
-  background-color: #e9f5df;
+  background-color: #4fa800;
 }
 #main-menu > ul.menu > li > a:focus, #main-menu > ul.menu > li > a.active {
-  color: #eb1842;
+  color: #005c40;
   text-decoration: none;
-  background-color: #f2f2f2;
+  background-color: #8ac265;
   -webkit-box-shadow: inset 0 3px 8px rgba(0, 0, 0, 0.125);
   -moz-box-shadow: inset 0 3px 8px rgba(0, 0, 0, 0.125);
   box-shadow: inset 0 3px 8px rgba(0, 0, 0, 0.125);
@@ -7035,9 +7035,9 @@ ul.dropdown-menu li {
   content: '';
 }
 #main-menu > ul.menu > li.open > a {
-  color: #eb1842;
+  color: #005c40;
   text-decoration: none;
-  background-color: #f2f2f2;
+  background-color: #8ac265;
 }
 #main-menu > ul.menu > li.open > a .caret {
   border-top-color: #777777;
@@ -8709,9 +8709,9 @@ html.js input.throbbing {
     border-radius: 3px;
   }
   #main-menu > ul.menu li a:hover {
-    color: #eb1842;
+    color: white;
     text-decoration: none;
-    background-color: #e9f5df;
+    background-color: #4fa800;
   }
   #main-menu > ul.menu li.open ul.menu {
     display: none !important;
@@ -8858,6 +8858,10 @@ body div#primary-page {
   background-image: -o-linear-gradient(top, #90ceff 0%, #adddff 20%, #dbf0ff 50%, #ffffff 100%);
   background-image: linear-gradient(top, #90ceff 0%, #adddff 20%, #dbf0ff 50%, #ffffff 100%);
   padding-bottom: 50px;
+}
+
+body #logo {
+  padding: 15px;
 }
 
 body #footer {
@@ -9107,7 +9111,7 @@ div.subnav .nav > .active > a:hover {
   background-color: #67db00;
 }
 .pagination ul > .active > a, .pagination ul > .active > a:hover {
-  background-color: #eff0e4;
+  background-color: #caebac;
   color: #043022;
 }
 .pagination ul > .disabled > a, .pagination ul > .disabled > a:hover {
