@@ -7,9 +7,10 @@ body {
   background: $greenLight;
 
   div#primary-page {
-    background: white;
-    padding-bottom: 50px;
-  }
+    background-color: #fff; // Old browsers
+    @include background-image(linear-gradient(top, #90ceff 0%,#fff 100%));
+      padding-bottom: 50px;
+    }
 }
 
 body #footer {
