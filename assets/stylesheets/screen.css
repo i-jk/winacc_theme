@@ -8864,6 +8864,12 @@ body #logo {
   padding: 15px;
 }
 
+#content {
+  background: rgba(255, 255, 255, 0.7);
+  padding: 2px 10px;
+  border-radius: 5px;
+}
+
 body #footer {
   background: #8ac265 url('../images/bg-grass.png?1376751506') center top repeat-x;
   min-height: 200px;
