@@ -8816,15 +8816,17 @@ html.js input.throbbing {
   }
 }
 body {
-  background: #4fa800;
+  background: #8ac265;
 }
 body div#primary-page {
   background: white;
 }
 
 body #footer {
-  background: #4fa800 url('../images/bg-grass.png?1376749976') center top repeat-x;
+  background: #8ac265 url('../images/bg-grass.png?1376751152') center top repeat-x;
   min-height: 200px;
+  margin-top: 0;
+  padding-top: 50px;
 }
 
 .btn {

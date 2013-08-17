@@ -4,7 +4,7 @@
 // --------------------------------------------------
 
 body {
-  background: $green;
+  background: $greenLight;
 
   div#primary-page {
     background: white;
@@ -12,6 +12,8 @@ body {
 }
 
 body #footer {
-  @include background($green image-url("bg-grass.png") center top repeat-x);
+  @include background($greenLight image-url("bg-grass.png") center top repeat-x);
   min-height: 200px;
+  margin-top: 0;
+  padding-top: 50px;
 }
