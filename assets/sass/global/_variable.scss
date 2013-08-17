@@ -19,16 +19,16 @@ $white:                 #fff !default;
 
 // Accent colors
 // -------------------------
-$blue:                  #3498DB !default;
-$greenDarker:           #043022 !default;
-$greenDark:             #005C40 !default;
-$green:                 #4FA800 !default;
-$greenLight:            #CAEBAC !default;
-$red:                   #E74C3C !default;
-$yellow:                #e6bb0d !default;
-$orange:                #F39C12 !default;
-$pink:                  #ff6699 !default;
-$purple:                #8E44AD !default;
+$blue:                  #3498DB;
+$greenDarker:           #043022;
+$greenDark:             #005C40;
+$green:                 #4FA800;
+$greenLight:            #CAEBAC;
+$red:                   #E74C3C;
+$yellow:                #e6bb0d;
+$orange:                #F39C12;
+$pink:                  #ff6699;
+$purple:                #8E44AD;
 
 
 // Scaffolding
@@ -39,27 +39,26 @@ $textColor:             $greenDarker !default;
 
 // Links
 // -------------------------
-$linkColor:             #4fa800 !default;
+$linkColor:             $green !default;
 $linkColorHover:        lighten($linkColor, 5%) !default;
 
 
 // Typography
 // -------------------------
-$sansFontFamily:        "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif !default;
+$sansFontFamily:        "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
 $serifFontFamily:       Georgia, "Times New Roman", Times, serif !default;
 $monoFontFamily:        Monaco, Menlo, Consolas, "Courier New", monospace !default;
 
-$baseFontSize:          15px !default;
+$baseFontSize:          15px;
 $baseFontFamily:        $sansFontFamily !default;
-$baseLineHeight:        21px !default;
+$baseLineHeight:        21px;
 $altFontFamily:         $serifFontFamily !default;
 
-$headingsFontFamily:    $baseFontFamily; // empty to use BS default, $baseFontFamily
-$headingsFontWeight:    normal !default;    // instead of browser default, bold
-$headingsColor:         $green !default; // empty to use BS default, $textColor
+$headingsFontFamily:      "BorisBlackBloxxRegular", "Helvetica Neue", "Arial Black", Verdana, sans-serif;
+$headingsFontWeight:    normal;    // instead of browser default, bold
+$headingsColor:         $green; // empty to use BS default, $textColor
 
-// JK - use another name since headingsFontFamily isn't working...
-$headingFontFamily:      "BorisBlackBloxxRegular", "Helvetica Neue", "Arial Black", Verdana, sans-serif !default;
+$headingsBaseFontSize:  34px;
 
 // Component sizing
 // -------------------------

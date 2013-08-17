@@ -8854,11 +8854,6 @@ html.js input.throbbing {
   padding: 0 6px;
 }
 
-h1, h2, h3, h4, h5, h6 {
-  font-family: "BorisBlackBloxxRegular", "Helvetica Neue", "Arial Black", Verdana, sans-serif;
-  color: #4fa800;
-}
-
 .alert {
   background-color: #f39c12;
   color: white;
@@ -9262,103 +9257,6 @@ legend {
   background-color: #dde4e6;
 }
 
-p {
-  margin: 0 0 10.5px;
-}
-
-.lead {
-  margin-bottom: 21px;
-  font-size: 22.5px;
-  font-weight: 200;
-  line-height: 31.5px;
-}
-
-small {
-  font-size: 85%;
-}
-
-strong {
-  font-weight: bold;
-}
-
-em {
-  font-style: italic;
-}
-
-cite {
-  font-style: normal;
-}
-
-.muted {
-  color: #b4bcc2;
-}
-
-a.muted:hover,
-a.muted:focus {
-  color: #98a3ab;
-}
-
-.text-warning {
-  color: #e6bb0d;
-}
-
-a.text-warning:hover,
-a.text-warning:focus {
-  color: #b6940a;
-}
-
-.text-error {
-  color: #e74c3c;
-}
-
-a.text-error:hover,
-a.text-error:focus {
-  color: #d62c1a;
-}
-
-.text-info {
-  color: #3498db;
-}
-
-a.text-info:hover,
-a.text-info:focus {
-  color: #217dbb;
-}
-
-.text-success {
-  color: #4fa800;
-}
-
-a.text-success:hover,
-a.text-success:focus {
-  color: #377500;
-}
-
-.text-left {
-  text-align: left;
-}
-
-.text-right {
-  text-align: right;
-}
-
-.text-center {
-  text-align: center;
-}
-
-h1, h2, h3, h4, h5, h6 {
-  margin: 10.5px 0;
-  font-weight: normal;
-  line-height: 21px;
-  color: #4fa800;
-  text-rendering: optimizelegibility;
-}
-h1 small, h2 small, h3 small, h4 small, h5 small, h6 small {
-  font-weight: normal;
-  line-height: 1;
-  color: #b4bcc2;
-}
-
 h1,
 h2,
 h3 {
@@ -9366,187 +9264,41 @@ h3 {
 }
 
 h1 {
-  font-size: 33.75px;
+  font-size: 34px;
 }
 
 h2 {
-  font-size: 30px;
+  font-size: 30.6px;
 }
 
 h3 {
-  font-size: 26.25px;
+  font-size: 25.5px;
 }
 
 h4 {
-  font-size: 19.95px;
+  font-size: 22.44px;
 }
 
 h5 {
-  font-size: 17.4px;
+  font-size: 17px;
 }
 
 h6 {
-  font-size: 14.25px;
+  font-size: 13.6px;
 }
 
 h1 small {
-  font-size: 26.25px;
+  font-size: 25.5px;
 }
 
 h2 small {
-  font-size: 18.75px;
+  font-size: 22.44px;
 }
 
 h3 small {
-  font-size: 15px;
+  font-size: 17px;
 }
 
 h4 small {
-  font-size: 15px;
-}
-
-.page-header {
-  padding-bottom: 9.5px;
-  margin: 21px 0 31.5px;
-  border-bottom: 1px solid #ecf0f1;
-}
-
-ul, ol {
-  padding: 0;
-  margin: 0 0 10.5px 25px;
-}
-
-ul ul,
-ul ol,
-ol ol,
-ol ul {
-  margin-bottom: 0;
-}
-
-li {
-  line-height: 21px;
-}
-
-ul.unstyled,
-ol.unstyled {
-  margin-left: 0;
-  list-style: none;
-}
-
-ul.inline,
-ol.inline {
-  margin-left: 0;
-  list-style: none;
-}
-ul.inline > li,
-ol.inline > li {
-  display: inline-block;
-  *display: inline;
-  /* IE7 inline-block hack */
-  *zoom: 1;
-  padding-left: 5px;
-  padding-right: 5px;
-}
-
-dl {
-  margin-bottom: 21px;
-}
-
-dt,
-dd {
-  line-height: 21px;
-}
-
-dt {
-  font-weight: bold;
-}
-
-dd {
-  margin-left: 10.5px;
-}
-
-.dl-horizontal {
-  overflow: hidden;
-  *zoom: 1;
-}
-.dl-horizontal dt {
-  float: left;
-  width: 160px;
-  clear: left;
-  text-align: right;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-}
-.dl-horizontal dd {
-  margin-left: 180px;
-}
-
-hr {
-  margin: 21px 0;
-  border: 0;
-  border-top: 1px solid #ecf0f1;
-  border-bottom: 1px solid white;
-}
-
-abbr[title],
-abbr[data-original-title] {
-  cursor: help;
-  border-bottom: 1px dotted #b4bcc2;
-}
-
-abbr.initialism {
-  font-size: 90%;
-  text-transform: uppercase;
-}
-
-blockquote {
-  padding: 0 0 0 15px;
-  margin: 0 0 21px;
-  border-left: 5px solid #ecf0f1;
-}
-blockquote p {
-  margin-bottom: 0;
-  font-size: 18.75px;
-  font-weight: 300;
-  line-height: 1.25;
-}
-blockquote small {
-  display: block;
-  line-height: 21px;
-  color: #b4bcc2;
-}
-blockquote small:before {
-  content: '\2014 \00A0';
-}
-blockquote.pull-right {
-  float: right;
-  padding-right: 15px;
-  padding-left: 0;
-  border-right: 5px solid #ecf0f1;
-  border-left: 0;
-}
-blockquote.pull-right p,
-blockquote.pull-right small {
-  text-align: right;
-}
-blockquote.pull-right small:before {
-  content: '';
-}
-blockquote.pull-right small:after {
-  content: '\00A0 \2014';
-}
-
-q:before,
-q:after,
-blockquote:before,
-blockquote:after {
-  content: "";
-}
-
-address {
-  display: block;
-  margin-bottom: 21px;
-  font-style: normal;
-  line-height: 21px;
+  font-size: 13.6px;
 }
