@@ -1,0 +1,17 @@
+//
+// Layout
+// Styles for main layout
+// --------------------------------------------------
+
+body {
+  background: $green;
+
+  div#primary-page {
+    background: white;
+  }
+}
+
+body #footer {
+  @include background($green image-url("bg-grass.png") center top repeat-x);
+  min-height: 200px;
+}

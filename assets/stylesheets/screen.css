@@ -309,7 +309,7 @@ body {
   font-size: 15px;
   line-height: 21px;
   color: #043022;
-  background-color: white;
+  background-color: #4fa800;
 }
 
 a {
@@ -1981,7 +1981,7 @@ table {
   border-top: 2px solid #dddddd;
 }
 .table .table {
-  background-color: white;
+  background-color: #4fa800;
 }
 
 .table-condensed th,
@@ -4613,7 +4613,7 @@ input[type="submit"].btn.btn-mini {
 .nav-tabs > .active > a:hover,
 .nav-tabs > .active > a:focus {
   color: #95a5a6;
-  background-color: white;
+  background-color: #4fa800;
   border: 1px solid #ddd;
   border-bottom-color: transparent;
   cursor: default;
@@ -8815,6 +8815,18 @@ html.js input.throbbing {
     background-color: #4fa800;
   }
 }
+body {
+  background: #4fa800;
+}
+body div#primary-page {
+  background: white;
+}
+
+body #footer {
+  background: #4fa800 url('../images/bg-grass.png?1376749976') center top repeat-x;
+  min-height: 200px;
+}
+
 .btn {
   padding: 8px 20px;
   border: none;
@@ -8945,10 +8957,6 @@ html.js input.throbbing {
 
 .close {
   text-shadow: none;
-}
-
-body footer#footer {
-  background: #4fa800 url('../images/bg-grass.png?1376748233') center top repeat-x;
 }
 
 .page-header {
