@@ -90,8 +90,8 @@ $paddingLarge:          18px 36px !default; // 44px
 $paddingSmall:          2px 12px !default;  // 26px
 $paddingMini:           1px 8px !default;   // 24px
 
-$baseBorderRadius:      6px !default;
-$borderRadiusLarge:     10px !default;
+$baseBorderRadius:      5px !default;
+$borderRadiusLarge:     8px !default;
 $borderRadiusSmall:     3px !default;
 
 
@@ -210,7 +210,7 @@ $navbarLinkColor:                 $greenDark !default;
 $navbarLinkColorHover:            $white !default;
 $navbarLinkColorActive:           $greenDark !default;
 $navbarLinkBackgroundHover:       $green !default;
-$navbarLinkBackgroundActive:      $greenLight !default;
+$navbarLinkBackgroundActive:      $greenLighter !default;
 
 $navbarBrandColor:                $navbarLinkColor !default;
 
