@@ -111,3 +111,7 @@
 .close {
 	text-shadow: none;
 }
+
+body footer#footer {
+  @include background($green image-url("bg-grass.png") center top repeat-x);
+}

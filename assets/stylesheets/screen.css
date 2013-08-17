@@ -8947,6 +8947,10 @@ html.js input.throbbing {
   text-shadow: none;
 }
 
+body footer#footer {
+  background: #4fa800 url('../images/bg-grass.png?1376748233') center top repeat-x;
+}
+
 .page-header {
   border-bottom: none;
 }
