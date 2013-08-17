@@ -201,15 +201,15 @@ $navbarCollapseWidth:             979px !default;
 $navbarCollapseDesktopWidth:      $navbarCollapseWidth + 1 !default;
 
 $navbarHeight:                    50px !default;
-$navbarBackgroundHighlight:       $greenDark !default;
-$navbarBackground:                $greenDark !default;
+$navbarBackgroundHighlight:       $greenLight;
+$navbarBackground:                $white;
 $navbarBorder:                    darken($navbarBackground, 5%) !default;
 
-$navbarText:                      $white !default;
-$navbarLinkColor:                 $white !default;
-$navbarLinkColorHover:            $linkColor !default;
-$navbarLinkColorActive:           $linkColor !default;
-$navbarLinkBackgroundHover:       transparent !default;
+$navbarText:                      $grayDarker !default;
+$navbarLinkColor:                 $greenDark !default;
+$navbarLinkColorHover:            $red !default;
+$navbarLinkColorActive:           $red !default;
+$navbarLinkBackgroundHover:       $greenWash !default;
 $navbarLinkBackgroundActive:      darken($navbarBackground, 5%) !default;
 
 $navbarBrandColor:                $navbarLinkColor !default;
