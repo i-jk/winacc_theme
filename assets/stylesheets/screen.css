@@ -9181,6 +9181,7 @@ input[type="color"],
 .uneditable-input {
   padding: 7px 6px;
   border: 2px solid #dce4ec;
+  margin: 0;
   text-indent: 1px;
   -webkit-border-radius: 6px;
   -moz-border-radius: 6px;
