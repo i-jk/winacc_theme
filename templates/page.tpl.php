@@ -66,10 +66,6 @@
             </div>
           </div>
 
-        </div>
-      </nav> <!-- /# primary nav and search -->
-      <nav class='navbar'>
-        <div class="navbar-inner">
           <!-- .btn-navbar-topics for collapsed topic menu content -->
           <?php if ($topic_menu_expanded): ?>
             <a class="btn btn-navbar btn-navbar-topics" data-toggle="collapse" data-target=".nav-topics-collapse">
@@ -77,6 +73,7 @@
               <span class="icon-lightbulb"></span>
             </a>
           <?php endif; ?>
+          
           <div class="nav-collapse nav-topics-collapse">
             <div class="inner">
               <?php if ($topic_menu_expanded): ?>
