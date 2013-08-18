@@ -94,12 +94,12 @@ legend {
 .form-actions {
   border-top: none;
   @include border-radius($baseBorderRadius);
-  background-color: darken($grayLighter, 5%);
+  background-color: $zestLight;
 }
 
 #content form {
   @include bg-trans-white();
-  border: 2px solid $greenLight;
+  border: 2px solid $zest;
   @include border-radius($baseBorderRadius);
   padding: 0 10px;
 }
