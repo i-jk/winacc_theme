@@ -9334,6 +9334,16 @@ legend {
   background-color: #e5e7d4;
 }
 
+#content .form {
+  background: white;
+  background: rgba(255, 255, 255, 0.75);
+  border: 2px solid #8ac265;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  padding: 0 10px;
+}
+
 h1, h2, h3, h4, h5, h6 {
   margin: 10.5px 0;
   font-family: "BorisBlackBloxxRegular", "Helvetica Neue", "Arial Black", Verdana, sans-serif;

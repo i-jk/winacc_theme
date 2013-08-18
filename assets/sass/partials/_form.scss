@@ -23,76 +23,83 @@ input[type="search"],
 input[type="tel"],
 input[type="color"],
 .uneditable-input {
-	padding: 7px 6px;
-	border: 2px solid #dce4ec;
-	text-indent: 1px;
-	@include border-radius(6px);
-	@include box-shadow(none);
-	@include placeholder(#acb6c0);
+  padding: 7px 6px;
+  border: 2px solid #dce4ec;
+  text-indent: 1px;
+  @include border-radius(6px);
+  @include box-shadow(none);
+  @include placeholder(#acb6c0);
 
-	&:focus {
-		border-color: $green;
-		@include box-shadow(none);
+  &:focus {
+    border-color: $green;
+    @include box-shadow(none);
 
-	}
+  }
 
 }
 
 .control-group.error,
 .control-group.error input:focus,
 .control-group.error textarea:focus {
-		border-color: #e74c3c;
-		@include box-shadow(none);
+    border-color: #e74c3c;
+    @include box-shadow(none);
 }
 
 .control-group.success,
 .control-group.success input:focus,
 .control-group.success textarea:focus {
-		border-color: #2ecc71;
-		@include box-shadow(none);
+    border-color: #2ecc71;
+    @include box-shadow(none);
 }
 
 .control-group.warning,
 .control-group.warning input:focus,
 .control-group.warning textarea:focus {
-		border-color: #f1c40f;
-		@include box-shadow(none);
+    border-color: #f1c40f;
+    @include box-shadow(none);
 }
 
 .control-group.info,
 .control-group.info input:focus,
 .control-group.info textarea:focus {
-		border-color: #3498db;
-		@include box-shadow(none);
+    border-color: #3498db;
+    @include box-shadow(none);
 }
 
 input[disabled],
 input[readonly],
 textarea[disabled],
 textarea[readonly] {
-	background-color: #eaeded;
-	border-color: transparent;
-	color: #cad2d3;
-	cursor: default;
+  background-color: #eaeded;
+  border-color: transparent;
+  color: #cad2d3;
+  cursor: default;
 }
 
 input[type="file"]{
-	line-height: 16px;
+  line-height: 16px;
 }
 
 .input-append .add-on,
 .input-prepend .add-on {
-	border: none;
-	background: none;
+  border: none;
+  background: none;
 }
 
 legend {
-	border-bottom: none;
-	color: $textColor;
+  border-bottom: none;
+  color: $textColor;
 }
 
 .form-actions {
-	border-top: none;
-	@include border-radius($baseBorderRadius);
-	background-color: darken($grayLighter, 5%);
+  border-top: none;
+  @include border-radius($baseBorderRadius);
+  background-color: darken($grayLighter, 5%);
+}
+
+#content .form {
+  @include bg-trans-white();
+  border: 2px solid $greenLight;
+  @include border-radius($baseBorderRadius);
+  padding: 0 10px;
 }
