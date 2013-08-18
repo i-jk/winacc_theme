@@ -55,23 +55,6 @@
                   ),
                 )); ?>
               <?php endif; ?>
-              <?php if ($topic_menu_expanded): ?>
-                <div class="row">
-                  <?php print theme('links__system_main_menu', array(
-                    'links' => $topic_menu_expanded,
-                    'attributes' => array(
-                      'class' => array('topic-menu nav pull-left'),
-                      'id' => array('topic-menu'),
-                      'role' => array('navigation'),
-                    ),
-                    'heading' => array(
-                      'text' => t('Topic menu'),
-                      'level' => 'h2',
-                      'class' => array('element-invisible'),
-                    ),
-                  )); ?>
-                </div>
-              <?php endif; ?>
             </div>
           </div>
 
@@ -83,6 +66,23 @@
             </div>
           </div>
 
+          <?php if ($topic_menu_expanded): ?>
+            <div class="row">
+              <?php print theme('links__system_main_menu', array(
+                'links' => $topic_menu_expanded,
+                'attributes' => array(
+                  'class' => array('topic-menu nav pull-left'),
+                  'id' => array('topic-menu'),
+                  'role' => array('navigation'),
+                ),
+                'heading' => array(
+                  'text' => t('Topic menu'),
+                  'level' => 'h2',
+                  'class' => array('element-invisible'),
+                ),
+              )); ?>
+            </div>
+          <?php endif; ?>
         </div>
       </nav> <!-- /#navigation -->
     </div>
