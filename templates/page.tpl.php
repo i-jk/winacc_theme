@@ -25,18 +25,6 @@
       <?php endif; ?>
       <nav class='navbar'>
         <div class="navbar-inner">
-          <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
-          <a class="btn btn-navbar btn-navbar-menu" data-toggle="collapse" data-target=".nav-menu-collapse">
-            <?php print t('Menu'); ?>
-            <span class="icon-reorder"></span>
-          </a>
-          <!-- .btn-navbar-topics for collapsed topic menu content -->
-          <?php if ($topic_menu_expanded): ?>
-            <a class="btn btn-navbar btn-navbar-topics" data-toggle="collapse" data-target=".nav-topics-collapse">
-              <?php print t('Topics'); ?>
-              <span class="icon-lightbulb"></span>
-            </a>
-          <?php endif; ?>
           <!-- .btn-navbar-search for collapsed search form -->
           <?php if ($search_form): ?>
             <a class="btn btn-navbar btn-navbar-searcher" data-toggle="collapse" data-target=".nav-search-collapse">
@@ -44,6 +32,18 @@
               <span class="icon-search"></span>
             </a>
           <?php endif; ?>
+          <!-- .btn-navbar-topics for collapsed topic menu content -->
+          <?php if ($topic_menu_expanded): ?>
+            <a class="btn btn-navbar btn-navbar-topics" data-toggle="collapse" data-target=".nav-topics-collapse">
+              <?php print t('Topics'); ?>
+              <span class="icon-lightbulb"></span>
+            </a>
+          <?php endif; ?>
+          <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+          <a class="btn btn-navbar btn-navbar-menu" data-toggle="collapse" data-target=".nav-menu-collapse">
+            <?php print t('Menu'); ?>
+            <span class="icon-reorder"></span>
+          </a>
 
           <div class="nav-collapse nav-menu-collapse">
             <div class="inner">

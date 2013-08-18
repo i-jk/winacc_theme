@@ -50,6 +50,11 @@
     background-image: none;
     @include box-shadow(none);
     background: $greenDark;
+    
+    &:hover {
+      background: $zest;
+      color: $black;
+    }
   }
 
   .navbar-inverse {

@@ -9059,6 +9059,10 @@ body #footer {
   box-shadow: none;
   background: #005c40;
 }
+.navbar .btn-navbar:hover {
+  background: #c7da62;
+  color: black;
+}
 .navbar .navbar-inverse .brand:hover {
   color: #0064cd;
 }
