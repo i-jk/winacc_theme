@@ -33,8 +33,8 @@
           <!-- .btn-navbar-topics for collapsed topic menu content -->
           <?php if ($topic_menu_expanded): ?>
             <a class="btn btn-navbar btn-navbar-topics" data-toggle="collapse" data-target=".nav-topics-collapse">
-              <?php print t('Search'); ?>
-              <span class="icon-search"></span>
+              <?php print t('Topics'); ?>
+              <span class="icon-lightbulb"></span>
             </a>
           <?php endif; ?>
           <!-- .btn-navbar-search for collapsed search form -->
@@ -73,7 +73,11 @@
             </div>
           </div>
 
-          <div class="nav-collapse nav-menu-collapse">
+        </div>
+      </nav> <!-- /# primary nav and search -->
+      <nav class='navbar'>
+        <div class="navbar-inner">
+          <div class="nav-collapse nav-topics-collapse">
             <div class="inner">
               <?php if ($topic_menu_expanded): ?>
                 <?php print theme('links__system_main_menu', array(
@@ -93,7 +97,7 @@
             </div>
           <?php endif; ?>
         </div>
-      </nav> <!-- /#navigation -->
+      </nav> <!-- /# topic nav -->
     </div>
   </header>
 
