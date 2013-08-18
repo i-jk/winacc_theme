@@ -97,7 +97,7 @@ legend {
   background-color: darken($grayLighter, 5%);
 }
 
-#content .form {
+#content form {
   @include bg-trans-white();
   border: 2px solid $greenLight;
   @include border-radius($baseBorderRadius);
