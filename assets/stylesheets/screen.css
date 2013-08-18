@@ -9057,6 +9057,7 @@ body #footer {
   -webkit-box-shadow: none;
   -moz-box-shadow: none;
   box-shadow: none;
+  background: #005c40;
 }
 .navbar .navbar-inverse .brand:hover {
   color: #0064cd;

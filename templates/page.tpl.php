@@ -30,6 +30,13 @@
             <?php print t('Menu'); ?>
             <span class="icon-reorder"></span>
           </a>
+          <!-- .btn-navbar-topics for collapsed topic menu content -->
+          <?php if ($topic_menu_expanded): ?>
+            <a class="btn btn-navbar btn-navbar-topics" data-toggle="collapse" data-target=".nav-topics-collapse">
+              <?php print t('Topics'); ?>
+              <span class="icon-lightbulb"></span>
+            </a>
+          <?php endif; ?>
           <!-- .btn-navbar-search for collapsed search form -->
           <?php if ($search_form): ?>
             <a class="btn btn-navbar btn-navbar-searcher" data-toggle="collapse" data-target=".nav-search-collapse">
@@ -66,14 +73,6 @@
             </div>
           </div>
 
-          <!-- .btn-navbar-topics for collapsed topic menu content -->
-          <?php if ($topic_menu_expanded): ?>
-            <a class="btn btn-navbar btn-navbar-topics" data-toggle="collapse" data-target=".nav-topics-collapse">
-              <?php print t('Topics'); ?>
-              <span class="icon-lightbulb"></span>
-            </a>
-          <?php endif; ?>
-          
           <div class="nav-collapse nav-topics-collapse">
             <div class="inner">
               <?php if ($topic_menu_expanded): ?>

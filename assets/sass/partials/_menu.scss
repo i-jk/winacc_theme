@@ -49,6 +49,7 @@
   .btn-navbar {
     background-image: none;
     @include box-shadow(none);
+    background: $greenDark;
   }
 
   .navbar-inverse {
