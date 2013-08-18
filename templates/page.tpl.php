@@ -14,7 +14,7 @@
   <header id="header" class="header" role="header">
     <div class="container clearfix">
       <?php if ($logo || $site_name): ?>
-        <a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>" rel="home" class="pull-left brand">
+        <a href="<?php print $front_page; ?>" title="<?php print t('Home') . $site_name; ?>" rel="home" class="pull-left brand">
           <?php if ($logo): ?>
             <img id="logo" src="<?php print $logo; ?>" alt="<?php print t('Home'); ?>" />
           <?php endif; ?>
@@ -27,13 +27,20 @@
         <div class="navbar-inner">
           <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
           <a class="btn btn-navbar btn-navbar-menu" data-toggle="collapse" data-target=".nav-menu-collapse">
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
+            <?php print t('Home'); ?>
+            <span class="icon-reorder"></span>
           </a>
+          <!-- .btn-navbar-topics for collapsed topic menu content -->
+          <?php if ($topic_menu_expanded): ?>
+            <a class="btn btn-navbar btn-navbar-topics" data-toggle="collapse" data-target=".nav-topics-collapse">
+              <?php print t('Search'); ?>
+              <span class="icon-search"></span>
+            </a>
+          <?php endif; ?>
           <!-- .btn-navbar-search for collapsed search form -->
           <?php if ($search_form): ?>
             <a class="btn btn-navbar btn-navbar-search" data-toggle="collapse" data-target=".nav-search-collapse">
+              <?php print t('Search'); ?>
               <span class="icon-search"></span>
             </a>
           <?php endif; ?>
@@ -66,21 +73,23 @@
             </div>
           </div>
 
-          <?php if ($topic_menu_expanded): ?>
-            <div class="row">
-              <?php print theme('links__system_main_menu', array(
-                'links' => $topic_menu_expanded,
-                'attributes' => array(
-                  'class' => array('topic-menu nav pull-left'),
-                  'id' => array('topic-menu'),
-                  'role' => array('navigation'),
-                ),
-                'heading' => array(
-                  'text' => t('Topic menu'),
-                  'level' => 'h2',
-                  'class' => array('element-invisible'),
-                ),
-              )); ?>
+          <div class="nav-collapse nav-menu-collapse">
+            <div class="inner">
+              <?php if ($topic_menu_expanded): ?>
+                <?php print theme('links__system_main_menu', array(
+                  'links' => $topic_menu_expanded,
+                  'attributes' => array(
+                    'class' => array('topic-menu nav pull-left'),
+                    'id' => array('topic-menu'),
+                    'role' => array('navigation'),
+                  ),
+                  'heading' => array(
+                    'text' => t('Topic menu'),
+                    'level' => 'h2',
+                    'class' => array('element-invisible'),
+                  ),
+                )); ?>
+              </div>
             </div>
           <?php endif; ?>
         </div>
