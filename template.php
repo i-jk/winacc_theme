@@ -77,7 +77,7 @@ function winacc_theme_process_page(&$variables) {
   $topic_menu_tree = array();
   $topic_menu_tree = menu_tree_all_data('menu-topics', NULL, 2);
   // Add the rendered output to the $topic_menu_tree variable.
-  $variables['topic_menu_tree'] = menu_tree_output($topic_menu_tree);
+  $variables['topic_menu_expanded'] = menu_tree_output($topic_menu_tree);
 
   // Always print the site name and slogan, but if they are toggled off, we'll
   // just hide them visually.
