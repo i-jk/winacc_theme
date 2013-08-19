@@ -13,18 +13,19 @@
 <div id="primary-page">
   <header id="header" class="header" role="header">
     <div class="container clearfix">
-      <?php if ($logo || $site_name): ?>
-        <a href="<?php print $front_page; ?>" title="<?php print t('Home') . $site_name; ?>" rel="home" class="pull-left brand">
-          <?php if ($logo): ?>
-            <img id="logo" src="<?php print $logo; ?>" alt="<?php print t('Home'); ?>" />
-          <?php endif; ?>
-          <?php if ($site_name): ?>
-            <h1 id="site-name" class="element-invisible"><?php print $site_name; ?></h1>
-          <?php endif; ?>
-        </a>
-      <?php endif; ?>
+
       <nav class='navbar'>
         <div class="navbar-inner">
+          <?php if ($logo || $site_name): ?>
+            <a href="<?php print $front_page; ?>" title="<?php print t('Home') . ' - ' . $site_name; ?>" rel="home" class="brand span3" data-toggle="tooltip">
+              <?php if ($logo): ?>
+                <img id="logo" src="<?php print $logo; ?>" alt="<?php print t('Home'); ?>" />
+              <?php endif; ?>
+              <?php if ($site_name): ?>
+                <h1 id="site-name" class="element-invisible"><?php print $site_name; ?></h1>
+              <?php endif; ?>
+            </a>
+          <?php endif; ?>
           <!-- .btn-navbar-search for collapsed search form -->
           <?php if ($search_form): ?>
             <a class="btn btn-navbar btn-navbar-searcher" data-toggle="collapse" data-target=".nav-search-collapse">
@@ -99,13 +100,6 @@
 
   <div id="main-wrapper">
     <div id="main" class="main container">
-      <?php if ($breadcrumb): ?>
-        <div id="breadcrumb" class="visible-desktop">
-          <div class="container">
-            <?php print $breadcrumb; ?>
-          </div>
-        </div>
-      <?php endif; ?>
       <?php if ($messages): ?>
         <div id="messages">
           <div class="container">
@@ -114,6 +108,13 @@
         </div>
       <?php endif; ?>
       <div id="content">
+        <?php if ($breadcrumb): ?>
+        <div id="breadcrumb" class="visible-desktop">
+          <div class="container">
+            <?php print $breadcrumb; ?>
+          </div>
+        </div>
+      <?php endif; ?>
         <a id="main-content"></a>
         <div id="page-header">
             <div class="container">
