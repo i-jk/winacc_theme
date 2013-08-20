@@ -26,7 +26,7 @@
 
   .navbar-inner {
     @include box-shadow(none);
-    @include bg-trans-white(0.85);
+    background: transparent;
     border: none;
   }
 
