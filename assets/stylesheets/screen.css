@@ -8895,7 +8895,7 @@ div#grass {
 
 body #footer {
   background: #4fa800;
-  padding-bottom: 0;
+  margin-top: 0;
 }
 
 .btn {
