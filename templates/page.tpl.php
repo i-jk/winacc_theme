@@ -16,7 +16,7 @@
     <div class="row-fluid"><div class="span12">
       <?php if ($logo || $site_name): ?>
         <div class="span3">
-          <a href="<?php print $front_page; ?>" title="<?php print t('Home') . ' - ' . $site_name; ?>" rel="home" class="brand span3" data-toggle="tooltip">
+          <a href="<?php print $front_page; ?>" title="<?php print t('Home') . ' - ' . $site_name; ?>" rel="home" class="brand" data-toggle="tooltip">
             <?php if ($logo): ?>
               <img id="logo" src="<?php print $logo; ?>" alt="<?php print t('Home'); ?>" />
             <?php endif; ?>

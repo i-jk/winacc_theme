@@ -8862,6 +8862,11 @@ body #logo {
   padding: 15px;
 }
 
+#header .container {
+  background: white;
+  background: rgba(255, 255, 255, 0.85);
+}
+
 div#primary-page {
   background-color: #adddff;
   background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #90ceff), color-stop(25%, #adddff), color-stop(60%, #dbf0ff), color-stop(100%, #edf6fc));
