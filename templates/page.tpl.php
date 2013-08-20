@@ -13,31 +13,26 @@
 <div id="primary-page">
   <header id="header" class="header" role="header">
     <div class="container clearfix">
-
+    <div class="row-fluid">
+      <?php if ($logo || $site_name): ?>
+        <div class="span3">
+          <a href="<?php print $front_page; ?>" title="<?php print t('Home') . ' - ' . $site_name; ?>" rel="home" class="brand span3" data-toggle="tooltip">
+            <?php if ($logo): ?>
+              <img id="logo" src="<?php print $logo; ?>" alt="<?php print t('Home'); ?>" />
+            <?php endif; ?>
+            <?php if ($site_name): ?>
+              <h1 id="site-name" class="element-invisible"><?php print $site_name; ?></h1>
+            <?php endif; ?>
+          </a>
+        </div>
+      <?php endif; ?>
       <nav class='navbar'>
         <div class="navbar-inner">
-          <?php if ($logo || $site_name): ?>
-            <a href="<?php print $front_page; ?>" title="<?php print t('Home') . ' - ' . $site_name; ?>" rel="home" class="brand span3" data-toggle="tooltip">
-              <?php if ($logo): ?>
-                <img id="logo" src="<?php print $logo; ?>" alt="<?php print t('Home'); ?>" />
-              <?php endif; ?>
-              <?php if ($site_name): ?>
-                <h1 id="site-name" class="element-invisible"><?php print $site_name; ?></h1>
-              <?php endif; ?>
-            </a>
-          <?php endif; ?>
           <!-- .btn-navbar-search for collapsed search form -->
           <?php if ($search_form): ?>
             <a class="btn btn-navbar btn-navbar-searcher" data-toggle="collapse" data-target=".nav-search-collapse">
               <?php print t('Search'); ?>
               <span class="icon-search"></span>
-            </a>
-          <?php endif; ?>
-          <!-- .btn-navbar-topics for collapsed topic menu content -->
-          <?php if ($topic_menu_expanded): ?>
-            <a class="btn btn-navbar btn-navbar-topics" data-toggle="collapse" data-target=".nav-topics-collapse">
-              <?php print t('Topics'); ?>
-              <span class="icon-lightbulb"></span>
             </a>
           <?php endif; ?>
           <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
@@ -73,7 +68,19 @@
               <?php endif; ?>
             </div>
           </div>
+          
+        </div>
+      </nav>
+      <nav class='navbar'>
+        <div class="navbar-inner">
 
+          <!-- .btn-navbar-topics for collapsed topic menu content -->
+          <?php if ($topic_menu_expanded): ?>
+            <a class="btn btn-navbar btn-navbar-topics" data-toggle="collapse" data-target=".nav-topics-collapse">
+              <?php print t('Topics'); ?>
+              <span class="icon-lightbulb"></span>
+            </a>
+          <?php endif; ?>
           <div class="nav-collapse nav-topics-collapse">
             <div class="inner">
               <?php if ($topic_menu_expanded): ?>

@@ -42,11 +42,13 @@ $green:                 #4FA800;
 $greenLight:            #8AC265;
 $greenLighter:          #CAEBAC;
 $greenWash:             #E9F5DF;
+$earth:                 #351706;
 $red:                   #EB1842;
 $yellow:                #E4D316;
 $orange:                #E4A216;
 $pink:                  #E969C5;
 $purple:                #8950EE;
+
 $zest:                  #C7DA62;
 $zestLight:             #DEE4C1;
 
@@ -67,7 +69,7 @@ $textColor:             $greenDarker !default;
 
 // Links
 // -------------------------
-$linkColor:             $green !default;
+$linkColor:             #A70035;
 $linkColorHover:        lighten($linkColor, 5%) !default;
 
 

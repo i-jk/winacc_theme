@@ -329,13 +329,13 @@ body {
 }
 
 a {
-  color: #4fa800;
+  color: #a70035;
   text-decoration: none;
 }
 
 a:hover,
 a:focus {
-  color: #5bc200;
+  color: #c1003d;
   text-decoration: underline;
 }
 
@@ -4159,7 +4159,7 @@ input[type="submit"].btn.btn-mini {
 .btn-link {
   border-color: transparent;
   cursor: pointer;
-  color: #4fa800;
+  color: #a70035;
   -webkit-border-radius: 0;
   -moz-border-radius: 0;
   border-radius: 0;
@@ -4167,7 +4167,7 @@ input[type="submit"].btn.btn-mini {
 
 .btn-link:hover,
 .btn-link:focus {
-  color: #5bc200;
+  color: #c1003d;
   text-decoration: underline;
   background-color: transparent;
 }
@@ -4557,7 +4557,7 @@ input[type="submit"].btn.btn-mini {
 .nav-list > .active > a:focus {
   color: white;
   text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.2);
-  background-color: #4fa800;
+  background-color: #a70035;
 }
 
 .nav-list [class^="icon-"],
@@ -4649,7 +4649,7 @@ input[type="submit"].btn.btn-mini {
 .nav-pills > .active > a:hover,
 .nav-pills > .active > a:focus {
   color: white;
-  background-color: #4fa800;
+  background-color: #a70035;
 }
 
 .nav-stacked > li {
@@ -4716,15 +4716,15 @@ input[type="submit"].btn.btn-mini {
 }
 
 .nav .dropdown-toggle .caret {
-  border-top-color: #4fa800;
-  border-bottom-color: #4fa800;
+  border-top-color: #a70035;
+  border-bottom-color: #a70035;
   margin-top: 6px;
 }
 
 .nav .dropdown-toggle:hover .caret,
 .nav .dropdown-toggle:focus .caret {
-  border-top-color: #5bc200;
-  border-bottom-color: #5bc200;
+  border-top-color: #c1003d;
+  border-bottom-color: #c1003d;
 }
 
 /* move down carets for tabs */
@@ -6011,7 +6011,7 @@ input[type="submit"].btn.btn-mini {
 
 a.thumbnail:hover,
 a.thumbnail:focus {
-  border-color: #4fa800;
+  border-color: #a70035;
   -webkit-box-shadow: 0 1px 4px rgba(0, 105, 214, 0.25);
   -moz-box-shadow: 0 1px 4px rgba(0, 105, 214, 0.25);
   box-shadow: 0 1px 4px rgba(0, 105, 214, 0.25);
@@ -6651,7 +6651,7 @@ div.vertical-tabs ul.vertical-tabs-list li a {
 }
 div.vertical-tabs ul.vertical-tabs-list li a:hover {
   color: white;
-  background: #4fa800;
+  background: #a70035;
   text-decoration: none;
 }
 div.vertical-tabs ul.vertical-tabs-list li a:hover strong {
@@ -6843,7 +6843,7 @@ ul.links.inline li {
   opacity: 0.9;
 }
 .field-slideshow-wrapper .field-slideshow-pager a.activeSlide {
-  background: #4fa800;
+  background: #a70035;
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=90);
   opacity: 0.9;
 }
@@ -6869,7 +6869,7 @@ ul.links.inline li {
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
   border-radius: 4px;
-  background-color: #4fa800;
+  background-color: #a70035;
   background-image: -webkit-gradient(linear, 0 100%, 100% 0, color-stop(0.25, rgba(255, 255, 255, 0.15)), color-stop(0.25, transparent), color-stop(0.5, transparent), color-stop(0.5, rgba(255, 255, 255, 0.15)), color-stop(0.75, rgba(255, 255, 255, 0.15)), color-stop(0.75, transparent), to(transparent));
   background-image: -webkit-linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
   background-image: -moz-linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
@@ -8856,7 +8856,7 @@ html.js input.throbbing {
   }
 }
 body {
-  background: #8ac265;
+  background: #351706;
 }
 body #logo {
   padding: 15px;
@@ -8890,6 +8890,7 @@ div#grass {
 
 body #footer {
   background: #4fa800;
+  margin-bottom: 0;
 }
 
 .btn {
@@ -9032,7 +9033,7 @@ body #footer {
   text-shadow: none;
 }
 .navbar .brand:hover {
-  color: #5bc200;
+  color: #c1003d;
 }
 .navbar .navbar-inner {
   -webkit-box-shadow: none;
