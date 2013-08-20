@@ -5,22 +5,25 @@
 
 body {
   background: $greenLight;
-
-  div#primary-page {
-    background-color: $skyBlue-2; // Old browsers
-    @include background-image(linear-gradient(top, $skyBlue-1 0%, $skyBlue-2 25%, $skyBlue-3 60%, $skyBlue-4 100%));
-    padding-bottom: 50px;
-    
-    #grass {
-      @include background(transparent image-url("bg-grass-bright.png") center top repeat-x);
-      min-height: 200px;
-      margin-top: 0;
-    }
+  
+  #logo {
+    padding: 15px;
   }
 }
 
-body #logo {
-  padding: 15px;
+div#primary-page {
+  background-color: $skyBlue-2; // Old browsers
+  @include background-image(linear-gradient(top, $skyBlue-1 0%, $skyBlue-2 25%, $skyBlue-3 60%, $skyBlue-4 100%));
+}
+
+div#main-wrapper {
+  margin-bottom: 50px;
+}
+
+div#grass {
+  @include background(transparent image-url("bg-grass-bright.png") center top repeat-x);
+  min-height: 200px;
+  margin-top: 0;
 }
 
 #content {
@@ -30,5 +33,5 @@ body #logo {
 }
 
 body #footer {
-  @include background($greenLight);
+  @include background($green);
 }

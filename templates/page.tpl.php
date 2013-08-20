@@ -139,7 +139,9 @@
       </div>
     </div>
   </div> <!-- /#main-wrapper -->
-  <div id="grass"></div>
+  <div id="grass">
+    <div class="container"><small class="pull-right"><a href="#"><?php print t('Back to Top'); ?></a></small></div>
+  </div>
 </div>
 <footer id="footer" class="footer" role="footer">
   <div class="container">
