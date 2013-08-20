@@ -38,5 +38,5 @@ div#grass {
 
 body #footer {
   @include background($green);
-  margin-bottom: 0;
+  padding-bottom: 0;
 }
