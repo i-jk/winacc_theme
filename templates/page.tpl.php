@@ -139,6 +139,7 @@
       </div>
     </div>
   </div> <!-- /#main-wrapper -->
+  <div id="grass"></div>
 </div>
 <footer id="footer" class="footer" role="footer">
   <div class="container">

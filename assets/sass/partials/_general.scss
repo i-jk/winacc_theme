@@ -8,8 +8,14 @@ body {
 
   div#primary-page {
     background-color: $skyBlue-2; // Old browsers
-    @include background-image(linear-gradient(top, $skyBlue-1 0%, $skyBlue-2 20%, $skyBlue-3 50%, $white 100%));
+    @include background-image(linear-gradient(top, $skyBlue-1 0%, $skyBlue-2 25%, $skyBlue-3 60%, $skyBlue-4 100%));
     padding-bottom: 50px;
+    
+    #grass {
+      @include background(transparent image-url("bg-grass-bright.png") center top repeat-x);
+      min-height: 200px;
+      margin-top: 0;
+    }
   }
 }
 
@@ -23,9 +29,6 @@ body #logo {
   border-radius: $baseBorderRadius;
 }
 
-
 body #footer {
-  @include background($greenLight image-url("bg-grass.png") center top repeat-x);
-  min-height: 200px;
-  margin-top: 0;
+  @include background($greenLight);
 }
