@@ -18,6 +18,10 @@
       .css('background-image','-moz-linear-gradient(top left, #FFFFFF 0%, #'+event.backgroundColor+' 100%)')
       .css('background-image','-o-linear-gradient(top left, #FFFFFF 0%, #'+event.backgroundColor+' 100%)')
       .css('background-image','linear-gradient(top left, #FFFFFF 0%, #'+event.backgroundColor+' 100%)')*/
+      
+      c[4]
+      $('#grass-bright').css('opacity', c[4]);
+      $('#grass-dark').css('opacity', 1 - c[4]);
     }, 5000);
   });
 
@@ -65,40 +69,54 @@ function getColours(d) {
     var second = Math.ceil(pos)
     var bias = (pos - first);
     var colours = [
-      'rgb(' // coloursTop
-        + weighted(coloursTop[first][0], coloursTop[second][0], bias) + ', '
-        + weighted(coloursTop[first][1], coloursTop[second][1], bias) + ', '
-        + weighted(coloursTop[first][2], coloursTop[second][2], bias) + ')',
-      'rgb(' // coloursHigh
-        + weighted(coloursHigh[first][0], coloursHigh[second][0], bias) + ', '
-        + weighted(coloursHigh[first][1], coloursHigh[second][1], bias) + ', '
-        + weighted(coloursHigh[first][2], coloursHigh[second][2], bias) + ')',
-      'rgb(' // coloursLow
-        + weighted(coloursLow[first][0], coloursLow[second][0], bias) + ', '
-        + weighted(coloursLow[first][1], coloursLow[second][1], bias) + ', '
-        + weighted(coloursLow[first][2], coloursLow[second][2], bias) + ')',
-      'rgb(' // coloursHorizon
-        + weighted(coloursHorizon[first][0], coloursHorizon[second][0], bias) + ', '
-        + weighted(coloursHorizon[first][1], coloursHorizon[second][1], bias) + ', '
-        + weighted(coloursHorizon[first][2], coloursHorizon[second][2], bias) + ')'
+      // [0] coloursTop
+      'rgb('
+        + baisInt(coloursTop[first][0], coloursTop[second][0], bias) + ', '
+        + baisInt(coloursTop[first][1], coloursTop[second][1], bias) + ', '
+        + baisInt(coloursTop[first][2], coloursTop[second][2], bias) + ')',
+       // [1] coloursHigh
+      'rgb('
+        + baisInt(coloursHigh[first][0], coloursHigh[second][0], bias) + ', '
+        + baisInt(coloursHigh[first][1], coloursHigh[second][1], bias) + ', '
+        + baisInt(coloursHigh[first][2], coloursHigh[second][2], bias) + ')',
+      // [2] coloursLow
+      'rgb('
+        + baisInt(coloursLow[first][0], coloursLow[second][0], bias) + ', '
+        + baisInt(coloursLow[first][1], coloursLow[second][1], bias) + ', '
+        + baisInt(coloursLow[first][2], coloursLow[second][2], bias) + ')',
+      // [3] coloursHorizon
+      'rgb(' 
+        + baisInt(coloursHorizon[first][0], coloursHorizon[second][0], bias) + ', '
+        + baisInt(coloursHorizon[first][1], coloursHorizon[second][1], bias) + ', '
+        + baisInt(coloursHorizon[first][2], coloursHorizon[second][2], bias) + ')',
+      // [4] opacity of grass
+      baisInt(coloursTop[first][3], coloursHorizon[second][3], bias)
     ];
   return colours;
 }
 
-function weighted(a, b, weight) {
+function baisInt(a, b, weight) {
     return Math.round((a * (1 - weight)) + (b * weight));
 }
+function biasFloat(a, b, weight) {
+    return (a * (1 - weight)) + (b * weight);
+}
+
   // offset calendar -> tropical year = -0.028044764
   //var dc = progDay - 0.028044764;
 
 
 /** 
- * Colors arrays for background sky gradient
+ * Colors arrays for background sky gradient...
  * 
- * Each variable is for a point on the gradient: Top, High, Low, Horizon
+ * Each variable is for a point on the gradient:
+ *  Top = 0%
+ *  High = 50%
+ *  Low = 80%
+ *  Horizon = 100%
  * 
  * Each set of values is Red, Green, Blue for each of the times outlined below.
- * The forth value is the change of opacity of the grass.
+ * The forth value in coloursTop is the opacity of the grass layers.
  * 
  * Times/index:
  *  0 = midday
@@ -108,11 +126,11 @@ function weighted(a, b, weight) {
  *  4 = midnight
  */
 var coloursTop = [
-  [144, 206, 255], 
-  [ 98, 186, 255], 
-  [ 96,  96, 196],
-  [ 53, 149, 253],
-  [  0,  43,  97]
+  [144, 206, 255, 1.0], 
+  [ 98, 186, 255, 0.9], 
+  [ 96,  96, 196, 0.6],
+  [ 53, 149, 253, 0.2],
+  [  0,  43,  97, 0.0]
 ];
 var coloursHigh = [
   [144, 206, 255], //$skyBlue-2:             #adddff;
