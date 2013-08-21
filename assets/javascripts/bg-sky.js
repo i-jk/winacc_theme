@@ -11,11 +11,13 @@
     var iJK_timer = setInterval(function() {
       var c = getColours(new Date());
       console.log(c);
-      
-      // Fallback, use top colour.
-      $('#primary-page').css('background-color', c[0]);
-      // Webkit new
-      $('#primary-page').css('background-image', '-webkit-linear-gradient(top, ' + c[0] + ' 0%, ' + c[1] + ' 25%, ' + c[2] + ' 60%, ' + c[3] + ' 100%);
+
+      $('#primary-page')
+        // Fallback, use top colour.
+        .css('background-color', c[0])
+        // Webkit new
+        .css('background-image', '-webkit-linear-gradient(top, ' + c[0] + ' 0%, ' + c[1] + ' 25%, ' + c[2] + ' 60%, ' + c[3] + ' 100%)')
+      ;
       
       /*.css('filter','progid:DXImageTransform.Microsoft.gradient(startColorstr=\'#FFFFFF\', endColorstr=\'#'+event.backgroundColor+'\', gradientType=1)')
       .css('background-image','-webkit-gradient(linear, left top, right bottom, color-stop(0.1, #FFFFFF), color-stop(0.99, #'+event.backgroundColor+'))')
