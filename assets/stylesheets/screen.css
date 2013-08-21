@@ -8859,7 +8859,7 @@ body {
   background: #351706;
 }
 body #logo {
-  padding: 11px 19px;
+  padding: 18.75px;
 }
 
 #header .container {
@@ -9035,7 +9035,7 @@ body #footer {
 }
 
 .navbar {
-  margin-bottom: 0;
+  margin: 15px 0;
 }
 .navbar .brand {
   text-shadow: none;

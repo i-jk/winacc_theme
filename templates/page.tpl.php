@@ -27,7 +27,7 @@
         </div>
       <?php endif; ?>
       <div class="span9">
-        <nav class='navbar'>
+        <nav class='navbar navbar-main'>
           <div class="navbar-inner">
             <!-- .btn-navbar-search for collapsed search form -->
             <?php if ($search_form): ?>
@@ -72,7 +72,7 @@
             
           </div>
         </nav>
-        <nav class='navbar'>
+        <nav class='navbar navbar-topics'>
           <div class="navbar-inner">
 
             <!-- .btn-navbar-topics for collapsed topic menu content -->
