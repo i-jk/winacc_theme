@@ -6,11 +6,10 @@
   
   // Start timer interval on load
   $(document).ready(function() {
-    console.log(getColour(d));
+    console.log(getColour(new Date()));
     
     var iJK_timer = setInterval(function() {
-      var d = new Date();
-      console.log(getColour(d));
+      console.log(getColour(new Date()));
     }, 5000);
   });
 
