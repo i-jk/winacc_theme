@@ -7,12 +7,13 @@ body {
   background: $earth;
   
   #logo {
-    padding: 15px;
+    padding: $paddingLarge;
   }
 }
 
 #header .container {
   @include bg-trans-white(0.85);
+  margin-bottom: $fontSizeLarge;
 }
 
 div#primary-page {
@@ -33,7 +34,6 @@ div#grass {
 #content {
   @include bg-trans-white();
   padding: $paddingLarge;
-  border-radius: $baseBorderRadius;
 }
 
 body #footer {

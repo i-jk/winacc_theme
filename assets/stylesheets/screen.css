@@ -8859,12 +8859,13 @@ body {
   background: #351706;
 }
 body #logo {
-  padding: 15px;
+  padding: 11px 19px;
 }
 
 #header .container {
   background: white;
   background: rgba(255, 255, 255, 0.85);
+  margin-bottom: 18.75px;
 }
 
 div#primary-page {
@@ -8890,7 +8891,6 @@ div#grass {
   background: white;
   background: rgba(255, 255, 255, 0.75);
   padding: 11px 19px;
-  border-radius: 5px;
 }
 
 body #footer {
@@ -9034,6 +9034,9 @@ body #footer {
   border-bottom: none;
 }
 
+.navbar {
+  margin-bottom: 0;
+}
 .navbar .brand {
   text-shadow: none;
 }
@@ -9056,6 +9059,9 @@ body #footer {
   -webkit-box-shadow: none;
   -moz-box-shadow: none;
   box-shadow: none;
+}
+.navbar .navbar-form {
+  padding: 7px 0;
 }
 .navbar .navbar-search .search-query {
   border: none;

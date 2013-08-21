@@ -14,6 +14,7 @@
 // --------------------------------------------------
 
 .navbar {
+  margin-bottom: 0;
 
   .brand {
 
@@ -38,6 +39,10 @@
   .nav > .active > a:hover,
   .nav > .active > a:focus {
     @include box-shadow(none);
+  }
+
+  .navbar-form {
+    padding: 7px 0;
   }
 
   .navbar-search .search-query {
