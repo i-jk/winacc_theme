@@ -9,7 +9,10 @@
     console.log(getColour(new Date()));
     
     var iJK_timer = setInterval(function() {
-      console.log(getColour(new Date()));
+      var c = getColour(new Date());
+      console.log(c);
+      //jQuery('#primary-page').css('background-image','linear-gradient(top, #FFFFFF 0%, #245263 100%)');
+      //jQuery('#primary-page').css('background-color', c);
     }, 5000);
   });
 
@@ -93,6 +96,7 @@ console.log( getColour(new Date('2013 nov 23:59:00 GMT')) );
 .css('background-image','-webkit-gradient(linear, left top, right bottom, color-stop(0.1, #FFFFFF), color-stop(0.99, #'+event.backgroundColor+'))')
 .css('background-image','-moz-linear-gradient(top left, #FFFFFF 0%, #'+event.backgroundColor+' 100%)')
 .css('background-image','-o-linear-gradient(top left, #FFFFFF 0%, #'+event.backgroundColor+' 100%)')
+.css('background-image','linear-gradient(top left, #FFFFFF 0%, #'+event.backgroundColor+' 100%)')
 */
 
 })(jQuery);
