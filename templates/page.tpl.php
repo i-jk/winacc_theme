@@ -148,9 +148,11 @@
       </div>
     </div>
   </div> <!-- /#main-wrapper -->
-  <div id="grass">
+  <div id="primary-end">
     <div class="container"><small class="pull-right"><a href="#"><?php print t('Back to Top'); ?></a></small></div>
   </div>
+  <div id="grass-bright"></div>
+  <div id="grass-dark"></div>
 </div>
 <footer id="footer" class="footer" role="footer">
   <div class="container">

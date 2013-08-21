@@ -205,7 +205,10 @@ div.subnav {
   padding: $paddingLarge;
   margin: 0;
   @include border-radius($baseBorderRadius $baseBorderRadius 0 0);
-
+  
+  .active {
+    color: $linkColor;
+  }
   & > li {
     text-shadow: none;
   }

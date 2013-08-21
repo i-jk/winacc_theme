@@ -30,10 +30,13 @@ div#main-wrapper {
   margin-bottom: 50px;
 }
 
-div#grass {
-  @include background(transparent image-url("bg-grass-bright.png") center top repeat-x);
+#grass-bright, #grass-dark {
   min-height: 200px;
   margin-top: 0;
+  @include background(transparent image-url("bg-grass-bright.png") center top repeat-x);
+}
+#grass-dark {
+  @include background-image(image-url("bg-grass-dark.png"));
 }
 
 #content {

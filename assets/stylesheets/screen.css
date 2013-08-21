@@ -8887,10 +8887,14 @@ div#main-wrapper {
   margin-bottom: 50px;
 }
 
-div#grass {
-  background: transparent url('../images/bg-grass-bright.png?1377006350') center top repeat-x;
+#grass-bright, #grass-dark {
   min-height: 200px;
   margin-top: 0;
+  background: transparent url('../images/bg-grass-bright.png?1377006350') center top repeat-x;
+}
+
+#grass-dark {
+  background-image: url('../images/bg-grass-dark.png?1377016849');
 }
 
 #content {
@@ -9212,6 +9216,9 @@ div.subnav .nav > .active > a:hover {
   -webkit-border-radius: 5px 5px 0 0;
   -moz-border-radius: 5px 5px 0 0;
   border-radius: 5px 5px 0 0;
+}
+.breadcrumb .active {
+  color: #a70035;
 }
 .breadcrumb > li {
   text-shadow: none;
