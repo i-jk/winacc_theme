@@ -25,6 +25,14 @@
     }, 5000);
   });
 
+function baisInt(a, b, weight) {
+    return Math.round((a * (1 - weight)) + (b * weight));
+}
+function biasFloat(a, b, weight) {
+    return (a * (1 - weight)) + (b * weight);
+}
+
+
 /**
  * Returns current position of year cycle (0 = start, 1 = end)
  * d is a Date object
@@ -90,17 +98,11 @@ function getColours(d) {
         + baisInt(coloursHorizon[first][1], coloursHorizon[second][1], bias) + ', '
         + baisInt(coloursHorizon[first][2], coloursHorizon[second][2], bias) + ')',
       // [4] opacity of grass
-      baisInt(coloursTop[first][3], coloursHorizon[second][3], bias)
+      biasFloat(coloursTop[first][3], coloursHorizon[second][3], bias)
     ];
   return colours;
 }
 
-function baisInt(a, b, weight) {
-    return Math.round((a * (1 - weight)) + (b * weight));
-}
-function biasFloat(a, b, weight) {
-    return (a * (1 - weight)) + (b * weight);
-}
 
   // offset calendar -> tropical year = -0.028044764
   //var dc = progDay - 0.028044764;
