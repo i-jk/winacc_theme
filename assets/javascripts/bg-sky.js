@@ -6,18 +6,12 @@
   
   // Start timer interval on load
   $(document).ready(function() {
-    console.log(getColours(new Date()));
+    setBackground(getColours(new Date())));
     
     var iJK_timer = setInterval(function() {
       var c = getColours(new Date());
-      console.log(c);
-
-      $('#primary-page')
-        // Fallback, use top colour.
-        .css('background-color', c[0])
-        // Webkit new
-        .css('background-image', '-webkit-linear-gradient(top, ' + c[0] + ' 0%, ' + c[1] + ' 25%, ' + c[2] + ' 60%, ' + c[3] + ' 100%)')
-      ;
+      // console.log(c);
+      setBackground(c);
       
       /*.css('filter','progid:DXImageTransform.Microsoft.gradient(startColorstr=\'#FFFFFF\', endColorstr=\'#'+event.backgroundColor+'\', gradientType=1)')
       .css('background-image','-webkit-gradient(linear, left top, right bottom, color-stop(0.1, #FFFFFF), color-stop(0.99, #'+event.backgroundColor+'))')
@@ -27,8 +21,17 @@
       
       $('#grass-bright').css('opacity', c[4]);
       $('#grass-dark').css('opacity', 1 - c[4]);
-    }, 500);
+    }, 1000);
   });
+
+function setBackground(c) {
+  $('#primary-page')
+    // Fallback, use top colour.
+    .css('background-color', c[0])
+    // Webkit new
+    .css('background-image', '-webkit-linear-gradient(top, ' + c[0] + ' 0%, ' + c[1] + ' 25%, ' + c[2] + ' 60%, ' + c[3] + ' 100%)')
+  ;
+}
 
 function baisInt(a, b, weight) {
     return Math.round((a * (1 - weight)) + (b * weight));
@@ -73,7 +76,7 @@ function progressOfDay(d) {
  * progressOfDay is a value 0-1 from progressOfDay()
  */
 function getSolarPosition(progDay) {
-  return Math.abs(Math.sin(1 * Math.PI * (720 * progDay + .5)) * 4);
+  return Math.abs(Math.sin(1 * Math.PI * (500 * progDay + .5)) * 4);
 }
 
 function getColours(d) {
@@ -134,8 +137,8 @@ function getColours(d) {
  */
 var coloursTop = [
   [150, 209, 255, 1.0], 
-  [ 98, 186, 255, 0.9], 
-  [ 74, 136, 185, 0.6],
+  [ 98, 186, 255, 0.75], 
+  [ 74, 136, 185, 0.4],
   [  2,  27,  48, 0.1],
   [  0,   5,  14, 0.0]
 ];
