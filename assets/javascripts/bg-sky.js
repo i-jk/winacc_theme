@@ -6,7 +6,7 @@
   
   // Start timer interval on load
   $(document).ready(function() {
-    console.log(getColour(new Date()));
+    console.log(getColours(new Date()));
     
     var iJK_timer = setInterval(function() {
       var c = getColours(new Date());
@@ -59,7 +59,7 @@ function getSolarPosition(progDay) {
   return Math.abs(Math.sin(1 * Math.PI * (720 * progDay + .5)) * 4);
 }
 
-function getColour(d) {
+function getColours(d) {
     var pos = getSolarPosition(progressOfDay(d));
     var first = Math.floor(pos);
     var second = Math.ceil(pos)
