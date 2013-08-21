@@ -39,6 +39,7 @@ div#grass {
 #content {
   @include bg-trans-white();
   padding: $paddingLarge;
+  @include border-radius(0 0 $baseBorderRadius $baseBorderRadius);
 }
 
 body #footer {

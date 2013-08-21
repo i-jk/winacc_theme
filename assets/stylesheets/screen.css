@@ -8897,6 +8897,9 @@ div#grass {
   background: white;
   background: rgba(255, 255, 255, 0.75);
   padding: 11px 19px;
+  -webkit-border-radius: 0 0 5px 5px;
+  -moz-border-radius: 0 0 5px 5px;
+  border-radius: 0 0 5px 5px;
 }
 
 body #footer {
@@ -9203,9 +9206,9 @@ div.subnav .nav > .active > a:hover {
 .breadcrumb {
   background: white;
   background: rgba(255, 255, 255, 0.85);
+  font-size: 14.25px;
   padding: 11px 19px;
   margin: 0;
-  font-size: 12.75px;
   -webkit-border-radius: 5px 5px 0 0;
   -moz-border-radius: 5px 5px 0 0;
   border-radius: 5px 5px 0 0;

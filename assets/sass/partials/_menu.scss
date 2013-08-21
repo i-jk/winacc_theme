@@ -201,9 +201,9 @@ div.subnav {
 
 .breadcrumb {
   @include bg-trans-white(0.85);
+  font-size: $fontSizeMedium;
   padding: $paddingLarge;
   margin: 0;
-  font-size: $fontSizeSmall;
   @include border-radius($baseBorderRadius $baseBorderRadius 0 0);
 
   & > li {
