@@ -8914,6 +8914,14 @@ body #footer {
   background: rgba(79, 168, 0, 0.5);
   margin-top: 0;
 }
+body #footer .container {
+  color: white;
+  padding: 11px 19px;
+}
+body #footer .container a {
+  color: #c7da62;
+  font-weight: bold;
+}
 
 .btn {
   padding: 8px 20px;
