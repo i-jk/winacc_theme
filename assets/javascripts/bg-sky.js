@@ -12,7 +12,7 @@
       var c = getColour(new Date());
       console.log(c);
       //jQuery('#primary-page').css('background-image','linear-gradient(top, #FFFFFF 0%, #245263 100%)');
-      //jQuery('#primary-page').css('background-color', c);
+      jQuery('#primary-page').css('background-color', c);
     }, 5000);
   });
 
