@@ -8842,10 +8842,6 @@ html.js input.throbbing {
   body {
     padding: 0;
   }
-
-  #primary-page {
-    padding: 0 20px;
-  }
 }
 @media (max-width: 979px) {
   .navbar .nav-collapse .nav > li > a {
@@ -8860,8 +8856,6 @@ body {
 }
 body #logo {
   padding: 18.75px;
-}
-body #logo img {
   max-width: 250px;
 }
 

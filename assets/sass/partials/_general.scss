@@ -8,10 +8,7 @@ body {
   
   #logo {
     padding: $fontSizeLarge;
-    
-    img {
-      max-width: 250px;
-    }
+    max-width: 250px;
   }
 }
 
@@ -23,7 +20,6 @@ body {
 
 div#primary-page {
   background-color: $skyBlue-2; // Old browsers
-  // @include background-image(linear-gradient(top, $skyBlue-1 0%, $skyBlue-2 25%, $skyBlue-3 60%, $skyBlue-4 100%));
 }
 
 div#main-wrapper {
