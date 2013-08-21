@@ -18,6 +18,7 @@ body {
 #header .container {
   @include bg-trans-white(0.85);
   margin-bottom: $fontSizeLarge;
+  @include border-radius(0 0 $baseBorderRadius $baseBorderRadius);
 }
 
 div#primary-page {

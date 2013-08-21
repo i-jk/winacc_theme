@@ -8869,6 +8869,9 @@ body #logo img {
   background: white;
   background: rgba(255, 255, 255, 0.85);
   margin-bottom: 18.75px;
+  -webkit-border-radius: 0 0 5px 5px;
+  -moz-border-radius: 0 0 5px 5px;
+  border-radius: 0 0 5px 5px;
 }
 
 div#primary-page {
