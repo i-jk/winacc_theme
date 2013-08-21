@@ -11,8 +11,12 @@
     var iJK_timer = setInterval(function() {
       var c = getColours(new Date());
       console.log(c);
-
+      
+      // Fallback, use top colour.
       $('#primary-page').css('background-color', c[0]);
+      // Webkit new
+      $('#primary-page').css('background-image', '-webkit-linear-gradient(top, ' + c[0] + ' 0%, ' + c[1] + ' 25%, ' + c[2] + ' 60%, ' + c[3] + ' 100%);
+      
       /*.css('filter','progid:DXImageTransform.Microsoft.gradient(startColorstr=\'#FFFFFF\', endColorstr=\'#'+event.backgroundColor+'\', gradientType=1)')
       .css('background-image','-webkit-gradient(linear, left top, right bottom, color-stop(0.1, #FFFFFF), color-stop(0.99, #'+event.backgroundColor+'))')
       .css('background-image','-moz-linear-gradient(top left, #FFFFFF 0%, #'+event.backgroundColor+' 100%)')
@@ -129,30 +133,30 @@ function getColours(d) {
 var coloursTop = [
   [150, 209, 255, 1.0], 
   [ 98, 186, 255, 0.9], 
-  [ 90, 172, 236, 0.6],
-  [ 55, 115, 162, 0.2],
-  [  1,  41, 92, 0.0]
+  [ 74, 136, 185, 0.6],
+  [  2,  27,  48, 0.1],
+  [  0,   5,  14, 0.0]
 ];
 var coloursHigh = [
-  [144, 206, 255], //$skyBlue-2:             #adddff;
+  [144, 206, 255],
   [ 98, 186, 255], 
-  [ 96,  96, 196],
-  [ 53, 149, 253],
-  [  0,  43,  97]
+  [ 97, 167, 216],
+  [  5,  38,  60],
+  [  0,  15,  37]
 ];
 var coloursLow = [
-  [144, 206, 255], //$skyBlue-3:             #dbf0ff;
-  [ 98, 186, 255], 
-  [ 96,  96, 196],
-  [ 53, 149, 253],
-  [  0,  43,  97]
+  [144, 206, 255],
+  [142, 208, 255], 
+  [194, 189, 152],
+  [ 43,  60,  73],
+  [  8,  36,  66]
 ];
 var coloursHorizon = [
-  [144, 206, 255], //$skyBlue-4:             #EDF6FC;
-  [ 98, 186, 255], 
-  [ 96,  96, 196],
-  [ 53, 149, 253],
-  [  0,  43,  97]
+  [144, 206, 255],
+  [199, 231, 255], 
+  [255, 139,  32],
+  [122,  94,  83],
+  [ 39,  60,  77]
 ];
 
 
