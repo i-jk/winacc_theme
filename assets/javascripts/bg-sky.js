@@ -19,8 +19,7 @@
       .css('background-image','-o-linear-gradient(top left, #FFFFFF 0%, #'+event.backgroundColor+' 100%)')
       .css('background-image','linear-gradient(top left, #FFFFFF 0%, #'+event.backgroundColor+' 100%)')*/
       
-      $('#grass-bright').css('opacity', c[4]);
-      $('#grass-dark').css('opacity', 1 - c[4]);
+
     }, 15000);
   });
 
@@ -31,6 +30,9 @@ function setBackground(c) {
     // Webkit new
     .css('background-image', '-webkit-linear-gradient(top, ' + c[0] + ' 0%, ' + c[1] + ' 25%, ' + c[2] + ' 60%, ' + c[3] + ' 100%)')
   ;
+  // Set grass
+  $('#grass-bright').css('opacity', c[4]);
+  $('#grass-dark').css('opacity', 1 - c[4]);
 }
 
 function baisInt(a, b, weight) {
