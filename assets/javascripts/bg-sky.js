@@ -51,7 +51,7 @@ function progressOfDay(d) {
  * progressOfDay is a value 0-1 from progressOfDay()
  */
 function getSolarPosition(progDay) {
-  return Math.abs(Math.sin(1 * Math.PI * (progDay + .5)) * 4);
+  return Math.abs(Math.sin(1 * Math.PI * (720 * progDay + .5)) * 4);
 }
 
 function getColour(d) {
