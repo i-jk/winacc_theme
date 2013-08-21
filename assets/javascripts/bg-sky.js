@@ -22,7 +22,7 @@
       c[4]
       $('#grass-bright').css('opacity', c[4]);
       $('#grass-dark').css('opacity', 1 - c[4]);
-    }, 5000);
+    }, 500);
   });
 
 function baisInt(a, b, weight) {
@@ -128,11 +128,11 @@ function getColours(d) {
  *  4 = midnight
  */
 var coloursTop = [
-  [144, 206, 255, 1.0], 
+  [150, 209, 255, 1.0], 
   [ 98, 186, 255, 0.9], 
-  [ 96,  96, 196, 0.6],
-  [ 53, 149, 253, 0.2],
-  [  0,  43,  97, 0.0]
+  [ 90, 172, 236, 0.6],
+  [ 55, 115, 162, 0.2],
+  [  1,  41, 92, 0.0]
 ];
 var coloursHigh = [
   [144, 206, 255], //$skyBlue-2:             #adddff;
