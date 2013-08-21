@@ -189,7 +189,7 @@ div.subnav {
   padding: $paddingLarge;
   margin: 0;
   font-size: $fontSizeSmall;
-  @include border-radius(none);
+  @include border-radius($baseBorderRadius $baseBorderRadius 0 0);
 
   & > li {
     text-shadow: none;

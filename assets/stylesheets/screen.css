@@ -9190,9 +9190,9 @@ div.subnav .nav > .active > a:hover {
   padding: 11px 19px;
   margin: 0;
   font-size: 12.75px;
-  -webkit-border-radius: none;
-  -moz-border-radius: none;
-  border-radius: none;
+  -webkit-border-radius: 5px 5px 0 0;
+  -moz-border-radius: 5px 5px 0 0;
+  border-radius: 5px 5px 0 0;
 }
 .breadcrumb > li {
   text-shadow: none;
