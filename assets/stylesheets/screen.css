@@ -9058,6 +9058,9 @@ body #footer {
 }
 .navbar .nav > li > a {
   text-shadow: none;
+  -webkit-transition: 0.25s;
+  -moz-transition: 0.25s;
+  transition: 0.25s;
 }
 .navbar .nav > .active > a,
 .navbar .nav > .active > a:hover,
@@ -9140,8 +9143,21 @@ div.subnav .nav > .active > a:hover {
   border-bottom: 2px solid rgba(0, 0, 0, 0.2);
 }
 
+.nav-pills {
+  margin: 5px 0;
+}
 .nav-pills .open .dropdown-toggle {
   background-color: #0064cd;
+}
+.nav-pills > li > a {
+  background: white;
+  background: rgba(255, 255, 255, 0.5);
+  -webkit-transition: 0.25s;
+  -moz-transition: 0.25s;
+  transition: 0.25s;
+}
+.nav-pills > li > a:hover, .nav-pills > li > a:focus {
+  background-color: white;
 }
 
 .pagination ul {

@@ -33,6 +33,9 @@
 
   .nav > li > a {
     text-shadow: none;
+    -webkit-transition: 0.25s;
+    -moz-transition: 0.25s;
+    transition: 0.25s;
   }
 
   .nav > .active > a,
@@ -126,9 +129,21 @@ div.subnav {
 }
 
 .nav-pills {
+  margin: 5px 0;
 
   .open .dropdown-toggle {
     background-color: $blueDark;
+  }
+  
+  & > li > a {
+    @include bg-trans-white(0.50);
+    -webkit-transition: 0.25s;
+    -moz-transition: 0.25s;
+    transition: 0.25s;
+    
+    &:hover, &:focus { 
+      background-color: $white;
+    }
   }
 }
 
