@@ -82,6 +82,7 @@ function getColours(d) {
         + weighted(coloursHorizon[first][1], coloursHorizon[second][1], bias) + ', '
         + weighted(coloursHorizon[first][2], coloursHorizon[second][2], bias) + ')'
     ];
+  return colours;
 }
 
 function weighted(a, b, weight) {
