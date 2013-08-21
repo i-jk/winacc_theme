@@ -3,13 +3,17 @@
  * JS for Radix Starter.
  */
 (function ($) {
-  // code here
-  var iJK_timer = setInterval(function() {
-    var d = new Date();
-    alert(getColour(d));
-  }
+  
+  // Start timer interval on load
+  $(document).ready(function() {
+    console.log(getColour(d));
+    
+    var iJK_timer = setInterval(function() {
+      var d = new Date();
+      console.log(getColour(d));
+    }, 5000);
+  });
 
-}, 5000);
 /**
  * Returns current position of year cycle (0 = start, 1 = end)
  * d is a Date object
