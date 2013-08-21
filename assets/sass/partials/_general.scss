@@ -31,12 +31,16 @@ div#main-wrapper {
 }
 
 #grass-bright, #grass-dark {
-  min-height: 200px;
+  height: 200px;
   margin-top: 0;
   @include background(transparent image-url("bg-grass-bright.png") center top repeat-x);
+  position: relative;
+  z-index: 1;
 }
 #grass-dark {
   @include background-image(image-url("bg-grass-dark.png"));
+  margin-top: -200px;
+  z-index: 0;
 }
 
 #content {

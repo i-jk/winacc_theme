@@ -8888,13 +8888,17 @@ div#main-wrapper {
 }
 
 #grass-bright, #grass-dark {
-  min-height: 200px;
+  height: 200px;
   margin-top: 0;
   background: transparent url('../images/bg-grass-bright.png?1377006350') center top repeat-x;
+  position: relative;
+  z-index: 1;
 }
 
 #grass-dark {
   background-image: url('../images/bg-grass-dark.png?1377016849');
+  margin-top: -200px;
+  z-index: 0;
 }
 
 #content {
