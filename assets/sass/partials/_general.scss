@@ -51,9 +51,9 @@ div#main-wrapper {
 }
 
 body #footer {
-  border-top: 10px solid mix($green, $earth, 0.75);
-  @include background(mix($green, $earth, 0.5));
-  border-bottom: 20px solid mix($green, $earth, 0.25);
+  border-top: 10px solid mix($green, $earth, 75%);
+  @include background(mix($green, $earth, 50%));
+  border-bottom: 20px solid mix($green, $earth, 25%);
   margin-top: 0;
   
   .container {
