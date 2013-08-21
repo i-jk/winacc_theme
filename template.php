@@ -113,4 +113,5 @@ function winacc_theme_process_page(&$variables) {
   if (!isset($variables['page']['content']['system_main']['main']['#markup']) || (strpos($variables['page']['content']['system_main']['main']['#markup'], 'panel-panel') === FALSE)) {
     $variables['no_panels'] = TRUE;
   }
+  
 }
