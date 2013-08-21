@@ -8,6 +8,10 @@ body {
   
   #logo {
     padding: $fontSizeLarge;
+    
+    img {
+      max-width: 250px;
+    }
   }
 }
 

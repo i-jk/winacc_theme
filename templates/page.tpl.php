@@ -116,14 +116,14 @@
           </div>
         </div>
       <?php endif; ?>
-      <div id="content">
-        <?php if ($breadcrumb): ?>
+      <?php if ($breadcrumb): ?>
         <div id="breadcrumb" class="visible-desktop">
           <div class="container">
             <?php print $breadcrumb; ?>
           </div>
         </div>
       <?php endif; ?>
+      <div id="content">
         <a id="main-content"></a>
         <div id="page-header">
             <div class="container">

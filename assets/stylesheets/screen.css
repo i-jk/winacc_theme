@@ -8861,6 +8861,9 @@ body {
 body #logo {
   padding: 18.75px;
 }
+body #logo img {
+  max-width: 250px;
+}
 
 #header .container {
   background: white;
@@ -9180,7 +9183,12 @@ div.subnav .nav > .active > a:hover {
 
 .breadcrumb {
   background: white;
-  background: rgba(255, 255, 255, 0.8);
+  background: rgba(255, 255, 255, 0.85);
+  padding: 11px 19px;
+  font-size: fontSizeSmall;
+  -webkit-border-radius: none;
+  -moz-border-radius: none;
+  border-radius: none;
 }
 .breadcrumb > li {
   text-shadow: none;
