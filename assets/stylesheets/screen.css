@@ -8876,11 +8876,6 @@ body #logo img {
 
 div#primary-page {
   background-color: #adddff;
-  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #90ceff), color-stop(25%, #adddff), color-stop(60%, #dbf0ff), color-stop(100%, #edf6fc));
-  background-image: -webkit-linear-gradient(top, #90ceff 0%, #adddff 25%, #dbf0ff 60%, #edf6fc 100%);
-  background-image: -moz-linear-gradient(top, #90ceff 0%, #adddff 25%, #dbf0ff 60%, #edf6fc 100%);
-  background-image: -o-linear-gradient(top, #90ceff 0%, #adddff 25%, #dbf0ff 60%, #edf6fc 100%);
-  background-image: linear-gradient(top, #90ceff 0%, #adddff 25%, #dbf0ff 60%, #edf6fc 100%);
 }
 
 div#main-wrapper {

@@ -9,10 +9,15 @@
     console.log(getColour(new Date()));
     
     var iJK_timer = setInterval(function() {
-      var c = getColour(new Date());
+      var c = getColours(new Date());
       console.log(c);
-      //jQuery('#primary-page').css('background-image','linear-gradient(top, #FFFFFF 0%, #245263 100%)');
-      jQuery('#primary-page').css('background-color', c);
+
+      $('#primary-page').css('background-color', c[0]);
+      /*.css('filter','progid:DXImageTransform.Microsoft.gradient(startColorstr=\'#FFFFFF\', endColorstr=\'#'+event.backgroundColor+'\', gradientType=1)')
+      .css('background-image','-webkit-gradient(linear, left top, right bottom, color-stop(0.1, #FFFFFF), color-stop(0.99, #'+event.backgroundColor+'))')
+      .css('background-image','-moz-linear-gradient(top left, #FFFFFF 0%, #'+event.backgroundColor+' 100%)')
+      .css('background-image','-o-linear-gradient(top left, #FFFFFF 0%, #'+event.backgroundColor+' 100%)')
+      .css('background-image','linear-gradient(top left, #FFFFFF 0%, #'+event.backgroundColor+' 100%)')*/
     }, 5000);
   });
 
@@ -59,10 +64,24 @@ function getColour(d) {
     var first = Math.floor(pos);
     var second = Math.ceil(pos)
     var bias = (pos - first);
-    return 'rgb('
-        + weighted(colours[first][0], colours[second][0], bias) + ', '
-        + weighted(colours[first][1], colours[second][1], bias) + ', '
-        + weighted(colours[first][2], colours[second][2], bias) + ')'
+    var colours = [
+      'rgb(' // coloursTop
+        + weighted(coloursTop[first][0], coloursTop[second][0], bias) + ', '
+        + weighted(coloursTop[first][1], coloursTop[second][1], bias) + ', '
+        + weighted(coloursTop[first][2], coloursTop[second][2], bias) + ')',
+      'rgb(' // coloursHigh
+        + weighted(coloursHigh[first][0], coloursHigh[second][0], bias) + ', '
+        + weighted(coloursHigh[first][1], coloursHigh[second][1], bias) + ', '
+        + weighted(coloursHigh[first][2], coloursHigh[second][2], bias) + ')',
+      'rgb(' // coloursLow
+        + weighted(coloursLow[first][0], coloursLow[second][0], bias) + ', '
+        + weighted(coloursLow[first][1], coloursLow[second][1], bias) + ', '
+        + weighted(coloursLow[first][2], coloursLow[second][2], bias) + ')',
+      'rgb(' // coloursHorizon
+        + weighted(coloursHorizon[first][0], coloursHorizon[second][0], bias) + ', '
+        + weighted(coloursHorizon[first][1], coloursHorizon[second][1], bias) + ', '
+        + weighted(coloursHorizon[first][2], coloursHorizon[second][2], bias) + ')'
+    ];
 }
 
 function weighted(a, b, weight) {
@@ -72,31 +91,52 @@ function weighted(a, b, weight) {
   //var dc = progDay - 0.028044764;
 
 
-
-var colours = [
-  [196, 196, 255], // 0 = midday
-  [128, 128, 255], // 1 = 10:04:11, 13:55:50
-  [96, 96, 196],     // 2 = 08:00:00, 16:00:00
-  [24, 16, 128],      // 3 = 05:31:16, 18:28:44
-  [0, 0, 64]        // 4 = midnight
+/** 
+ * Colors arrays for background sky gradient
+ * 
+ * Each variable is for a point on the gradient: Top, High, Low, Horizon
+ * 
+ * Each set of values is Red, Green, Blue for each of the times outlined below.
+ * The forth value is the change of opacity of the grass.
+ * 
+ * Times/index:
+ *  0 = midday
+ *  1 = 10:04:11, 13:55:50
+ *  2 = 08:00:00, 16:00:00
+ *  3 = 05:31:16, 18:28:44
+ *  4 = midnight
+ */
+var coloursTop = [
+  [144, 206, 255], 
+  [ 98, 186, 255], 
+  [ 96,  96, 196],
+  [ 53, 149, 253],
+  [  0,  43,  97]
 ];
-/*
-console.log( getColour(new Date('2013 nov 00:00:00 GMT')) );
-console.log( getColour(new Date('2013 nov 03:00:00 GMT')) );
-console.log( getColour(new Date('2013 nov 06:00:00 GMT')) );
-console.log( getColour(new Date('2013 nov 10:00:00 GMT')) );
-console.log('n', getColour(new Date('2013 nov 12:00:00 GMT')) );
-console.log( getColour(new Date('2013 nov 15:00:00 GMT')) );
-console.log( getColour(new Date('2013 nov 18:00:00 GMT')) );
-console.log( getColour(new Date('2013 nov 21:00:00 GMT')) );
-console.log( getColour(new Date('2013 nov 23:59:00 GMT')) );
+var coloursHigh = [
+  [144, 206, 255], //$skyBlue-2:             #adddff;
+  [ 98, 186, 255], 
+  [ 96,  96, 196],
+  [ 53, 149, 253],
+  [  0,  43,  97]
+];
+var coloursLow = [
+  [144, 206, 255], //$skyBlue-3:             #dbf0ff;
+  [ 98, 186, 255], 
+  [ 96,  96, 196],
+  [ 53, 149, 253],
+  [  0,  43,  97]
+];
+var coloursHorizon = [
+  [144, 206, 255], //$skyBlue-4:             #EDF6FC;
+  [ 98, 186, 255], 
+  [ 96,  96, 196],
+  [ 53, 149, 253],
+  [  0,  43,  97]
+];
 
 
-.css('filter','progid:DXImageTransform.Microsoft.gradient(startColorstr=\'#FFFFFF\', endColorstr=\'#'+event.backgroundColor+'\', gradientType=1)')
-.css('background-image','-webkit-gradient(linear, left top, right bottom, color-stop(0.1, #FFFFFF), color-stop(0.99, #'+event.backgroundColor+'))')
-.css('background-image','-moz-linear-gradient(top left, #FFFFFF 0%, #'+event.backgroundColor+' 100%)')
-.css('background-image','-o-linear-gradient(top left, #FFFFFF 0%, #'+event.backgroundColor+' 100%)')
-.css('background-image','linear-gradient(top left, #FFFFFF 0%, #'+event.backgroundColor+' 100%)')
-*/
+
+];
 
 })(jQuery);
