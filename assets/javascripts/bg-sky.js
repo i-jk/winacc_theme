@@ -21,7 +21,7 @@
       
       $('#grass-bright').css('opacity', c[4]);
       $('#grass-dark').css('opacity', 1 - c[4]);
-    }, 1000);
+    }, 15000);
   });
 
 function setBackground(c) {
@@ -76,7 +76,7 @@ function progressOfDay(d) {
  * progressOfDay is a value 0-1 from progressOfDay()
  */
 function getSolarPosition(progDay) {
-  return Math.abs(Math.sin(1 * Math.PI * (500 * progDay + .5)) * 4);
+  return Math.abs(Math.sin(1 * Math.PI * (progDay + .5)) * 4);
 }
 
 function getColours(d) {
