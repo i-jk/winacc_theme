@@ -8899,6 +8899,7 @@ div#main-wrapper {
   background-image: url('../images/bg-grass-dark.png?1377016849');
   margin-top: -200px;
   z-index: 0;
+  opacity: 0.3;
 }
 
 #content {
@@ -8911,7 +8912,9 @@ div#main-wrapper {
 }
 
 body #footer {
-  background: rgba(79, 168, 0, 0.5);
+  border-top: 10px solid #351805;
+  background: #351705;
+  border-bottom: 20px solid #351705;
   margin-top: 0;
 }
 body #footer .container {

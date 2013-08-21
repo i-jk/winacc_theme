@@ -41,6 +41,7 @@ div#main-wrapper {
   @include background-image(image-url("bg-grass-dark.png"));
   margin-top: -200px;
   z-index: 0;
+  opacity: 0.3;
 }
 
 #content {
@@ -50,7 +51,9 @@ div#main-wrapper {
 }
 
 body #footer {
-  @include background(rgba(79, 168, 0, 0.5));
+  border-top: 10px solid mix($green, $earth, 0.75);
+  @include background(mix($green, $earth, 0.5));
+  border-bottom: 20px solid mix($green, $earth, 0.25);
   margin-top: 0;
   
   .container {
