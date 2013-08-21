@@ -156,11 +156,10 @@
 </div>
 <footer id="footer" class="footer" role="footer">
   <div class="container">
-      <small class="copyright pull-left"><a href="/contact">Contact</a> |
-        <a href="/privacy-policy">Privacy Policy</a> | Powered by
-        <a href="http://drupal.org">Drupal</a> | Website by
-        <a href="http://www.i-jk.co.uk/"><strong>i-JK Drupal Solutions</strong></a>
-      </small>
-    <?php endif; ?>
+    <small class="copyright pull-left"><a href="/contact">Contact</a> |
+      <a href="/privacy-policy">Privacy Policy</a> | Powered by
+      <a href="http://drupal.org">Drupal</a> | Website by
+      <a href="http://www.i-jk.co.uk/"><strong>i-JK Drupal Solutions</strong></a>
+    </small>
   </div>
 </footer>
