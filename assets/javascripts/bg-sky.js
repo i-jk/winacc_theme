@@ -6,7 +6,7 @@
   
   // Start timer interval on load
   $(document).ready(function() {
-    setBackground(getColours(new Date())));
+    setBackground(getColours(new Date()));
     
     var iJK_timer = setInterval(function() {
       var c = getColours(new Date());
