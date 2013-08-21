@@ -20,3 +20,4 @@ stylesheets-conditional[IE 8][all][] = assets/stylesheets/ie8.css
 
 ; Javascript
 scripts[] = assets/javascripts/bootstrap.js
+scripts[] = assets/javascripts/bg-sky.js
