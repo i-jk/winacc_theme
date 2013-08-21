@@ -19,7 +19,6 @@
       .css('background-image','-o-linear-gradient(top left, #FFFFFF 0%, #'+event.backgroundColor+' 100%)')
       .css('background-image','linear-gradient(top left, #FFFFFF 0%, #'+event.backgroundColor+' 100%)')*/
       
-      c[4]
       $('#grass-bright').css('opacity', c[4]);
       $('#grass-dark').css('opacity', 1 - c[4]);
     }, 500);
@@ -98,7 +97,7 @@ function getColours(d) {
         + baisInt(coloursHorizon[first][1], coloursHorizon[second][1], bias) + ', '
         + baisInt(coloursHorizon[first][2], coloursHorizon[second][2], bias) + ')',
       // [4] opacity of grass
-      biasFloat(coloursTop[first][3], coloursHorizon[second][3], bias)
+      biasFloat(coloursTop[first][3], coloursTop[second][3], bias)
     ];
   return colours;
 }
