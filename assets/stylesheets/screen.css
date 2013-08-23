@@ -9379,7 +9379,7 @@ div.subnav .nav > .active > a:hover {
   color: white;
 }
 
-.breadcrumb {
+#breadcrumb {
   background: white;
   background: rgba(255, 255, 255, 0.85);
   font-size: 14.25px;
@@ -9389,10 +9389,10 @@ div.subnav .nav > .active > a:hover {
   -moz-border-radius: 5px 5px 0 0;
   border-radius: 5px 5px 0 0;
 }
-.breadcrumb .active {
+#breadcrumb .active {
   color: #a70035;
 }
-.breadcrumb > li {
+#breadcrumb > li {
   text-shadow: none;
 }
 

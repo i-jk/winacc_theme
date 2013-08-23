@@ -96,7 +96,7 @@
         </div>
       <?php endif; ?>
       <?php if ($breadcrumb || $search_form): ?>
-        <div id="breadcrumb" class="visible-desktop">
+        <div id="breadcrumb" class="navbar">
           <div class="container">
             <!-- .btn-navbar-search for collapsed search form -->
             <?php if ($search_form): ?>

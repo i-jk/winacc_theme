@@ -10,11 +10,12 @@
  * Put Breadcrumbs in a ul li structure
  */
 function winacc_theme_breadcrumb($variables) {
+  echo 'here';
   $breadcrumb = $variables['breadcrumb'];
   if (!empty($breadcrumb)) {
     $crumbs = '<ul class="breadcrumbs">';
     foreach($breadcrumb as $value) {
-      $crumbs .= '<li>'.$value.'</li>';
+      $output .= '<li>'.$value.'<span class="divider">/</span></li>';
     }
     $crumbs .= '</ul>';
   }
@@ -40,7 +41,7 @@ function winacc_theme_preprocess_views_view_table(&$variables) {
 /**
  * Override or insert variables into the page template.
  *
- * Implements template_process_page().
+ * Implements theme_menu_local_tasks().
  */
 function winacc_theme_menu_local_tasks(&$variables) {
   $output = '';

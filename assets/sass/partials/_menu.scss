@@ -202,7 +202,7 @@ div.subnav {
   }
 }
 
-.breadcrumb {
+#breadcrumb {
   @include bg-trans-white(0.85);
   font-size: $fontSizeMedium;
   padding: $paddingLarge;
