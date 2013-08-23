@@ -14,77 +14,6 @@
   A70035	7D1F3D	6C0023	D33567	D35F84
 
 */
-@font-face {
-  font-family: 'BorisBlackBloxxRegular';
-  src: url("../fonts/boris-black-bloxx/borisblackbloxx-webfont.eot");
-  src: url("../fonts/boris-black-bloxx/borisblackbloxx-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/boris-black-bloxx/borisblackbloxx-webfont.woff") format("woff"), url("../fonts/boris-black-bloxx/borisblackbloxx-webfont.ttf") format("truetype"), url("../fonts/boris-black-bloxx/borisblackbloxx-webfont.svg#BorisBlackBloxxRegular") format("svg");
-  font-weight: normal;
-  font-style: normal;
-}
-
-p {
-  margin-bottom: 1em;
-}
-
-h1, h2, h3, h4, h5, h6 {
-  margin: 10.5px 0;
-  font-family: "BorisBlackBloxxRegular", "Helvetica Neue", "Arial Black", Verdana, sans-serif;
-  font-weight: normal !important;
-  line-height: 21px;
-  color: #4fa800;
-  text-rendering: optimizelegibility;
-}
-h1 small, h2 small, h3 small, h4 small, h5 small, h6 small {
-  line-height: 1;
-  color: #b8bba7;
-}
-
-h1,
-h2,
-h3 {
-  line-height: 42px;
-}
-
-h1 {
-  font-size: 34px;
-}
-
-h2 {
-  font-size: 30.6px;
-}
-
-h3 {
-  font-size: 25.5px;
-}
-
-h4 {
-  font-size: 22.44px;
-}
-
-h5 {
-  font-size: 17px;
-}
-
-h6 {
-  font-size: 13.6px;
-}
-
-h1 small {
-  font-size: 25.5px;
-}
-
-h2 small {
-  font-size: 22.44px;
-}
-
-h3 small {
-  font-size: 17px;
-}
-
-h4 small {
-  font-size: 13.6px;
-}
-
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -9248,9 +9177,6 @@ body #footer .container a {
   -moz-box-shadow: none;
   box-shadow: none;
 }
-.navbar .navbar-form {
-  padding: 7px 0;
-}
 .navbar .navbar-search .search-query {
   border: none;
   -webkit-box-shadow: none;
@@ -9380,9 +9306,10 @@ div.subnav .nav > .active > a:hover {
 }
 
 #breadcrumb {
+  background: white;
+  background: rgba(255, 255, 255, 0.85);
   font-size: 14.25px;
-  padding: 0;
-  margin: 0;
+  padding: 11px 19px;
 }
 #breadcrumb .active {
   color: #9c9e8d;
@@ -9392,6 +9319,12 @@ div.subnav .nav > .active > a:hover {
 }
 #breadcrumb > li {
   text-shadow: none;
+}
+
+.breadcrumb {
+  padding: 0;
+  margin: 0;
+  background: none;
 }
 
 textarea,
@@ -9573,4 +9506,75 @@ legend {
   -moz-border-radius: 5px;
   border-radius: 5px;
   padding: 10px;
+}
+
+@font-face {
+  font-family: 'BorisBlackBloxxRegular';
+  src: url("../fonts/boris-black-bloxx/borisblackbloxx-webfont.eot");
+  src: url("../fonts/boris-black-bloxx/borisblackbloxx-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/boris-black-bloxx/borisblackbloxx-webfont.woff") format("woff"), url("../fonts/boris-black-bloxx/borisblackbloxx-webfont.ttf") format("truetype"), url("../fonts/boris-black-bloxx/borisblackbloxx-webfont.svg#BorisBlackBloxxRegular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+p {
+  margin-bottom: 1em;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 10.5px 0;
+  font-family: "BorisBlackBloxxRegular", "Helvetica Neue", "Arial Black", Verdana, sans-serif;
+  font-weight: normal !important;
+  line-height: 21px;
+  color: #4fa800;
+  text-rendering: optimizelegibility;
+}
+h1 small, h2 small, h3 small, h4 small, h5 small, h6 small {
+  line-height: 1;
+  color: #b8bba7;
+}
+
+h1,
+h2,
+h3 {
+  line-height: 42px;
+}
+
+h1 {
+  font-size: 34px;
+}
+
+h2 {
+  font-size: 30.6px;
+}
+
+h3 {
+  font-size: 25.5px;
+}
+
+h4 {
+  font-size: 22.44px;
+}
+
+h5 {
+  font-size: 17px;
+}
+
+h6 {
+  font-size: 13.6px;
+}
+
+h1 small {
+  font-size: 25.5px;
+}
+
+h2 small {
+  font-size: 22.44px;
+}
+
+h3 small {
+  font-size: 17px;
+}
+
+h4 small {
+  font-size: 13.6px;
 }

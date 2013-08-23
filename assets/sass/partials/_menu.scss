@@ -46,10 +46,6 @@
     @include box-shadow(none);
   }
 
-  .navbar-form {
-    padding: 7px 0;
-  }
-
   .navbar-search .search-query {
     border: none;
     @include box-shadow(none);
@@ -203,9 +199,9 @@ div.subnav {
 }
 
 #breadcrumb {
+  @include bg-trans-white(0.85);
   font-size: $fontSizeMedium;
-  padding: 0;
-  margin: 0;
+  padding: $paddingLarge;
   
   .active {
     color: $gray;
@@ -220,3 +216,8 @@ div.subnav {
   }
 }
 
+.breadcrumb {
+  padding: 0;
+  margin: 0;
+  background: none;
+}
