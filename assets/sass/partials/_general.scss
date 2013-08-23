@@ -12,12 +12,25 @@ body {
   }
 }
 
+
+
 #header .container {
   @include bg-trans-white(0.85);
   margin-bottom: $fontSizeLarge;
   @include border-radius(0 0 $baseBorderRadius $baseBorderRadius);
   position: relative;
 }
+#header .navbar {
+  position: absolute;
+}
+.navbar-main {
+  top: 0;
+}
+.navbar-topics {
+  bottom: 0;
+}
+
+
 
 div#primary-page {
   background-color: $skyBlue-2; // Old browsers

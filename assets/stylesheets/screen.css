@@ -8928,6 +8928,18 @@ body #logo {
   position: relative;
 }
 
+#header .navbar {
+  position: absolute;
+}
+
+.navbar-main {
+  top: 0;
+}
+
+.navbar-topics {
+  bottom: 0;
+}
+
 div#primary-page {
   background-color: #adddff;
 }
@@ -9206,7 +9218,6 @@ body #footer .container a {
 
 .navbar {
   margin: 0;
-  position: absolute;
 }
 .navbar .brand {
   text-shadow: none;
@@ -9272,14 +9283,6 @@ body #footer .container a {
 .navbar .navbar-inverse .navbar-search .search-query:focus {
   padding: 4px 14px;
   color: #043022;
-}
-
-.navbar-main {
-  top: 0;
-}
-
-.navbar-topics {
-  bottom: 0;
 }
 
 div.subnav {

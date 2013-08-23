@@ -16,7 +16,6 @@
 
 .navbar {
   margin: 0;
-  position: absolute;
 
   .brand {
     text-shadow: none;
@@ -87,12 +86,7 @@
     }
   }
 }
-.navbar-main {
-  top: 0;
-}
-.navbar-topics {
-  bottom: 0;
-}
+
 
 div.subnav {
 
