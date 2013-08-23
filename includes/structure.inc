@@ -10,13 +10,12 @@
  * Put Breadcrumbs in a ul li structure
  */
 function winacc_theme_breadcrumb($variables) {
-  echo 'here';
   $breadcrumb = $variables['breadcrumb'];
   if (!empty($breadcrumb)) {
     $output = '<h2 class="element-invisible">' . t('You are here') . '</h2>';
     $output .= '<ul class="breadcrumb">';
     foreach($breadcrumb as $value) {
-      $output .= '<li>' . $value . ' <span class="divider icon-angle-right">»</span></li>';
+      $output .= '<li>' . $value . ' <span class="divider icon-angle-right"></span></li>';
     }
     $output .= '<li class="active">' . drupal_get_title() . '</span>';
     $output .= '</ul>';
