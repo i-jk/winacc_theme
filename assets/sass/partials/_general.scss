@@ -54,11 +54,16 @@ div#main-wrapper {
   opacity: 0.3;
 }
 
+
+
 #content {
   @include bg-trans-white();
   padding: $paddingLarge;
-  @include border-radius($baseBorderRadius $baseBorderRadius);
+  @include border-radius(0 0 $baseBorderRadius $baseBorderRadius);
 }
+
+
+
 
 body #footer {
   border-top: 10px solid mix($green, $earth, 75%);

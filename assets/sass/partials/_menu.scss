@@ -200,7 +200,8 @@ div.subnav {
 
 #breadcrumb {
   @include bg-trans-white(0.85);
-  font-size: $fontSizeMedium;
+  @include border-radius($baseBorderRadius $baseBorderRadius 0 0);
+  //font-size: $fontSizeMedium;
   padding: $paddingLarge;
   
   .active {
