@@ -9169,6 +9169,12 @@ body #footer .container a {
   -webkit-transition: 0.25s;
   -moz-transition: 0.25s;
   transition: 0.25s;
+  font-size: 18.75px;
+  background: white;
+  background: rgba(255, 255, 255, 0.5);
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
 }
 .navbar .nav > .active > a,
 .navbar .nav > .active > a:hover,
@@ -9314,10 +9320,10 @@ div.subnav .nav > .active > a:hover {
   padding: 5px 19px;
 }
 #breadcrumb .active {
-  color: #9c9e8d;
+  color: #7b7c70;
 }
 #breadcrumb .divider {
-  color: #7b7c70;
+  color: #9c9e8d;
 }
 #breadcrumb > li {
   text-shadow: none;

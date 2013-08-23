@@ -38,6 +38,9 @@
     -webkit-transition: 0.25s;
     -moz-transition: 0.25s;
     transition: 0.25s;
+    font-size: $fontSizeLarge;
+    @include bg-trans-white(0.50);
+    @include border-radius($baseBorderRadius);
   }
 
   .nav > .active > a,
@@ -205,11 +208,11 @@ div.subnav {
   padding: 5px 19px;
   
   .active {
-    color: $gray;
+    color: $grayDark;
   }
   
   .divider {
-    color: $grayDark;
+    color: $gray;
   }
 
   & > li {
