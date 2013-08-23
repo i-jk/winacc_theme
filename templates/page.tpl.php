@@ -97,7 +97,7 @@
             <?php endif; ?>
           </div>
         </nav> <!-- /# topic nav -->
-      </div></div></div>
+      </div>
     </div>
   </header>
 
