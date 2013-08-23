@@ -13,7 +13,7 @@
 // --------------------------------------------------
 @import "compass_radix";
 @import "compass_radix_responsive";
-@import "global/variable";
+@import "global/variable"; // ensure use of variables!
 
 // Theme CSS
 // --------------------------------------------------
@@ -29,6 +29,3 @@
 @import "partials/comment";
 @import "partials/node";
 @import "partials/user";
-
-// Overrides of compass_radix(_responsive)
-@import "overrides/type";

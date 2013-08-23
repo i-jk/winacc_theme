@@ -13,21 +13,15 @@
 <div id="primary-page">
   <header id="header" class="header" role="header">
     <div class="container clearfix">
-    <div class="row-fluid"><div class="span12">
       <?php if ($logo || $site_name): ?>
-        <div class="span3">
-          <a href="<?php print $front_page; ?>" title="<?php print t('Home') . ' - ' . $site_name; ?>" rel="home" class="brand" data-toggle="tooltip">
-            <?php if ($logo): ?>
-              <img id="logo" src="<?php print $logo; ?>" alt="<?php print t('Home'); ?>" />
-            <?php endif; ?>
-            <?php if ($site_name): ?>
-              <h1 id="site-name" class="element-invisible"><?php print $site_name; ?></h1>
-            <?php endif; ?>
-          </a>
-        </div>
+        <a href="<?php print $front_page; ?>" title="<?php print t('Home') . ' - ' . $site_name; ?>" rel="home" class="brand pull-right" data-toggle="tooltip">
+          <?php if ($logo): ?>
+            <img id="logo" src="<?php print $logo; ?>" alt="<?php print t('Home'); ?>" />
+          <?php endif; ?>
+          <h1 id="site-name" class="element-invisible"><?php print $site_name; ?></h1>
+        </a>
       <?php endif; ?>
-      <div class="span9">
-        <nav class='navbar navbar-main'>
+        <nav class='navbar navbar-main pull-left'>
           <div class="navbar-inner">
             <!-- .btn-navbar-search for collapsed search form -->
             <?php if ($search_form): ?>
@@ -72,7 +66,7 @@
 
           </div>
         </nav>
-        <nav class='navbar navbar-topics'>
+        <nav class='navbar navbar-topics pull-left'>
           <div class="navbar-inner">
 
             <!-- .btn-navbar-topics for collapsed topic menu content -->

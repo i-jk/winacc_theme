@@ -16,6 +16,7 @@ body {
   @include bg-trans-white(0.85);
   margin-bottom: $fontSizeLarge;
   @include border-radius(0 0 $baseBorderRadius $baseBorderRadius);
+  position: relative;
 }
 
 div#primary-page {
@@ -43,7 +44,7 @@ div#main-wrapper {
 #content {
   @include bg-trans-white();
   padding: $paddingLarge;
-  @include border-radius(0 0 $baseBorderRadius $baseBorderRadius);
+  @include border-radius($baseBorderRadius $baseBorderRadius);
 }
 
 body #footer {
