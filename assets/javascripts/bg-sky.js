@@ -6,11 +6,14 @@
   
   // on load
   $(document).ready(function() {
-    if (
-    // set background ASAP
+    // Bail if no support for opacity...
+    // @see http://caniuse.com/css-opacity: 87% browsers OK in August 2013.
+    if (!Modernizr.opacity) return;
+    
+    // OK, set background ASAP.
     setBackground(getColours(new Date()));
     
-    // Begin timed bg change
+    // Begin timed bg change.
     var iJK_timer = setInterval(function() {
       var c = getColours(new Date());
       // console.log(c);
@@ -39,25 +42,8 @@ function setBackground(c) {
   }
   
   // Set grass
-  if (Modernizr.opacity) {
-    // Good browser
-    $('#grass-bright').css('opacity', c[4]);
-    $('#grass-dark').css('opacity', 1 - c[4]);
-  }
-  else {
-    // Old or IE<8 -- detect
-    var opacityType = (
-      (typeof o.style.opacity !== 'undefined') ? 'opacity' :
-      /*@cc_on @if (@_jscript)
-        (typeof o.filter === 'string') ? 'filter' :
-      @end @*/
-      'none'
-    );
-    if (opacityType == 'filter') {
-      $('#grass-bright').css('filter', 'filter: alpha(opacity=' + Math.round(c[4] * 100) + ')');
-      $('#grass-dark').css('filter', 'filter: alpha(opacity=' + Math.round((1 - c[4]) * 100) + ')');
-    }
-  }
+  $('#grass-bright').css('opacity', c[4]);
+  $('#grass-dark').css('opacity', 1 - c[4]);
 }
 
 function baisInt(a, b, weight) {
