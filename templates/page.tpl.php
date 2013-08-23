@@ -21,15 +21,9 @@
           <h1 id="site-name" class="element-invisible"><?php print $site_name; ?></h1>
         </a>
       <?php endif; ?>
-      <nav class='navbar navbar-main pull-left'>
+      <nav class='navbar navbar-main'>
         <div class="navbar-inner">
-          <!-- .btn-navbar-search for collapsed search form -->
-          <?php if ($search_form): ?>
-            <a class="btn btn-navbar btn-navbar-searcher" data-toggle="collapse" data-target=".nav-search-collapse">
-              <?php print t('Search'); ?>
-              <span class="icon-search"></span>
-            </a>
-          <?php endif; ?>
+
           <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
           <a class="btn btn-navbar btn-navbar-menu" data-toggle="collapse" data-target=".nav-menu-collapse">
             <?php print t('Menu'); ?>
@@ -52,14 +46,6 @@
                     'class' => array('element-invisible'),
                   ),
                 )); ?>
-              <?php endif; ?>
-            </div>
-          </div>
-
-          <div class="nav-collapse nav-search-collapse">
-            <div class="inner">
-              <?php if ($search_form): ?>
-                <?php print $search_form; ?>
               <?php endif; ?>
             </div>
           </div>
@@ -109,10 +95,26 @@
           </div>
         </div>
       <?php endif; ?>
-      <?php if ($breadcrumb): ?>
+      <?php if ($breadcrumb || $search_form): ?>
         <div id="breadcrumb" class="visible-desktop">
           <div class="container">
-            <?php print $breadcrumb; ?>
+            <!-- .btn-navbar-search for collapsed search form -->
+            <?php if ($search_form): ?>
+              <a class="btn btn-navbar btn-navbar-searcher" data-toggle="collapse" data-target=".nav-search-collapse">
+                <?php print t('Search'); ?>
+                <span class="icon-search"></span>
+              </a>
+            <?php endif; ?>
+            <div class="nav-collapse nav-search-collapse">
+              <div class="inner">
+                <?php if ($search_form): ?>
+                  <?php print $search_form; ?>
+                <?php endif; ?>
+              </div>
+            </div>
+            <?php if ($breadcrumb): ?>          
+              <?php print $breadcrumb; ?>
+            <?php endif; ?>
           </div>
         </div>
       <?php endif; ?>

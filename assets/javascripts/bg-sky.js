@@ -33,7 +33,7 @@ function setBackground(c) {
     // Good browser
     $('#primary-page')
       // Webkit new
-      .css('background-image', '-webkit-linear-gradient(top, ' + c[0] + ' 0%, ' + c[1] + ' 40%, ' + c[2] + ' 7%, ' + c[3] + ' 100%)')
+      .css('background-image', '-webkit-linear-gradient(top, ' + c[0] + ' 0%, ' + c[1] + ' 40%, ' + c[2] + ' 70%, ' + c[3] + ' 100%)')
     ;
   }
   else {
