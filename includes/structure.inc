@@ -14,10 +14,17 @@ function winacc_theme_breadcrumb($variables) {
   if (!empty($breadcrumb)) {
     $output = '<h2 class="element-invisible">' . t('You are here') . '</h2>';
     $output .= '<ul class="breadcrumb">';
+    $num_crumbs = count($breadcrumb);
+    $curr = 0;
     foreach($breadcrumb as $value) {
-      $output .= '<li>' . $value . ' <span class="divider icon-angle-right"></span></li>';
+      if (++$curr === $num_crumbs) {
+        // last one
+        $output .= '<li class="active">' . $value . '</li>';
+      }
+      else {
+        $output .= '<li>' . $value . ' <span class="divider icon-angle-right"></span></li>';
+      }
     }
-    $output .= '<li class="active">' . drupal_get_title() . '</span>';
     $output .= '</ul>';
   }
   return $output;
