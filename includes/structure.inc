@@ -13,13 +13,13 @@ function winacc_theme_breadcrumb($variables) {
   echo 'here';
   $breadcrumb = $variables['breadcrumb'];
   if (!empty($breadcrumb)) {
-    $crumbs = '<ul class="breadcrumbs">';
+    $output = '<ul class="breadcrumb">';
     foreach($breadcrumb as $value) {
-      $output .= '<li>'.$value.'<span class="divider">/</span></li>';
+      $output .= '<li>' . $value . ' <span class="divider">»</span></li>';
     }
-    $crumbs .= '</ul>';
+    $output .= '</ul>';
   }
-  return $crumbs;
+  return $output;
 }
   
 /**
