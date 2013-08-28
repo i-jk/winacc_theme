@@ -3,48 +3,49 @@
  * JS for Radix Starter.
  */
  
-/**
- * Detect Daylight Savings - from: http://stackoverflow.com/a/11888430
- */
-Date.prototype.stdTimezoneOffset = function() {
-    var jan = new Date(this.getFullYear(), 0, 1);
-    var jul = new Date(this.getFullYear(), 6, 1);
-    return Math.min(jan.getTimezoneOffset(), jul.getTimezoneOffset());
-}
-
-Date.prototype.dst = function() {
-    return this.getTimezoneOffset() < this.stdTimezoneOffset();
-}
-
-Date.prototype.yearUnitInterval = function() {
-  var yn = this.getFullYear();
-  var mn = this.getMonth();
-  var dn = this.getDate();
-  var d1 = new Date(yn,0,1,12,0,0); // noon on Jan. 1
-  var d2 = new Date(yn,mn,dn,12,0,0); // noon on input date
-  var ddiff = Math.round((d2-d1)/864e5);
-  // Solar vs calendar offset (tropical year)
-  const tropicalYearOffset = -0.028044764;
-  if ((yn%4 == 0) && (yn%100 != 0 || yn%400 == 0)) {
-    // leap year
-    return (ddiff + 1) / 366;
-  }
-  // non-leap year
-  return (ddiff + 1) / 365;
-}
-
-Date.prototype.dayUnitInterval = function() {
-  var h = this.getHours();
-  // adjust for Daylight Saving Hours
-  if (this.dst()) {
-    h--;
-  }
-  var m = this.getMinutes();
-  var s = this.getSeconds() / 60;
-  return (h * 60 + m + s) / 1440;
-}
 
 (function ($) {
+  
+  
+  /**
+   * Detect Daylight Savings - from: http://stackoverflow.com/a/11888430
+   */
+  Date.prototype.stdTimezoneOffset = function() {
+      var jan = new Date(this.getFullYear(), 0, 1);
+      var jul = new Date(this.getFullYear(), 6, 1);
+      return Math.min(jan.getTimezoneOffset(), jul.getTimezoneOffset());
+  }
+
+  Date.prototype.dst = function() {
+      return this.getTimezoneOffset() < this.stdTimezoneOffset();
+  }
+
+  Date.prototype.yearUnitInterval = function() {
+    var yn = this.getFullYear();
+    var mn = this.getMonth();
+    var dn = this.getDate();
+    var d1 = new Date(yn,0,1,12,0,0); // noon on Jan. 1
+    var d2 = new Date(yn,mn,dn,12,0,0); // noon on input date
+    var ddiff = Math.round((d2-d1)/864e5);
+    // Solar vs calendar offset (tropical year)
+    const tropicalYearOffset = -0.028044764;
+    var daysInYear = 365;
+    if ((yn%4 == 0) && (yn%100 != 0 || yn%400 == 0)) {
+      daysInYear = 366; // leap year
+    }
+    return ((ddiff + 1) / daysInYear) + tropicalYearOffset;
+  }
+
+  Date.prototype.dayUnitInterval = function() {
+    var h = this.getHours();
+    // adjust for Daylight Saving Hours
+    if (this.dst()) {
+      h--;
+    }
+    var m = this.getMinutes();
+    var s = this.getSeconds() / 60;
+    return (h * 60 + m + s) / 1440;
+  }
   
   // on load
   $(document).ready(function() {
