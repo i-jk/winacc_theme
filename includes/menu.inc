@@ -70,15 +70,22 @@ function winacc_theme_links__system_main_menu($variables) {
       }
 
       if (!empty($link['#below'])) {
+        // JK copy this element into the top of the sub-menu
+        $link['#below'] = array($key => $link) + $link['#below'];
+        unset($link['#below'][$key]['#below']);
+        $link['#below'][$key]['#cloned'] = TRUE;
+
         $class[] = 'dropdown';
         $link['#attributes']['data-toggle'] = 'dropdown';
         $link['#attributes']['class'][] = 'dropdown-toggle';
         $link['#href'] = NULL;
       }
+      if (isset($link['#cloned'])) {
+        // make cloned items from above menu bold
+        $class[] = 'parent-cloned';
+      }
       $options['attributes'] = $link['#attributes'];
-
       $output .= '<li' . drupal_attributes(array('class' => $class)) . '>';
-
       if (isset($link['#href'])) {
         // Pass in $link as $options, they share the same keys.
         $output .= l($link['#title'], $link['#href'], array('attributes' => $link['#attributes']));
@@ -97,6 +104,10 @@ function winacc_theme_links__system_main_menu($variables) {
           $span_attributes = drupal_attributes($link['#attributes']);
         }
         $output .= '<span' . $span_attributes . '>' . $link['#title'] . '</span>';
+      }
+      if (isset($link['cloned'])) {
+        // copied from above menu
+        $output .= '</strong>';
       }
 
       if (!empty($link['#below'])) {

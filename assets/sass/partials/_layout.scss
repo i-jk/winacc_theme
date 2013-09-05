@@ -9,21 +9,21 @@
 
 @media (max-width: 767px) {
 
-	div.subnav {
+  div.subnav {
 
-		.nav > li:first-child > a,
-		.nav > li + li > a {
-			border-color: transparent;
+    .nav > li:first-child > a,
+    .nav > li + li > a {
+      border-color: transparent;
 
-			&:hover {
-				background-color: darken($grayLighter, 10%);
-			}
-		}
+      &:hover {
+        background-color: darken($grayLighter, 10%);
+      }
+    }
 
-		.nav > li:last-child > a {
-			border-radius: 0 0 4px 4px;
-		}
-	}
+    .nav > li:last-child > a {
+      border-radius: 0 0 4px 4px;
+    }
+  }
 
   body {
     padding: 0;
@@ -33,15 +33,16 @@
 
 @media (max-width: 979px) {
 
-	.navbar {
+  .navbar {
 
-		.nav-collapse .nav > li > a {
-			color: $white;
+    .nav-collapse .nav > li > a {
+      color: $green;
 
-			&:hover {
-				background-color: $green;
-			}
-		}
+      &:hover {
+        color: $white;
+        background-color: $green;
+      }
+    }
 
-	}
+  }
 }

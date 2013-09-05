@@ -1,3 +1,9 @@
 // Node
 // Styles for Nodes
 // --------------------------------------------------
+
+.field-name-body {
+  @include bg-trans-white(0.85);
+  padding: $paddingMini;
+  @include border-radius($borderRadiusSmall);
+}

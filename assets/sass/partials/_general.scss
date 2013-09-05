@@ -5,24 +5,8 @@
 
 body {
   background: $earth;
-  
-  #logo {
-    padding: $fontSizeLarge;
-    max-width: 250px;
-  }
 }
 
-
-
-#header .container {
-  @include bg-trans-white(0.85);
-  margin-bottom: $fontSizeLarge;
-  @include border-radius(0 0 $baseBorderRadius $baseBorderRadius);
-  position: relative;
-}
-#header .navbar {
-  position: absolute;
-}
 .navbar-main {
   top: 0;
 }
@@ -57,7 +41,7 @@ div#main-wrapper {
 
 
 #content {
-  @include bg-trans-white();
+  @include bg-trans-white(0.9);
   padding: $paddingLarge;
   @include border-radius(0 0 $baseBorderRadius $baseBorderRadius);
 }
@@ -66,15 +50,14 @@ div#main-wrapper {
 
 
 body #footer {
-  border-top: 10px solid mix($green, $earth, 75%);
-  @include background(mix($green, $earth, 50%));
-  border-bottom: 20px solid mix($green, $earth, 25%);
+  @include background($earth);
   margin-top: 0;
-  
+  font-size: $baseFontSize -2;
+
   .container {
     color: $white;
     padding: $paddingLarge;
-    
+
     a {
       color: $zest;
       font-weight: bold;

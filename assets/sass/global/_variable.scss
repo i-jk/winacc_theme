@@ -9,16 +9,16 @@
   COLOUR TWEAKS: http://colorschemedesigner.com/#2.61Tw0nAw0w0
 
   Primary Color:
-  4FA800	4C7E20	336D00	80D335	96D35F
+  4FA800  4C7E20  336D00  80D335  96D35F
 
   Secondary Color A:
-  008247	186140	00542E	30C07F	57C090
+  008247  186140  00542E  30C07F  57C090
 
   Secondary Color B:
-  99B600	788822	637600	C0DA37	C7DA62
+  99B600  788822  637600  C0DA37  C7DA62
 
   Complementary Color:
-  A70035	7D1F3D	6C0023	D33567	D35F84
+  A70035  7D1F3D  6C0023  D33567  D35F84
 
 */
 
@@ -174,12 +174,12 @@ $dropdownLinkBackgroundHover:   $green !default;
 // -------------------------
 // Used for a bird's eye view of components dependent on the z-axis
 // Try to avoid customizing these :)
-$zindexDropdown:          1000 !default;
-$zindexPopover:           1010 !default;
-$zindexTooltip:           1030 !default;
-$zindexFixedNavbar:       1030 !default;
-$zindexModalBackdrop:     1040 !default;
-$zindexModal:             1050 !default;
+$zindexDropdown:          900 !default;
+$zindexPopover:           910 !default;
+$zindexTooltip:           930 !default;
+$zindexFixedNavbar:       930 !default;
+$zindexModalBackdrop:     940 !default;
+$zindexModal:             950 !default;
 
 
 // Sprite icons path

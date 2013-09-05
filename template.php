@@ -13,13 +13,16 @@ require_once $theme_path . '/includes/node.inc';
 
 
 /**
- * Implements hook_css_alter().
+ * Implements hook_js_alter().
  */
 function winacc_theme_js_alter(&$js) {
   // Unset some panopoly css.
   $radix_path = drupal_get_path('theme', 'radix');
   if (isset($js[$radix_path . '/assets/javascripts/radix-script.js'])) {
     unset($js[$radix_path . '/assets/javascripts/radix-script.js']);
+  }
+  if (isset($js['http://netdna.bootstrapcdn.com/twitter-bootstrap/2.3.1/js/bootstrap.min.js'])) {
+    unset($js['http://netdna.bootstrapcdn.com/twitter-bootstrap/2.3.1/js/bootstrap.min.js']);
   }
 }
 
@@ -30,7 +33,7 @@ function winacc_theme_theme($existing, $type, $theme, $path) {
   return array(
     'menu_local_actions' => array(
       'variables' => array('menu_actions' => NULL, 'attributes' => NULL),
-      'file' => 'includes/theme.inc',
+      'file' => 'includes/menu.inc',
     ),
   );
 }
@@ -45,7 +48,7 @@ function winacc_theme_process_page(&$variables) {
   if (module_exists('color')) {
     _color_page_alter($variables);
   }
-  
+
   // Define variables to theme local actions as a dropdown.
   $dropdown_attributes = array(
     'container' => array(
@@ -72,7 +75,7 @@ function winacc_theme_process_page(&$variables) {
   $main_menu_tree = menu_tree_all_data('main-menu', NULL, 2);
   // Add the rendered output to the $main_menu_expanded variable.
   $variables['main_menu_expanded'] = menu_tree_output($main_menu_tree);
-  
+
   // Get the entire Topic menu tree.
   $topic_menu_tree = array();
   $topic_menu_tree = menu_tree_all_data('menu-topics', NULL, 2);

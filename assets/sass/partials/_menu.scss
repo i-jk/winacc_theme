@@ -7,29 +7,40 @@
 
 .page-header {
   border-bottom: none;
-  
+
 }
 
 
 // NAVBAR
 // --------------------------------------------------
 
+body #header #navigation {
+  margin-top: 0;
+}
 .navbar {
+  border-bottom: 3px solid $green;
   margin: 0;
 
   .brand {
+    float: right;
     text-shadow: none;
-    @include bg-trans-white(0.85);
-    max-width: 250px;
+    margin: 20px;
+    padding: 0;
 
     &:hover {
       color: $linkColorHover;
     }
+
+    #logo {
+      height: 75px;
+      width: 186px;
+    }
   }
 
   .navbar-inner {
+    @include border-radius(0);
     @include box-shadow(none);
-    background: transparent;
+    background: $white;
     border: none;
   }
 
@@ -40,13 +51,22 @@
     transition: 0.25s;
     font-size: $fontSizeLarge;
     @include bg-trans-white(0.50);
-    @include border-radius($baseBorderRadius);
   }
 
   .nav > .active > a,
   .nav > .active > a:hover,
   .nav > .active > a:focus {
     @include box-shadow(none);
+  }
+
+  li.parent-cloned {
+    font-weight: bold;
+    background: $greenDarker;
+    font-size: $baseFontSize +2;
+
+    a {
+      padding-left: 15px;
+    }
   }
 
   .navbar-search .search-query {
@@ -56,10 +76,11 @@
   }
 
   .btn-navbar {
+    float: left;
     background-image: none;
     @include box-shadow(none);
     background: $greenDark;
-    
+
     &:hover {
       background: $zest;
       color: $black;
@@ -136,14 +157,14 @@ div.subnav {
   .open .dropdown-toggle {
     background-color: $blueDark;
   }
-  
+
   & > li > a {
     @include bg-trans-white(0.50);
     -webkit-transition: 0.25s;
     -moz-transition: 0.25s;
     transition: 0.25s;
-    
-    &:hover, &:focus { 
+
+    &:hover, &:focus {
       background-color: $white;
     }
   }
@@ -202,15 +223,11 @@ div.subnav {
 }
 
 #breadcrumb {
-  @include bg-trans-white(0.85);
-  @include border-radius($baseBorderRadius $baseBorderRadius 0 0);
-  //font-size: $fontSizeMedium;
-  padding: 5px 19px;
-  
+
   .active {
     color: $grayDark;
   }
-  
+
   .divider {
     color: $gray;
   }
@@ -224,4 +241,24 @@ div.subnav {
   padding: 7px 0;
   margin: 0;
   background: none;
+}
+
+#search-form {
+  padding: 10px;
+}
+
+// -------------
+.contextual-links-region {
+  display: block;
+}
+
+.admin-menu {
+  .navbar {
+    top: 27px;
+  }
+
+}
+
+#admin-menu {
+  z-index: $zindexFixedNavbar + 3
 }
