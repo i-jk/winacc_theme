@@ -6,7 +6,9 @@
 
 // FORMS
 // --------------------------------------------------
-
+select[multiple] {
+  height: 180px;
+}
 textarea,
 input[type="text"],
 input[type="password"],

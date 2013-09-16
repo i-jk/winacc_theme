@@ -49,8 +49,10 @@ body #header #navigation {
     -webkit-transition: 0.25s;
     -moz-transition: 0.25s;
     transition: 0.25s;
-    font-size: $fontSizeLarge;
-    @include bg-trans-white(0.50);
+    font-size: $baseFontSize;
+    font-weight: bold;
+    padding: 10px;
+    margin-top: 10px;
   }
 
   .nav > .active > a,
@@ -62,7 +64,7 @@ body #header #navigation {
   li.parent-cloned {
     font-weight: bold;
     background: $greenDarker;
-    font-size: $baseFontSize +2;
+    font-size: $baseFontSize + 1;
 
     a {
       padding-left: 15px;

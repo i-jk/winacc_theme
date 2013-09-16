@@ -6,7 +6,7 @@
 
 /**
  * Implements theme_breadcrumb().
- * 
+ *
  * Put Breadcrumbs in a ul li structure
  */
 function winacc_theme_breadcrumb($variables) {
@@ -29,7 +29,7 @@ function winacc_theme_breadcrumb($variables) {
   }
   return $output;
 }
-  
+
 /**
  * Implements hook_preprocess_views_view_table().
  */
@@ -41,7 +41,7 @@ function winacc_theme_preprocess_views_view_table(&$variables) {
     $rows[] = $row;
   }
   $variables['row_classes'] = $rows;
-  
+
   // Add in bootstrap classes
   $variables['classes_array'] = array('table', 'table-striped', 'table-bordered', 'table-hover');
 }
@@ -55,7 +55,6 @@ function winacc_theme_menu_local_tasks(&$variables) {
   $output = '';
 
   if (!empty($variables['primary'])) {
-    $variables['primary']['#prefix'] = '<h2 class="element-invisible">' . t('Primary tabs') . '</h2>';
     $variables['primary']['#prefix'] = '<ul class="nav nav-pills">';
     $variables['primary']['#suffix'] = '</ul>';
     if (!empty($variables['secondary'])) {

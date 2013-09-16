@@ -29,7 +29,7 @@ $grayDarker:            #222 !default;
 $grayDark:              #7B7C70 !default;
 $gray:                  #9C9E8D !default;
 $grayLight:             #B8BBA7 !default;
-$grayLighter:           #EFF0E4 !default;
+$grayLighter:           #f0f0f0 !default;
 $white:                 #fff !default;
 
 
@@ -205,7 +205,7 @@ $horizontalComponentOffset:       180px !default;
 
 // Wells
 // -------------------------
-$wellBackground:                  $grayLighter !default;
+$wellBackground:                  $white !default;
 
 
 // Navbar

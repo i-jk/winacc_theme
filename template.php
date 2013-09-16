@@ -66,7 +66,13 @@ function winacc_theme_process_page(&$variables) {
 
   // Add local actions as the last item in the local tasks.
   if (!empty($variables['action_links'])) {
-    $variables['tabs']['#primary'][]['#markup'] = theme('menu_local_actions', array('menu_actions' => $variables['action_links'], 'attributes' => $dropdown_attributes));
+    if (!isset($variables['tabs']['#primary'])) {
+      // No tabs set, and they've already been proceessed by now, so add
+      // ul wrapper that would otherwise be missed.
+      $variables['tabs']['primary']['#prefix'] = '<ul class="nav nav-pills">';
+      $variables['tabs']['primary']['#suffix'] = '</ul>';
+    }
+    $variables['tabs']['primary'][]['#markup'] = theme('menu_local_actions', array('menu_actions' => $variables['action_links'], 'attributes' => $dropdown_attributes));
     $variables['action_links'] = FALSE;
   }
 

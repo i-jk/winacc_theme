@@ -133,6 +133,7 @@
             </div>
         </div>
         <?php print render($page['content']); ?>
+        <div class="clearfix"></div>
       </div>
     </div>
   </div> <!-- /#main-wrapper -->
