@@ -2,8 +2,39 @@
 // Styles for Nodes
 // --------------------------------------------------
 
+// GENERAL
+// --------------------------------------------------
+// Submitted
+div.submitted,
+.views-field.views-field-created {
+  color: #351706;
+  font-style: italic;
+  padding: $paddingMiniLong;
+}
+
+// Body
+.views-field-body,
 .field-name-body {
-  @include bg-trans-white(0.85);
-  padding: $paddingMini;
+  background: $white;
+  padding: $paddingMiniLong;
   @include border-radius($borderRadiusSmall);
+  max-width: 900px;
+}
+
+// Tags
+.field-name-field-tags {
+  margin: 10px 5px;
+}
+
+// FAQs
+// --------------------------------------------------
+.faq-viewed {
+  @include bg-trans-white(0.618);
+  margin-bottom: 20px;
+}
+
+.faq-question {
+  font-weight: bold;
+  font-size: 1.1em;
+  padding-bottom: 5px;
 }

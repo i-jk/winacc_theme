@@ -25,7 +25,7 @@
 // Grays
 // -------------------------
 $black:                 #000 !default;
-$grayDarker:            #222 !default;
+$grayDarker:            #333 !default;
 $grayDark:              #7B7C70 !default;
 $gray:                  #9C9E8D !default;
 $grayLight:             #B8BBA7 !default;
@@ -60,6 +60,11 @@ $skyBlue-2:             #adddff;
 $skyBlue-3:             #dbf0ff;
 $skyBlue-4:             #EDF6FC;
 
+// Accents
+$accentLight:           #D33567;
+$accent:                #A70035;
+$accentDark:            #7D1F3D;
+
 
 // Scaffolding
 // -------------------------
@@ -69,13 +74,13 @@ $textColor:             $greenDarker !default;
 
 // Links
 // -------------------------
-$linkColor:             #A70035;
-$linkColorHover:        lighten($linkColor, 5%) !default;
+$linkColor:             $accent;
+$linkColorHover:        $accentLight;
 
 
 // Typography
 // -------------------------
-$sansFontFamily:        "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+$sansFontFamily:        "Calibri", "Asap", "Helvetica Neue", Helvetica, Arial, sans-serif;
 $serifFontFamily:       Georgia, "Times New Roman", Times, serif !default;
 $monoFontFamily:        Monaco, Menlo, Consolas, "Courier New", monospace !default;
 
@@ -102,6 +107,7 @@ $fontSizeMini:          $baseFontSize * 0.75 !default; // ~11px
 $paddingLarge:          18px 36px !default; // 44px
 $paddingSmall:          2px 12px !default;  // 26px
 $paddingMini:           1px 8px !default;   // 24px
+$paddingMiniLong:       5px 8px !default;   // 24px
 
 $baseBorderRadius:      5px !default;
 $borderRadiusLarge:     8px !default;

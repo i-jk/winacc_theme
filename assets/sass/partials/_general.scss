@@ -15,13 +15,17 @@ body {
 }
 
 
-
 div#primary-page {
   background-color: $skyBlue-2; // Old browsers
 }
 
 div#main-wrapper {
   margin-bottom: 50px;
+}
+
+div#main,
+div#navigation {
+  outline: 7px solid rgba(255, 255, 255, 0.382);
 }
 
 #grass-bright, #grass-dark {
@@ -41,9 +45,13 @@ div#main-wrapper {
 
 
 #content {
-  @include bg-trans-white(0.9);
+  @include bg-trans-white(0.91);
   padding: $paddingLarge;
-  @include border-radius(0 0 $baseBorderRadius $baseBorderRadius);
+  @include border-radius(0);
+
+  .page-header {
+    margin-bottom: 8px;
+  }
 }
 
 

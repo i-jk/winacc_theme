@@ -26,19 +26,18 @@ input[type="tel"],
 input[type="color"],
 .uneditable-input {
   padding: 7px 6px;
-  border: 2px solid #dce4ec;
+  border: 2px solid $greenLighter;
   margin: 0;
   text-indent: 1px;
   @include border-radius(6px);
   @include box-shadow(none);
-  @include placeholder(#acb6c0);
+  @include placeholder($grayLight);
 
   &:focus {
-    border-color: $zest;
+    border-color: $blue;
     @include box-shadow(none);
 
   }
-
 }
 
 .control-group.error,
@@ -105,3 +104,7 @@ legend {
   @include border-radius($baseBorderRadius);
   padding: 10px;
 }
+
+
+// OVERRIDES
+#edit-field-tags-und { width: 95%; }

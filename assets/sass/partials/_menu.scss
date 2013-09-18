@@ -7,7 +7,6 @@
 
 .page-header {
   border-bottom: none;
-
 }
 
 
@@ -18,8 +17,7 @@ body #header #navigation {
   margin-top: 0;
 }
 .navbar {
-  border-bottom: 3px solid $green;
-  margin: 0;
+  margin: 0 0 5px 0;
 
   .brand {
     float: right;
@@ -37,6 +35,12 @@ body #header #navigation {
     }
   }
 
+  .navbar-main {
+    top: 0;
+  }
+  .navbar-topics {
+    bottom: 0;
+  }
   .navbar-inner {
     @include border-radius(0);
     @include box-shadow(none);
@@ -59,6 +63,7 @@ body #header #navigation {
   .nav > .active > a:hover,
   .nav > .active > a:focus {
     @include box-shadow(none);
+    color: $white;
   }
 
   li.parent-cloned {
@@ -202,6 +207,16 @@ div.subnav {
   }
 }
 
+.nav-stacked {
+  background: white;
+
+  & > .active > a,
+  & > .active > a:hover,
+  .nav-header {
+    color: $white;
+  }
+}
+
 .pager {
 
   li > a,
@@ -258,7 +273,6 @@ div.subnav {
   .navbar {
     top: 27px;
   }
-
 }
 
 #admin-menu {

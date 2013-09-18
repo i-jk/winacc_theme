@@ -18,6 +18,18 @@
 
 }
 
+@font-face {
+    font-family: 'BorisBlackBloxxRegular';
+    src: url('../fonts/boris-black-bloxx/borisblackbloxx-webfont.eot');
+    src: url('../fonts/boris-black-bloxx/borisblackbloxx-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/boris-black-bloxx/borisblackbloxx-webfont.woff') format('woff'),
+         url('../fonts/boris-black-bloxx/borisblackbloxx-webfont.ttf') format('truetype'),
+         url('../fonts/boris-black-bloxx/borisblackbloxx-webfont.svg#BorisBlackBloxxRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
 p {
   margin-bottom: 1em;
 }
@@ -31,6 +43,7 @@ h1, h2, h3, h4, h5, h6 {
   font-family: $headingsFontFamily;
   font-weight: normal !important;
   line-height: $baseLineHeight;
+  letter-spacing: 1px;
   color: $green;
   text-rendering: optimizelegibility; // Fix the character spacing for headings
   small {
@@ -41,7 +54,7 @@ h1, h2, h3, h4, h5, h6 {
 
 h1,
 h2,
-h3 { line-height: $baseLineHeight * 2; }
+h3 { line-height: $baseLineHeight * 2; letter-spacing: 0px; }
 
 h1 { font-size: $headingsBaseFontSize; } // ~34px
 h2 { font-size: $headingsBaseFontSize * 0.90; } // ~31px
@@ -54,6 +67,12 @@ h1 small { font-size: $headingsBaseFontSize * 0.75; } // ~26px
 h2 small { font-size: $headingsBaseFontSize * 0.66; } // ~22px
 h3 small { font-size: $headingsBaseFontSize * 0.50; } // ~17px
 h4 small { font-size: $headingsBaseFontSize * 0.40; } // ~14px
+
+
+h1 strong, h2 strong, h3 strong, h4 strong, h5 strong, h6 strong {
+  font-weight: normal;
+  color: $greenDark;
+}
 
 blockquote {
   border-left-color: $blue;

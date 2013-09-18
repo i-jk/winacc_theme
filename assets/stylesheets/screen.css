@@ -309,7 +309,7 @@ textarea {
 }
 body {
   margin: 0;
-  font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Calibri", "Asap", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 15px;
   line-height: 21px;
   color: #043022;
@@ -323,7 +323,7 @@ a {
 
 a:hover,
 a:focus {
-  color: #c1003d;
+  color: #d33567;
   text-decoration: underline;
 }
 
@@ -1072,7 +1072,7 @@ input,
 button,
 select,
 textarea {
-  font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Calibri", "Asap", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 label {
@@ -4085,27 +4085,27 @@ input[type="button"].btn-block {
 .btn-inverse {
   color: white;
   text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
-  background-color: #2b2b2b;
-  background-image: -moz-linear-gradient(top, #222222, #3c3c3c);
-  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#222222), to(#3c3c3c));
-  background-image: -webkit-linear-gradient(top, #222222, #3c3c3c);
-  background-image: -o-linear-gradient(top, #222222, #3c3c3c);
-  background-image: linear-gradient(to bottom, #222222, #3c3c3c);
+  background-color: #3c3c3c;
+  background-image: -moz-linear-gradient(top, #333333, #4d4d4d);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#333333), to(#4d4d4d));
+  background-image: -webkit-linear-gradient(top, #333333, #4d4d4d);
+  background-image: -o-linear-gradient(top, #333333, #4d4d4d);
+  background-image: linear-gradient(to bottom, #333333, #4d4d4d);
   background-repeat: repeat-x;
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#1f1f1f', endColorstr='#393939', GradientType=0);
-  border-color: #3c3c3c #3c3c3c #151515;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#303030', endColorstr='#4a4a4a', GradientType=0);
+  border-color: #4d4d4d #4d4d4d #262626;
   border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
-  *background-color: #3c3c3c;
+  *background-color: #4d4d4d;
   /* Darken IE7 buttons by default so they stand out more given they won't have borders */
   filter: progid:DXImageTransform.Microsoft.gradient(enabled=false);
 }
 .btn-inverse:hover, .btn-inverse:focus, .btn-inverse:active, .btn-inverse.active, .btn-inverse.disabled, .btn-inverse[disabled] {
   color: white;
-  background-color: #3c3c3c;
-  *background-color: #2f2f2f;
+  background-color: #4d4d4d;
+  *background-color: #404040;
 }
 .btn-inverse:active, .btn-inverse.active {
-  background-color: #222222 \9;
+  background-color: #333333 \9;
 }
 
 button.btn,
@@ -4155,7 +4155,7 @@ input[type="submit"].btn.btn-mini {
 
 .btn-link:hover,
 .btn-link:focus {
-  color: #c1003d;
+  color: #d33567;
   text-decoration: underline;
   background-color: transparent;
 }
@@ -4330,7 +4330,7 @@ input[type="submit"].btn.btn-mini {
   background-color: #5fb9e3;
 }
 .btn-group.open .btn-inverse.dropdown-toggle {
-  background-color: #3c3c3c;
+  background-color: #4d4d4d;
 }
 
 .btn .caret {
@@ -4711,8 +4711,8 @@ input[type="submit"].btn.btn-mini {
 
 .nav .dropdown-toggle:hover .caret,
 .nav .dropdown-toggle:focus .caret {
-  border-top-color: #c1003d;
-  border-bottom-color: #c1003d;
+  border-top-color: #d33567;
+  border-bottom-color: #d33567;
 }
 
 /* move down carets for tabs */
@@ -4952,7 +4952,7 @@ input[type="submit"].btn.btn-mini {
 .navbar-text {
   margin-bottom: 0;
   line-height: 50px;
-  color: #222222;
+  color: #333333;
 }
 
 .navbar-link {
@@ -5030,7 +5030,7 @@ input[type="submit"].btn.btn-mini {
 .navbar-search .search-query {
   margin-bottom: 0;
   padding: 4px 14px;
-  font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Calibri", "Asap", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 13px;
   font-weight: normal;
   line-height: 1;
@@ -6447,7 +6447,7 @@ a.label:hover, a.label:focus, a.badge:hover, a.badge:focus {
   line-height: 30px;
   color: white;
   text-align: center;
-  background: #222222;
+  background: #333333;
   border: 3px solid white;
   -webkit-border-radius: 23px;
   -moz-border-radius: 23px;
@@ -8548,7 +8548,7 @@ html.js input.throbbing {
   }
 
   .nav-collapse .nav .nav-header {
-    color: #222222;
+    color: #333333;
     text-shadow: none;
   }
 
@@ -8860,6 +8860,11 @@ div#main-wrapper {
   margin-bottom: 50px;
 }
 
+div#main,
+div#navigation {
+  outline: 7px solid rgba(255, 255, 255, 0.382);
+}
+
 #grass-bright, #grass-dark {
   height: 200px;
   margin-top: 0;
@@ -8877,11 +8882,14 @@ div#main-wrapper {
 
 #content {
   background: white;
-  background: rgba(255, 255, 255, 0.9);
+  background: rgba(255, 255, 255, 0.91);
   padding: 11px 19px;
-  -webkit-border-radius: 0 0 5px 5px;
-  -moz-border-radius: 0 0 5px 5px;
-  border-radius: 0 0 5px 5px;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+}
+#content .page-header {
+  margin-bottom: 8px;
 }
 
 body #footer {
@@ -8966,6 +8974,16 @@ body #footer .container a {
   -moz-border-radius: 8px;
   border-radius: 8px;
   text-shadow: none;
+}
+
+#main-wrapper .messages {
+  border: 3px solid;
+  font-weight: bold;
+  margin: 0;
+  padding: 10px 15px;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
 }
 
 .well {
@@ -9132,8 +9150,7 @@ body #header #navigation {
 }
 
 .navbar {
-  border-bottom: 3px solid #4fa800;
-  margin: 0;
+  margin: 0 0 5px 0;
 }
 .navbar .brand {
   float: right;
@@ -9142,11 +9159,17 @@ body #header #navigation {
   padding: 0;
 }
 .navbar .brand:hover {
-  color: #c1003d;
+  color: #d33567;
 }
 .navbar .brand #logo {
   height: 75px;
   width: 186px;
+}
+.navbar .navbar-main {
+  top: 0;
+}
+.navbar .navbar-topics {
+  bottom: 0;
 }
 .navbar .navbar-inner {
   -webkit-border-radius: 0;
@@ -9174,6 +9197,7 @@ body #header #navigation {
   -webkit-box-shadow: none;
   -moz-box-shadow: none;
   box-shadow: none;
+  color: white;
 }
 .navbar li.parent-cloned {
   font-weight: bold;
@@ -9294,6 +9318,14 @@ div.subnav .nav > .active > a:hover {
   color: white;
 }
 
+.nav-stacked {
+  background: white;
+}
+.nav-stacked > .active > a, .nav-stacked > .active > a:hover,
+.nav-stacked .nav-header {
+  color: white;
+}
+
 .pager li > a,
 .pager li > span {
   background-color: #4fa800;
@@ -9344,6 +9376,15 @@ div.subnav .nav > .active > a:hover {
   z-index: 933;
 }
 
+.views-row {
+  margin-bottom: 20px;
+}
+
+.item-list .pager li {
+  padding: 0.25em;
+  margin: 0;
+}
+
 select[multiple] {
   height: 180px;
 }
@@ -9365,7 +9406,7 @@ input[type="tel"],
 input[type="color"],
 .uneditable-input {
   padding: 7px 6px;
-  border: 2px solid #dce4ec;
+  border: 2px solid #caebac;
   margin: 0;
   text-indent: 1px;
   -webkit-border-radius: 6px;
@@ -9391,7 +9432,7 @@ input[type="search"]:-moz-placeholder,
 input[type="tel"]:-moz-placeholder,
 input[type="color"]:-moz-placeholder,
 .uneditable-input:-moz-placeholder {
-  color: #acb6c0;
+  color: #b8bba7;
 }
 textarea:-ms-input-placeholder,
 input[type="text"]:-ms-input-placeholder,
@@ -9409,7 +9450,7 @@ input[type="search"]:-ms-input-placeholder,
 input[type="tel"]:-ms-input-placeholder,
 input[type="color"]:-ms-input-placeholder,
 .uneditable-input:-ms-input-placeholder {
-  color: #acb6c0;
+  color: #b8bba7;
 }
 textarea::-webkit-input-placeholder,
 input[type="text"]::-webkit-input-placeholder,
@@ -9427,7 +9468,7 @@ input[type="search"]::-webkit-input-placeholder,
 input[type="tel"]::-webkit-input-placeholder,
 input[type="color"]::-webkit-input-placeholder,
 .uneditable-input::-webkit-input-placeholder {
-  color: #acb6c0;
+  color: #b8bba7;
 }
 textarea:focus,
 input[type="text"]:focus,
@@ -9445,7 +9486,7 @@ input[type="search"]:focus,
 input[type="tel"]:focus,
 input[type="color"]:focus,
 .uneditable-input:focus {
-  border-color: #c7da62;
+  border-color: #34a6db;
   -webkit-box-shadow: none;
   -moz-box-shadow: none;
   box-shadow: none;
@@ -9529,13 +9570,49 @@ legend {
   padding: 10px;
 }
 
+#edit-field-tags-und {
+  width: 95%;
+}
+
+div.submitted,
+.views-field.views-field-created {
+  color: #351706;
+  font-style: italic;
+  padding: 5px 8px;
+}
+
+.views-field-body,
 .field-name-body {
   background: white;
-  background: rgba(255, 255, 255, 0.85);
-  padding: 0 6px;
+  padding: 5px 8px;
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
   border-radius: 3px;
+  max-width: 900px;
+}
+
+.field-name-field-tags {
+  margin: 10px 5px;
+}
+
+.faq-viewed {
+  background: white;
+  background: rgba(255, 255, 255, 0.618);
+  margin-bottom: 20px;
+}
+
+.faq-question {
+  font-weight: bold;
+  font-size: 1.1em;
+  padding-bottom: 5px;
+}
+
+@font-face {
+  font-family: 'BorisBlackBloxxRegular';
+  src: url("../fonts/boris-black-bloxx/borisblackbloxx-webfont.eot");
+  src: url("../fonts/boris-black-bloxx/borisblackbloxx-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/boris-black-bloxx/borisblackbloxx-webfont.woff") format("woff"), url("../fonts/boris-black-bloxx/borisblackbloxx-webfont.ttf") format("truetype"), url("../fonts/boris-black-bloxx/borisblackbloxx-webfont.svg#BorisBlackBloxxRegular") format("svg");
+  font-weight: normal;
+  font-style: normal;
 }
 
 @font-face {
@@ -9555,6 +9632,7 @@ h1, h2, h3, h4, h5, h6 {
   font-family: "BorisBlackBloxxRegular", "Helvetica Neue", "Arial Black", Verdana, sans-serif;
   font-weight: normal !important;
   line-height: 21px;
+  letter-spacing: 1px;
   color: #4fa800;
   text-rendering: optimizelegibility;
 }
@@ -9567,6 +9645,7 @@ h1,
 h2,
 h3 {
   line-height: 42px;
+  letter-spacing: 0px;
 }
 
 h1 {
@@ -9607,6 +9686,11 @@ h3 small {
 
 h4 small {
   font-size: 13.6px;
+}
+
+h1 strong, h2 strong, h3 strong, h4 strong, h5 strong, h6 strong {
+  font-weight: normal;
+  color: #005c40;
 }
 
 blockquote {

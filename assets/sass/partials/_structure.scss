@@ -88,6 +88,17 @@
 }
 
 
+// MESSAGES
+// --------------------------------------------------
+#main-wrapper .messages {
+  border: 3px solid;
+  font-weight: bold;
+  margin: 0;
+  padding: 10px 15px;
+  @include border-radius(0);
+}
+
+
 // MISC
 // --------------------------------------------------
 

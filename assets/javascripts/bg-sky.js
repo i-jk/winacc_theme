@@ -49,78 +49,63 @@
     }
     var m = d.getMinutes();
     var s = d.getSeconds() / 60;
-    return (h * 60 + m + s) / 1440;
+    return ((h * 60 + m + s) / 1440);
   }
 
-  // on load
-  $(document).ready(function() {
-    // Bail if no support for opacity...
-    // @see http://caniuse.com/css-opacity: 87% browsers OK in August 2013.
-    if (!Modernizr.opacity) return;
 
-    // OK, set background ASAP.
-    setBackground(getColours(new Date()));
+  function setBackground(c) {
+    // Set sky colours.
+    if (Modernizr.cssgradients) {
+      // Good browser
+      $('#primary-page')
+        // Webkit new
+        .css('background-image', '-webkit-linear-gradient(top, ' + c[0] + ' 0%, ' + c[1] + ' 40%, ' + c[2] + ' 70%, ' + c[3] + ' 100%)')
+      ;
+    }
+    else {
+      // old browsers only get single colour bg change
+      $('#primary-page').css('background-color', c[1]);
+    }
 
-    // Begin timed bg change.
-    var iJK_timer = setInterval(function() {
-      var c = getColours(new Date());
-      // console.log(c);
-      setBackground(c);
-
-      /*
-      .css('background-image','-webkit-gradient(linear, left top, right bottom, color-stop(0.1, #FFFFFF), color-stop(0.99, #'+event.backgroundColor+'))')
-      .css('background-image','-moz-linear-gradient(top left, #FFFFFF 0%, #'+event.backgroundColor+' 100%)')
-      .css('background-image','-o-linear-gradient(top left, #FFFFFF 0%, #'+event.backgroundColor+' 100%)')
-      .css('background-image','linear-gradient(top left, #FFFFFF 0%, #'+event.backgroundColor+' 100%)')
-      */
-    }, 15000);
-  });
-
-function setBackground(c) {
-  // Set sky colours.
-  if (Modernizr.cssgradients) {
-    // Good browser
-    $('#primary-page')
-      // Webkit new
-      .css('background-image', '-webkit-linear-gradient(top, ' + c[0] + ' 0%, ' + c[1] + ' 40%, ' + c[2] + ' 70%, ' + c[3] + ' 100%)')
-    ;
-  }
-  else {
-    // old browsers only get single colour bg change
-    $('#primary-page').css('background-color', c[1]);
+    // Set grass
+    $('#grass-bright').css('opacity', c[4]);
+    $('#grass-dark').css('opacity', 1 - c[4]);
   }
 
-  // Set grass
-  $('#grass-bright').css('opacity', c[4]);
-  $('#grass-dark').css('opacity', 1 - c[4]);
-}
-
-function baisInt(a, b, weight) {
-    return Math.round((a * (1 - weight)) + (b * weight));
-}
-function biasFloat(a, b, weight) {
-    return (a * (1 - weight)) + (b * weight);
-}
+  function baisInt(a, b, weight) {
+      return Math.round((a * (1 - weight)) + (b * weight));
+  }
+  function biasFloat(a, b, weight) {
+      return (a * (1 - weight)) + (b * weight);
+  }
 
 
-/**
- * Returns current 'brightness' of sun, 0 to 4
- * d is a Date object.
- *
- * @todo abstract out the number (4) of steps that map to the colours
- */
-function getSolarPosition(d) {
-  // dayUnitInterval is a value 0-1 from Date.dayUnitInterval().
-  // Convert yearUnitInterval into hours change -- for Winchester, UK
-  // there's ~8 hours diff winter->summer (Equinox having 12h days)
-  var hoursChange = ((yearUnitInterval(d) * 8) - 4);
-  return Math.abs(Math.sin(1 * Math.PI * (dayUnitInterval(d) + .5)) + hoursChange) * 4;
-}
+  /**
+   * Returns current 'brightness' of sun, 0 to 4
+   * d is a Date object.
+   *
+   * @todo abstract out the number (4) of steps that map to the colours
+   */
+  function getSolarPosition(d) {
+    const colorSceneCount = 4;
+    const timeSpeed = 1;//1440;
+    // Convert yearUnitInterval into hours change -- for Winchester, UK
+    // there's ~4 hours diff winter/summer from Equinox with 12h days.
+    var dayPos = 1 - Math.sin(Math.PI * timeSpeed * (1 - dayUnitInterval(d)));
+    var yearPos = 1 - Math.cos(2 * Math.PI * yearUnitInterval(d) + Math.PI);
+    var sunPos = dayPos + (yearPos / 24 * 4);
 
-/**
- * Gets the CSS3 colour gradient rgb stops based on Date d.
- */
-function getColours(d) {
+    // Map sun pos to colour scene position.
+    sunPos =  sunPos * colorSceneCount;
+    if (sunPos > colorSceneCount) { return colorSceneCount; }
+    if (sunPos < 0) { return 0; }
+    return sunPos;
+  }
+
+  /**
+   * Gets the CSS3 colour gradient rgb stops based on Date d.
+   */
+  function getColours(d) {
     var pos = getSolarPosition(d);
     var first = Math.floor(pos);
     var second = Math.ceil(pos)
@@ -150,58 +135,93 @@ function getColours(d) {
       biasFloat(coloursTop[first][3], coloursTop[second][3], bias)
     ];
   return colours;
-}
+  }
 
 
 
 
-/**
- * Colors arrays for background sky gradient...
- *
- * Each variable is for a point on the gradient:
- *  Top = 0%
- *  High = 50%
- *  Low = 80%
- *  Horizon = 100%
- *
- * Each set of values is Red, Green, Blue for each of the times outlined below.
- * The forth value in coloursTop is the opacity of the grass layers.
- *
- * Times/index:
- *  0 = midday
- *  1 = 10:04:11, 13:55:50
- *  2 = 08:00:00, 16:00:00
- *  3 = 05:31:16, 18:28:44
- *  4 = midnight
- */
-var coloursTop = [
-  [150, 209, 255, 1.0],
-  [ 98, 186, 255, 0.75],
-  [ 74, 136, 185, 0.4],
-  [  2,  27,  48, 0.1],
-  [  0,   5,  14, 0.0]
-];
-var coloursHigh = [
-  [173, 221, 255],
-  [ 98, 186, 255],
-  [ 97, 167, 216],
-  [  5,  38,  60],
-  [  0,  15,  37]
-];
-var coloursLow = [
-  [219, 240, 255],
-  [142, 208, 255],
-  [194, 189, 152],
-  [ 43,  60,  73],
-  [  8,  36,  66]
-];
-var coloursHorizon = [
-  [237, 246, 252],
-  [199, 231, 255],
-  [255, 139,  32],
-  [122,  94,  83],
-  [ 39,  60,  77]
-];
+  /**
+   * Colors arrays for background sky gradient...
+   *
+   * Each variable is for a point on the gradient:
+   *  Top = 0%
+   *  High = 50%
+   *  Low = 80%
+   *  Horizon = 100%
+   *
+   * Each set of values is Red, Green, Blue for each of the times outlined below.
+   * The forth value in coloursTop is the opacity of the grass layers.
+   *
+   * Times/index:
+   *  0 = midday
+   *  1 = 10:04:11, 13:55:50
+   *  2 = 08:00:00, 16:00:00
+   *  3 = 05:31:16, 18:28:44
+   *  4 = midnight
+   */
+  var coloursTop = [
+    [150, 209, 255, 1.0],
+    [ 98, 186, 255, 0.75],
+    [ 74, 136, 185, 0.4],
+    [  2,  27,  48, 0.1],
+    [  0,   5,  14, 0.0]
+  ];
+  var coloursHigh = [
+    [173, 221, 255],
+    [ 98, 186, 255],
+    [ 97, 167, 216],
+    [  5,  38,  60],
+    [  0,  15,  37]
+  ];
+  var coloursLow = [
+    [219, 240, 255],
+    [142, 208, 255],
+    [194, 189, 152],
+    [ 43,  60,  73],
+    [  8,  36,  66]
+  ];
+  var coloursHorizon = [
+    [237, 246, 252],
+    [199, 231, 255],
+    [233, 128,  31],
+    [100,  91,  72],
+    [ 39,  60,  77]
+  ];
 
+  // on load
+  $(document).ready(function() {
+    // Bail if no support for opacity...
+    // @see http://caniuse.com/css-opacity: 87% browsers OK in August 2013.
+    if (!Modernizr.opacity) return;
+
+    // OK, set background ASAP.
+    var d = new Date();
+    setBackground(getColours(d));
+
+    // Begin timed bg change.
+    var iJK_timer = setInterval(function() {
+      d = new Date();
+      var c = getColours(d);
+      // console.log(c);
+      setBackground(c);
+
+      /*
+      .css('background-image','-webkit-gradient(linear, left top, right bottom, color-stop(0.1, #FFFFFF), color-stop(0.99, #'+event.backgroundColor+'))')
+      .css('background-image','-moz-linear-gradient(top left, #FFFFFF 0%, #'+event.backgroundColor+' 100%)')
+      .css('background-image','-o-linear-gradient(top left, #FFFFFF 0%, #'+event.backgroundColor+' 100%)')
+      .css('background-image','linear-gradient(top left, #FFFFFF 0%, #'+event.backgroundColor+' 100%)')
+      */
+    //}, 1000);
+    }, 15000);
+/*
+var d = new Date();
+      d.setMonth(6);
+    for(i = 0; i<=23; i++) {
+
+      d.setHours(i);
+
+      console.log('Hour ' + i +' -- dayPos ' + sunPos );
+    }*/
+  });
 
 })(jQuery);
