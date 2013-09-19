@@ -63,7 +63,7 @@ body #header #navigation {
   .nav > .active > a:hover,
   .nav > .active > a:focus {
     @include box-shadow(none);
-    color: $white;
+    color: $greenDarker;
   }
 
   li.parent-cloned {
