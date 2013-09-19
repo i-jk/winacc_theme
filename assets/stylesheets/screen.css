@@ -8909,6 +8909,10 @@ div#navigation {
   margin-bottom: 8px;
 }
 
+.sidebar .item-list h3 {
+  font-size: 1.33em;
+}
+
 body #footer {
   background: #351706;
   margin-top: 0;
@@ -9176,7 +9180,7 @@ body #header #navigation {
   padding: 0;
 }
 .navbar .brand:hover {
-  color: #a70035;
+  opacity: 0.8;
 }
 .navbar .brand #logo {
   height: 75px;
@@ -9216,12 +9220,14 @@ body #header #navigation {
   color: #043022;
 }
 .navbar li.parent-cloned {
+  background: black;
+  background: rgba(0, 0, 0, 0.5);
   font-weight: bold;
-  background: #043022;
   font-size: 16px;
 }
 .navbar li.parent-cloned a {
   padding-left: 15px;
+  font-weight: bold;
 }
 .navbar .navbar-search .search-query {
   border: none;
@@ -9252,6 +9258,9 @@ body #header #navigation {
 .navbar .topic-menu > li > a:hover,
 .navbar .topic-menu > li > a:focus {
   color: white;
+  background: #7d1f3d;
+}
+.navbar .topic-menu .dropdown-menu {
   background: #7d1f3d;
 }
 

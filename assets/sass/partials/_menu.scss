@@ -28,7 +28,7 @@ body #header #navigation {
     padding: 0;
 
     &:hover {
-      color: $linkColorHover;
+      opacity: 0.8;
     }
 
     #logo {
@@ -68,12 +68,13 @@ body #header #navigation {
   }
 
   li.parent-cloned {
+    @include bg-trans-black(0.5);
     font-weight: bold;
-    background: $greenDarker;
     font-size: $baseFontSize + 1;
 
     a {
       padding-left: 15px;
+      font-weight: bold;
     }
   }
 
@@ -106,6 +107,10 @@ body #header #navigation {
   .topic-menu > li > a:hover,
   .topic-menu > li > a:focus {
     color: $white;
+    background: $accent2Dark;
+  }
+
+  .topic-menu .dropdown-menu {
     background: $accent2Dark;
   }
 }
