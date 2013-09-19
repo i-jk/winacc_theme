@@ -33,16 +33,52 @@
 
 @media (max-width: 979px) {
 
+  .nav-collapse.in {
+    overflow: visible;
+  }
+
   .navbar {
+    .nav-collapse .nav > li {
+      float: left;
+      width: 48%;
 
-    .nav-collapse .nav > li > a {
-      color: $green;
+      & > a {
+        margin: 2px 5px 3px 0;
+        padding: 4px;
 
-      &:hover {
-        color: $white;
-        background-color: $green;
+        &:hover {
+          color: $white;
+          background-color: $green;
+        }
       }
     }
 
   }
+
+}
+
+
+
+@media (min-width: 980px) {
+  .navbar {
+    input.search-query {
+        width: 100px;
+    }
+    .nav > li > a {
+      padding: 10px 8px;
+    }
+  }
+}
+
+@media (min-width: 1200px) {
+
+  .navbar {
+    input.search-query {
+        width: 200px;
+    }
+    .nav > li > a {
+      padding: 10px;
+    }
+  }
+
 }

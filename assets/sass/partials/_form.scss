@@ -96,7 +96,7 @@ legend {
 .form-actions {
   border-top: none;
   @include border-radius($baseBorderRadius);
-  background-color: $zestLight;
+  background-color: $accent;
 }
 
 #content form {

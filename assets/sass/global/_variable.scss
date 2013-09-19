@@ -49,9 +49,6 @@ $orange:                #E4A216;
 $pink:                  #E969C5;
 $purple:                #8950EE;
 
-$zest:                  #C7DA62;
-$zestLight:             #DEE4C1;
-
 // Sky colours
 // -------------------------
 // Day
@@ -61,21 +58,26 @@ $skyBlue-3:             #dbf0ff;
 $skyBlue-4:             #EDF6FC;
 
 // Accents
+$accentDark:            #043022; //#7D1F3D;
+$accent:                #005C40; //#A70035;
 $accentLight:           #D33567;
-$accent:                #A70035;
-$accentDark:            #7D1F3D;
+
+// Accents
+$accent2Dark:            #7D1F3D;
+$accent2:                #A70035;
+$accent2Light:           #C7DA62;
 
 
 // Scaffolding
 // -------------------------
 $bodyBackground:        $green;
-$textColor:             $greenDarker !default;
+$textColor:             $black;
 
 
 // Links
 // -------------------------
 $linkColor:             $accent;
-$linkColorHover:        $accentLight;
+$linkColorHover:        $accent2;
 
 
 // Typography

@@ -7,13 +7,6 @@ body {
   background: $earth;
 }
 
-.navbar-main {
-  top: 0;
-}
-.navbar-topics {
-  bottom: 0;
-}
-
 
 div#primary-page {
   background-color: $skyBlue-2; // Old browsers
@@ -67,7 +60,7 @@ body #footer {
     padding: $paddingLarge;
 
     a {
-      color: $zest;
+      color: $accent2Light;
       font-weight: bold;
     }
   }

@@ -30,6 +30,10 @@
 
 }
 
+a {
+  font-weight: bold;
+}
+
 p {
   margin-bottom: 1em;
 }
@@ -69,8 +73,9 @@ h3 small { font-size: $headingsBaseFontSize * 0.50; } // ~17px
 h4 small { font-size: $headingsBaseFontSize * 0.40; } // ~14px
 
 
+h1 a, h2 a, h3 a, h4 a, h5 a, h6 a,
 h1 strong, h2 strong, h3 strong, h4 strong, h5 strong, h6 strong {
-  font-weight: normal;
+  font-weight: normal !important;
   color: $greenDark;
 }
 

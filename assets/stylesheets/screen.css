@@ -312,18 +312,18 @@ body {
   font-family: "Calibri", "Asap", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 15px;
   line-height: 21px;
-  color: #043022;
+  color: black;
   background-color: #4fa800;
 }
 
 a {
-  color: #a70035;
+  color: #005c40;
   text-decoration: none;
 }
 
 a:hover,
 a:focus {
-  color: #d33567;
+  color: #a70035;
   text-decoration: underline;
 }
 
@@ -1628,7 +1628,7 @@ select:focus:invalid:focus {
 
 .help-block,
 .help-inline {
-  color: #0a7754;
+  color: #262626;
 }
 
 .help-block {
@@ -3955,27 +3955,27 @@ input[type="button"].btn-block {
 .btn-primary {
   color: white;
   text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
-  background-color: #05412e;
-  background-image: -moz-linear-gradient(top, #043022, #085f43);
-  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#043022), to(#085f43));
-  background-image: -webkit-linear-gradient(top, #043022, #085f43);
-  background-image: -o-linear-gradient(top, #043022, #085f43);
-  background-image: linear-gradient(to bottom, #043022, #085f43);
+  background-color: #090909;
+  background-image: -moz-linear-gradient(top, black, #1a1a1a);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(black), to(#1a1a1a));
+  background-image: -webkit-linear-gradient(top, black, #1a1a1a);
+  background-image: -o-linear-gradient(top, black, #1a1a1a);
+  background-image: linear-gradient(to bottom, #000000, #1a1a1a);
   background-repeat: repeat-x;
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#042b1f', endColorstr='#085a40', GradientType=0);
-  border-color: #085f43 #085f43 #021811;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='black', endColorstr='#171717', GradientType=0);
+  border-color: #1a1a1a #1a1a1a black;
   border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
-  *background-color: #085f43;
+  *background-color: #1a1a1a;
   /* Darken IE7 buttons by default so they stand out more given they won't have borders */
   filter: progid:DXImageTransform.Microsoft.gradient(enabled=false);
 }
 .btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active, .btn-primary.disabled, .btn-primary[disabled] {
   color: white;
-  background-color: #085f43;
-  *background-color: #064833;
+  background-color: #1a1a1a;
+  *background-color: #0d0d0d;
 }
 .btn-primary:active, .btn-primary.active {
-  background-color: #043022 \9;
+  background-color: black \9;
 }
 
 .btn-warning {
@@ -4147,7 +4147,7 @@ input[type="submit"].btn.btn-mini {
 .btn-link {
   border-color: transparent;
   cursor: pointer;
-  color: #a70035;
+  color: #005c40;
   -webkit-border-radius: 0;
   -moz-border-radius: 0;
   border-radius: 0;
@@ -4155,7 +4155,7 @@ input[type="submit"].btn.btn-mini {
 
 .btn-link:hover,
 .btn-link:focus {
-  color: #d33567;
+  color: #a70035;
   text-decoration: underline;
   background-color: transparent;
 }
@@ -4315,7 +4315,7 @@ input[type="submit"].btn.btn-mini {
   background-color: #cfd1c4;
 }
 .btn-group.open .btn-primary.dropdown-toggle {
-  background-color: #085f43;
+  background-color: #1a1a1a;
 }
 .btn-group.open .btn-warning.dropdown-toggle {
   background-color: #edb540;
@@ -4545,7 +4545,7 @@ input[type="submit"].btn.btn-mini {
 .nav-list > .active > a:focus {
   color: white;
   text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.2);
-  background-color: #a70035;
+  background-color: #005c40;
 }
 
 .nav-list [class^="icon-"],
@@ -4637,7 +4637,7 @@ input[type="submit"].btn.btn-mini {
 .nav-pills > .active > a:hover,
 .nav-pills > .active > a:focus {
   color: white;
-  background-color: #a70035;
+  background-color: #005c40;
 }
 
 .nav-stacked > li {
@@ -4704,15 +4704,15 @@ input[type="submit"].btn.btn-mini {
 }
 
 .nav .dropdown-toggle .caret {
-  border-top-color: #a70035;
-  border-bottom-color: #a70035;
+  border-top-color: #005c40;
+  border-bottom-color: #005c40;
   margin-top: 6px;
 }
 
 .nav .dropdown-toggle:hover .caret,
 .nav .dropdown-toggle:focus .caret {
-  border-top-color: #d33567;
-  border-bottom-color: #d33567;
+  border-top-color: #a70035;
+  border-bottom-color: #a70035;
 }
 
 /* move down carets for tabs */
@@ -5999,7 +5999,7 @@ input[type="submit"].btn.btn-mini {
 
 a.thumbnail:hover,
 a.thumbnail:focus {
-  border-color: #a70035;
+  border-color: #005c40;
   -webkit-box-shadow: 0 1px 4px rgba(0, 105, 214, 0.25);
   -moz-box-shadow: 0 1px 4px rgba(0, 105, 214, 0.25);
   box-shadow: 0 1px 4px rgba(0, 105, 214, 0.25);
@@ -6639,7 +6639,7 @@ div.vertical-tabs ul.vertical-tabs-list li a {
 }
 div.vertical-tabs ul.vertical-tabs-list li a:hover {
   color: white;
-  background: #a70035;
+  background: #005c40;
   text-decoration: none;
 }
 div.vertical-tabs ul.vertical-tabs-list li a:hover strong {
@@ -6831,7 +6831,7 @@ ul.links.inline li {
   opacity: 0.9;
 }
 .field-slideshow-wrapper .field-slideshow-pager a.activeSlide {
-  background: #a70035;
+  background: #005c40;
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=90);
   opacity: 0.9;
 }
@@ -6857,7 +6857,7 @@ ul.links.inline li {
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
   border-radius: 4px;
-  background-color: #a70035;
+  background-color: #005c40;
   background-image: -webkit-gradient(linear, 0 100%, 100% 0, color-stop(0.25, rgba(255, 255, 255, 0.15)), color-stop(0.25, transparent), color-stop(0.5, transparent), color-stop(0.5, rgba(255, 255, 255, 0.15)), color-stop(0.75, rgba(255, 255, 255, 0.15)), color-stop(0.75, transparent), to(transparent));
   background-image: -webkit-linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
   background-image: -moz-linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
@@ -8832,24 +8832,41 @@ html.js input.throbbing {
   }
 }
 @media (max-width: 979px) {
+  .nav-collapse.in {
+    overflow: visible;
+  }
+
+  .navbar .nav-collapse .nav > li {
+    float: left;
+    width: 48%;
+  }
   .navbar .nav-collapse .nav > li > a {
-    color: #4fa800;
+    margin: 2px 5px 3px 0;
+    padding: 4px;
   }
   .navbar .nav-collapse .nav > li > a:hover {
     color: white;
     background-color: #4fa800;
   }
 }
+@media (min-width: 980px) {
+  .navbar input.search-query {
+    width: 100px;
+  }
+  .navbar .nav > li > a {
+    padding: 10px 8px;
+  }
+}
+@media (min-width: 1200px) {
+  .navbar input.search-query {
+    width: 200px;
+  }
+  .navbar .nav > li > a {
+    padding: 10px;
+  }
+}
 body {
   background: #351706;
-}
-
-.navbar-main {
-  top: 0;
-}
-
-.navbar-topics {
-  bottom: 0;
 }
 
 div#primary-page {
@@ -9002,7 +9019,7 @@ body #footer .container a {
   box-shadow: none;
 }
 .progress .bar {
-  background: #043022;
+  background: black;
   -webkit-box-shadow: none;
   -moz-box-shadow: none;
   box-shadow: none;
@@ -9095,7 +9112,7 @@ body #footer .container a {
   box-shadow: none;
 }
 .progress .bar {
-  background: #043022;
+  background: black;
   -webkit-box-shadow: none;
   -moz-box-shadow: none;
   box-shadow: none;
@@ -9159,7 +9176,7 @@ body #header #navigation {
   padding: 0;
 }
 .navbar .brand:hover {
-  color: #d33567;
+  color: #a70035;
 }
 .navbar .brand #logo {
   height: 75px;
@@ -9188,7 +9205,6 @@ body #header #navigation {
   transition: 0.25s;
   font-size: 15px;
   font-weight: bold;
-  padding: 10px;
   margin-top: 10px;
 }
 .navbar .nav > .active > a,
@@ -9214,6 +9230,9 @@ body #header #navigation {
   box-shadow: none;
   line-height: normal;
 }
+.navbar input.search-query {
+  width: 200px;
+}
 .navbar .btn-navbar {
   float: left;
   background-image: none;
@@ -9223,23 +9242,17 @@ body #header #navigation {
   background: #005c40;
 }
 .navbar .btn-navbar:hover {
-  background: #c7da62;
+  background: #005c40;
   color: black;
 }
-.navbar .navbar-inverse .brand:hover {
-  color: #0064cd;
+.navbar .topic-menu > li > a {
+  color: #a70035;
 }
-.navbar .navbar-inverse .navbar-search .search-query {
-  border-color: transparent;
-  -webkit-box-shadow: none;
-  -moz-box-shadow: none;
-  box-shadow: none;
-  line-height: normal;
-  color: #043022;
-}
-.navbar .navbar-inverse .navbar-search .search-query:focus {
-  padding: 4px 14px;
-  color: #043022;
+.navbar .topic-menu > .active a,
+.navbar .topic-menu > li > a:hover,
+.navbar .topic-menu > li > a:focus {
+  color: white;
+  background: #7d1f3d;
 }
 
 div.subnav {
@@ -9258,7 +9271,7 @@ div.subnav .nav > li > a {
   -webkit-box-shadow: none;
   -moz-box-shadow: none;
   box-shadow: none;
-  color: #043022;
+  color: black;
 }
 div.subnav .nav > .active > a,
 div.subnav .nav > .active > a:hover {
@@ -9267,7 +9280,7 @@ div.subnav .nav > .active > a:hover {
   -webkit-box-shadow: none;
   -moz-box-shadow: none;
   box-shadow: none;
-  color: #043022;
+  color: black;
 }
 
 .nav-list > li > a, .nav-list > .active > a,
@@ -9311,7 +9324,7 @@ div.subnav .nav > .active > a:hover {
 }
 .pagination ul > .active > a, .pagination ul > .active > a:hover {
   background-color: #caebac;
-  color: #043022;
+  color: black;
 }
 .pagination ul > .disabled > a, .pagination ul > .disabled > a:hover {
   background-color: #67db00;
@@ -9550,7 +9563,7 @@ input[type="file"] {
 
 legend {
   border-bottom: none;
-  color: #043022;
+  color: black;
 }
 
 .form-actions {
@@ -9558,7 +9571,7 @@ legend {
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
   border-radius: 5px;
-  background-color: #dee4c1;
+  background-color: #005c40;
 }
 
 #content form {
@@ -9621,6 +9634,10 @@ div.submitted,
   src: url("../fonts/boris-black-bloxx/borisblackbloxx-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/boris-black-bloxx/borisblackbloxx-webfont.woff") format("woff"), url("../fonts/boris-black-bloxx/borisblackbloxx-webfont.ttf") format("truetype"), url("../fonts/boris-black-bloxx/borisblackbloxx-webfont.svg#BorisBlackBloxxRegular") format("svg");
   font-weight: normal;
   font-style: normal;
+}
+
+a {
+  font-weight: bold;
 }
 
 p {
@@ -9688,8 +9705,9 @@ h4 small {
   font-size: 13.6px;
 }
 
+h1 a, h2 a, h3 a, h4 a, h5 a, h6 a,
 h1 strong, h2 strong, h3 strong, h4 strong, h5 strong, h6 strong {
-  font-weight: normal;
+  font-weight: normal !important;
   color: #005c40;
 }
 
