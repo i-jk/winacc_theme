@@ -3,21 +3,31 @@
  * JS for Radix Starter.
  */
 
-
-
+/** Global settings */
+var iJK_Sky = {
+  timeSpeed: 1, //seconds per second
+  refreshRate: 20, // seconds
+  maxHoursSolstice: 4,
+  date: new Date(),
+  // colours: (TODO),
+  step: function () {
+    this.date.setSeconds(this.date.getSeconds() + this.timeSpeed);
+  }
+};
 
 (function ($) {
+
   /**
    * Detect Daylight Savings - from: http://stackoverflow.com/a/11888430
    */
   function stdTimezoneOffset(d) {
-      var jan = new Date(d.getFullYear(), 0, 1);
-      var jul = new Date(d.getFullYear(), 6, 1);
-      return Math.min(jan.getTimezoneOffset(), jul.getTimezoneOffset());
+    var jan = new Date(d.getFullYear(), 0, 1);
+    var jul = new Date(d.getFullYear(), 6, 1);
+    return Math.min(jan.getTimezoneOffset(), jul.getTimezoneOffset());
   }
 
   function isDST(d) {
-      return d.getTimezoneOffset() < stdTimezoneOffset(d);
+    return d.getTimezoneOffset() < stdTimezoneOffset(d);
   }
   /**
    * d is a Date.
@@ -61,6 +71,12 @@
         // Webkit new
         .css('background-image', '-webkit-linear-gradient(top, ' + c[0] + ' 0%, ' + c[1] + ' 40%, ' + c[2] + ' 70%, ' + c[3] + ' 100%)')
       ;
+      /* OTHERS TODO
+      .css('background-image','-webkit-gradient(linear, left top, right bottom, color-stop(0.1, #FFFFFF), color-stop(0.99, #'+event.backgroundColor+'))')
+      .css('background-image','-moz-linear-gradient(top left, #FFFFFF 0%, #'+event.backgroundColor+' 100%)')
+      .css('background-image','-o-linear-gradient(top left, #FFFFFF 0%, #'+event.backgroundColor+' 100%)')
+      .css('background-image','linear-gradient(top left, #FFFFFF 0%, #'+event.backgroundColor+' 100%)')
+      */
     }
     else {
       // old browsers only get single colour bg change
@@ -195,33 +211,16 @@
     if (!Modernizr.opacity) return;
 
     // OK, set background ASAP.
-    var d = new Date();
+    var d = iJK_Sky.date;
+    var c = getColours(d);
     setBackground(getColours(d));
 
     // Begin timed bg change.
     var iJK_timer = setInterval(function() {
-      d = new Date();
-      var c = getColours(d);
-      // console.log(c);
+      iJK_Sky.step();
+      c = getColours(iJK_Sky.date);
       setBackground(c);
-
-      /*
-      .css('background-image','-webkit-gradient(linear, left top, right bottom, color-stop(0.1, #FFFFFF), color-stop(0.99, #'+event.backgroundColor+'))')
-      .css('background-image','-moz-linear-gradient(top left, #FFFFFF 0%, #'+event.backgroundColor+' 100%)')
-      .css('background-image','-o-linear-gradient(top left, #FFFFFF 0%, #'+event.backgroundColor+' 100%)')
-      .css('background-image','linear-gradient(top left, #FFFFFF 0%, #'+event.backgroundColor+' 100%)')
-      */
-    //}, 1000);
-    }, 15000);
-/*
-var d = new Date();
-      d.setMonth(6);
-    for(i = 0; i<=23; i++) {
-
-      d.setHours(i);
-
-      console.log('Hour ' + i +' -- dayPos ' + sunPos );
-    }*/
+    }, iJK_Sky.refreshRate * 1000);
   });
 
 })(jQuery);

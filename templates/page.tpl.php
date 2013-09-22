@@ -25,6 +25,7 @@
           <?php endif; ?>
 
           <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+          <div data-toggle="collapse" class="hidden-desktop pull-left btn-collapse-wrapper">
           <a class="btn btn-navbar btn-navbar-menu" data-toggle="collapse" data-target=".nav-menu-collapse">
             <?php print t('Menu'); ?>
             <span class="icon-reorder"></span>
@@ -43,6 +44,7 @@
               <span class="icon-search"></span>
             </a>
           <?php endif; ?>
+          </div>
 
           <div class="nav-collapse nav-menu-collapse">
             <div class="inner">

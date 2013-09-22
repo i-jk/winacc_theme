@@ -48,6 +48,7 @@ body #header #navigation {
     @include box-shadow(none);
     background: $white;
     border: none;
+    padding: 10px;
   }
 
   .nav > li > a {
@@ -55,7 +56,7 @@ body #header #navigation {
     -webkit-transition: 0.25s;
     -moz-transition: 0.25s;
     transition: 0.25s;
-    font-size: $baseFontSize;
+    font-size: $baseFontSize + 1;
     font-weight: bold;
     margin-top: 10px;
   }
@@ -82,10 +83,6 @@ body #header #navigation {
     border: none;
     @include box-shadow(none);
     line-height: normal;
-  }
-
-  input.search-query {
-    width: 200px;
   }
 
   .btn-navbar {
@@ -189,7 +186,7 @@ div.subnav {
     & > li > a {
       background-color: $green;
       border-color: transparent;
-      color: $white;
+      color: $white !important;
 
       &:hover {
         background-color: lighten($green, 10%);

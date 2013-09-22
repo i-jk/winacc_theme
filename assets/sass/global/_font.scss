@@ -7,27 +7,25 @@
 // --------------------------------------------------
 
 @font-face {
-    font-family: 'BorisBlackBloxxRegular';
-    src: url('../fonts/boris-black-bloxx/borisblackbloxx-webfont.eot');
-    src: url('../fonts/boris-black-bloxx/borisblackbloxx-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/boris-black-bloxx/borisblackbloxx-webfont.woff') format('woff'),
-         url('../fonts/boris-black-bloxx/borisblackbloxx-webfont.ttf') format('truetype'),
-         url('../fonts/boris-black-bloxx/borisblackbloxx-webfont.svg#BorisBlackBloxxRegular') format('svg');
-    font-weight: normal;
-    font-style: normal;
-
+  font-family: 'BorisBlackBloxxRegular';
+  src: url('../fonts/boris-black-bloxx/borisblackbloxx-webfont.eot');
+  src: url('../fonts/boris-black-bloxx/borisblackbloxx-webfont.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/boris-black-bloxx/borisblackbloxx-webfont.woff') format('woff'),
+       url('../fonts/boris-black-bloxx/borisblackbloxx-webfont.ttf') format('truetype'),
+       url('../fonts/boris-black-bloxx/borisblackbloxx-webfont.svg#BorisBlackBloxxRegular') format('svg');
+  font-weight: normal;
+  font-style: normal;
 }
 
 @font-face {
-    font-family: 'BorisBlackBloxxRegular';
-    src: url('../fonts/boris-black-bloxx/borisblackbloxx-webfont.eot');
-    src: url('../fonts/boris-black-bloxx/borisblackbloxx-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/boris-black-bloxx/borisblackbloxx-webfont.woff') format('woff'),
-         url('../fonts/boris-black-bloxx/borisblackbloxx-webfont.ttf') format('truetype'),
-         url('../fonts/boris-black-bloxx/borisblackbloxx-webfont.svg#BorisBlackBloxxRegular') format('svg');
-    font-weight: normal;
-    font-style: normal;
-
+  font-family: 'BorisBlackBloxxRegular';
+  src: url('../fonts/boris-black-bloxx/borisblackbloxx-webfont.eot');
+  src: url('../fonts/boris-black-bloxx/borisblackbloxx-webfont.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/boris-black-bloxx/borisblackbloxx-webfont.woff') format('woff'),
+       url('../fonts/boris-black-bloxx/borisblackbloxx-webfont.ttf') format('truetype'),
+       url('../fonts/boris-black-bloxx/borisblackbloxx-webfont.svg#BorisBlackBloxxRegular') format('svg');
+  font-weight: normal;
+  font-style: normal;
 }
 
 a {
@@ -54,6 +52,9 @@ h1, h2, h3, h4, h5, h6 {
     line-height: 1;
     color: $grayLight;
   }
+  -webkit-font-smoothing: antialiased;
+  -moz-font-smoothing: antialiased;
+  font-smoothing: antialiased;
 }
 
 h1,
@@ -73,8 +74,7 @@ h3 small { font-size: $headingsBaseFontSize * 0.50; } // ~17px
 h4 small { font-size: $headingsBaseFontSize * 0.40; } // ~14px
 
 
-h1 a, h2 a, h3 a, h4 a, h5 a, h6 a,
-h1 strong, h2 strong, h3 strong, h4 strong, h5 strong, h6 strong {
+h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
   font-weight: normal !important;
   color: $greenDark;
 }
@@ -83,5 +83,4 @@ blockquote {
   border-left-color: $blue;
   font-style: italic;
   color: darken($blue, 16%);
-
 }

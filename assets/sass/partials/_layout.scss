@@ -7,6 +7,17 @@
 // MEDIA QUERIES
 // --------------------------------------------------
 
+@media (max-width: 530px) {
+
+  .navbar {
+    div.btn-collapse-wrapper {
+      margin-top: 0;
+      clear: both;
+    }
+  }
+}
+
+
 @media (max-width: 767px) {
 
   div.subnav {
@@ -23,6 +34,7 @@
     .nav > li:last-child > a {
       border-radius: 0 0 4px 4px;
     }
+
   }
 
   body {
@@ -45,6 +57,7 @@
       & > a {
         margin: 2px 5px 3px 0;
         padding: 4px;
+        color: $white;
 
         &:hover {
           color: $white;
@@ -52,7 +65,10 @@
         }
       }
     }
-
+    .btn-collapse-wrapper {
+      margin-top: 30px;
+      float: left;
+    }
   }
 
 }
@@ -62,7 +78,7 @@
 @media (min-width: 980px) {
   .navbar {
     input.search-query {
-        width: 100px;
+        width: 160px;
     }
     .nav > li > a {
       padding: 10px 8px;
