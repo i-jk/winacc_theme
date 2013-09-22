@@ -148,8 +148,10 @@
 <footer id="footer" class="footer" role="footer">
   <div class="container">
     <small class="copyright pull-left">&copy; <?php print date('Y'); ?>
-      WinACC - <?php print $site_slogan; ?> | <a href="/contact">Contact</a> |
-      <a href="/privacy-policy">Privacy Policy</a> | Powered by
+      WinACC Ltd. - <?php print $site_slogan; ?> | <a href="/contact">Contact</a> |
+      <a href="/privacy-policy">Privacy Policy</a>
+    </small>
+    <small class="copyright pull-right">Powered by
       <a href="http://drupal.org">Drupal</a> | Website by
       <a href="http://www.i-jk.co.uk/"><strong>i-JK Drupal Solutions</strong></a>
     </small>
