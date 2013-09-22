@@ -8846,14 +8846,25 @@ html.js input.throbbing {
     float: left;
     width: 48%;
   }
-  .navbar .nav-collapse .nav > li > a {
+  .navbar .nav-collapse .nav > li a,
+  .navbar .nav-collapse .nav > li .dropdown-menu a {
     margin: 2px 5px 3px 0;
     padding: 4px;
     color: white;
-  }
-  .navbar .nav-collapse .nav > li > a:hover {
-    color: white;
     background-color: #4fa800;
+  }
+  .navbar .nav-collapse .nav > li a:hover,
+  .navbar .nav-collapse .nav > li .dropdown-menu a:hover {
+    color: white;
+    background-color: #005c40;
+  }
+  .navbar .nav-collapse .topic-menu > li a,
+  .navbar .nav-collapse .topic-menu > li .dropdown-menu a {
+    background-color: #a70035;
+  }
+  .navbar .nav-collapse .topic-menu > li a:hover,
+  .navbar .nav-collapse .topic-menu > li .dropdown-menu a:hover {
+    background-color: #7d1f3d;
   }
   .navbar .btn-collapse-wrapper {
     margin-top: 30px;
@@ -9257,15 +9268,19 @@ body #header #navigation {
   background: #005c40;
 }
 .navbar .btn-navbar:hover {
-  background: #005c40;
+  background: #e4d316;
   color: black;
+}
+.navbar .btn-navbar-searcher {
+  background: #34a6db;
+}
+.navbar .btn-navbar-topics {
+  background: #7d1f3d;
 }
 .navbar .topic-menu > li > a {
   color: #a70035;
 }
-.navbar .topic-menu > .active a,
-.navbar .topic-menu > li > a:hover,
-.navbar .topic-menu > li > a:focus {
+.navbar .topic-menu > .active a, .navbar .topic-menu > li > a:hover, .navbar .topic-menu > li > a:focus {
   color: white;
   background: #7d1f3d;
 }

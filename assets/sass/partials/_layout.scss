@@ -54,17 +54,33 @@
       float: left;
       width: 48%;
 
-      & > a {
+      a,
+      .dropdown-menu a {
         margin: 2px 5px 3px 0;
         padding: 4px;
         color: $white;
+        background-color: $green;
 
         &:hover {
           color: $white;
-          background-color: $green;
+          background-color: $greenDark;
+        }
+      }
+
+    }
+
+    .nav-collapse .topic-menu > li {
+
+      a,
+      .dropdown-menu a {
+        background-color: $accent2;
+
+        &:hover {
+          background-color: $accent2Dark;
         }
       }
     }
+
     .btn-collapse-wrapper {
       margin-top: 30px;
       float: left;

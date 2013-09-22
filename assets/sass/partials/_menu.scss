@@ -92,23 +92,35 @@ body #header #navigation {
     background: $greenDark;
 
     &:hover {
-      background: $accent;
+      background: $yellow;
       color: $black;
     }
   }
 
-  .topic-menu > li > a {
-    color: $accent2;
-  }
-  .topic-menu > .active a,
-  .topic-menu > li > a:hover,
-  .topic-menu > li > a:focus {
-    color: $white;
-    background: $accent2Dark;
+  // Search
+  .btn-navbar-searcher {
+    background: $blue;
   }
 
-  .topic-menu .dropdown-menu {
+
+  // Topics ------------------------------------------------------------
+  .btn-navbar-topics {
     background: $accent2Dark;
+  }
+  .topic-menu {
+     & > li > a {
+      color: $accent2;
+    }
+    & > .active a,
+    & > li > a:hover,
+    & > li > a:focus {
+      color: $white;
+      background: $accent2Dark;
+    }
+
+    & .dropdown-menu {
+      background: $accent2Dark;
+    }
   }
 }
 
