@@ -133,7 +133,7 @@ function winacc_theme_links__system_main_menu($variables) {
 /**
  * HTML for all local actions (rendered as dropdown).
  */
-function winacc_theme_menu_local_actions($variables) {
+/*function winacc_theme_menu_local_actions($variables) {
   $container_attributes = isset($variables['attributes']['container']) ? drupal_attributes($variables['attributes']['container']) : FALSE;
   $toggle_attributes = isset($variables['attributes']['toggle']) ? drupal_attributes($variables['attributes']['toggle']) : FALSE;
   $content_attributes = isset($variables['attributes']['content']) ? drupal_attributes($variables['attributes']['content']) : FALSE;
@@ -147,12 +147,12 @@ function winacc_theme_menu_local_actions($variables) {
   $output .= '</li>';
 
   return $output;
-}
+}*/
 
 /**
  * HTML for individual local actions.
  */
-function winacc_theme_menu_local_action($variables) {
+/*function winacc_theme_menu_local_action($variables) {
   $link = $variables['element']['#link'];
 
   $output = '<li>';
@@ -169,3 +169,4 @@ function winacc_theme_menu_local_action($variables) {
 
   return $output;
 }
+*/

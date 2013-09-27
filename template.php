@@ -29,14 +29,14 @@ function winacc_theme_js_alter(&$js) {
 /**
  * Implements hook_theme().
  */
-function winacc_theme_theme($existing, $type, $theme, $path) {
+/*function winacc_theme_theme($existing, $type, $theme, $path) {
   return array(
     'menu_local_actions' => array(
       'variables' => array('menu_actions' => NULL, 'attributes' => NULL),
       'file' => 'includes/menu.inc',
     ),
   );
-}
+}*/
 
 /**
  * Override or insert variables into the page template.
@@ -64,7 +64,7 @@ function winacc_theme_process_page(&$variables) {
       'class' => array('dropdown-menu'),
     ),
   );
-
+/*
   // Add local actions as the last item in the local tasks.
   if (!empty($variables['action_links'])) {
     if (!isset($variables['tabs']['#primary'])) {
@@ -76,7 +76,7 @@ function winacc_theme_process_page(&$variables) {
     $variables['tabs']['primary'][]['#markup'] = theme('menu_local_actions', array('menu_actions' => $variables['action_links'], 'attributes' => $dropdown_attributes));
     $variables['action_links'] = FALSE;
   }
-
+*/
   // Get the entire main menu tree.
   $main_menu_tree = array();
   $main_menu_tree = menu_tree_all_data('main-menu', NULL, 2);
