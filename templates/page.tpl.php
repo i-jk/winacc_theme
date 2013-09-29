@@ -148,7 +148,7 @@
 <footer id="footer" class="footer" role="footer">
   <div class="container">
     <small class="copyright pull-left">&copy; <?php print date('Y'); ?>
-      WinACC - Winchester Action on Climate Change Ltd. - <?php print $site_slogan; ?> | <a href="/contact">Contact</a> |
+      WinACC - Winchester Action on Climate Change Ltd. | <a href="/contact">Contact</a> |
       <a href="/privacy-policy">Privacy Policy</a>
     </small>
     <small class="copyright pull-right">Powered by
