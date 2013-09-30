@@ -4,7 +4,7 @@
 // --------------------------------------------------
 
 body {
-  background: $earth;
+  background: $black;
 }
 
 
@@ -56,7 +56,7 @@ div#navigation {
 
 
 body #footer {
-  @include background($earth);
+  @include background($black);
   margin-top: 0;
   font-size: $baseFontSize -2;
 
