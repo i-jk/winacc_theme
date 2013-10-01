@@ -47,7 +47,7 @@ var iJK_Sky = {
     var d2 = new Date(yn,mn,dn,12,0,0); // noon on input date
     var ddiff = Math.round((d2-d1)/86400000);
     // Solar vs calendar offset (tropical year)
-    const tropicalYearOffset = -0.028044764;
+    var tropicalYearOffset = -0.028044764;
     var daysInYear = 365;
     if ((yn%4 == 0) && (yn%100 != 0 || yn%400 == 0)) {
       daysInYear = 366; // leap year
@@ -126,8 +126,8 @@ var iJK_Sky = {
    * @todo abstract out the number (4) of steps that map to the colours
    */
   getSolarPosition: function (d) {
-    const colorSceneCount = 4;
-    const speed = 1;//1440;
+    var colorSceneCount = 4;
+    var speed = 1;//1440;
     // Convert yearUnitInterval into hours change -- for Winchester, UK
     // there's ~4 hours diff winter/summer from Equinox with 12h days.
     var dayPos = 1 - Math.sin(Math.PI * speed * (1 - this.dayUnitInterval(d)));
