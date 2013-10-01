@@ -8888,7 +8888,7 @@ html.js input.throbbing {
   }
 }
 body {
-  background: #351706;
+  background: black;
 }
 
 div#primary-page {
@@ -8936,7 +8936,7 @@ div#navigation {
 }
 
 body #footer {
-  background: #351706;
+  background: black;
   margin-top: 0;
   font-size: 15px -2;
 }
@@ -9424,6 +9424,17 @@ div.subnav .nav > .active > a:hover {
 
 #admin-menu {
   z-index: 933;
+}
+
+#views-nivo-slider-slider-panel_pane_1 {
+  overflow: hidden;
+  width: 100% !important;
+  height: auto !important;
+}
+
+#views-nivo-slider-slider-panel_pane_1 img {
+  width: 100% !important;
+  height: auto !important;
 }
 
 .views-row {

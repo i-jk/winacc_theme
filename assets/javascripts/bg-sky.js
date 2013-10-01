@@ -16,7 +16,7 @@ var iJK_Sky = {
   },
 
   setSpeed: function (speed) {
-    this.speed  = speed;
+    this.speed = speed;
     this.stop;
     this.start;
   },
@@ -85,17 +85,28 @@ var iJK_Sky = {
   setBackground: function(c, $) {
 
     if (Modernizr.cssgradients) {
-      // Good browser
-      $('#primary-page')
-        // Webkit new
-        .css('background-image', '-webkit-linear-gradient(top, ' + c[0] + ' 0%, ' + c[1] + ' 40%, ' + c[2] + ' 70%, ' + c[3] + ' 100%)')
-      ;
-      /* OTHERS TODO
-      .css('background-image','-webkit-gradient(linear, left top, right bottom, color-stop(0.1, #FFFFFF), color-stop(0.99, #'+event.backgroundColor+'))')
-      .css('background-image','-moz-linear-gradient(top left, #FFFFFF 0%, #'+event.backgroundColor+' 100%)')
-      .css('background-image','-o-linear-gradient(top left, #FFFFFF 0%, #'+event.backgroundColor+' 100%)')
-      .css('background-image','linear-gradient(top left, #FFFFFF 0%, #'+event.backgroundColor+' 100%)')
-      */
+      // Good browsers...
+      if ($.browser.webkit) {
+        // Webkit (Chrome & Safari).
+        $('#primary-page')
+          .css('background-image', '-webkit-gradient(linear, top, bottom, color-stop(0, ' + c[0] + '), color-stop(0.4, ' + c[1] + '), color-stop(0.7, ' + c[2] + '), color-stop(1, ' + c[3] + '))')
+          .css('background-image', '-webkit-linear-gradient(top, ' + c[0] + ' 0%, ' + c[1] + ' 40%, ' + c[2] + ' 70%, ' + c[3] + ' 100%)')
+        ;
+      }
+      else if ( $.browser.opera ) {
+        // Opera.
+        css('background-image','-o-linear-gradient(top, ' + c[0] + ' 0%, ' + c[1] + ' 40%, ' + c[2] + ' 70%, ' + c[3] + ' 100%)');
+      }
+      else if ( $.browser.mozilla ) {
+        // Firefox.
+        $('#primary-page').css('background-image', '-moz-linear-gradient(top, ' + c[0] + ' 0%, ' + c[1] + ' 40%, ' + c[2] + ' 70%, ' + c[3] + ' 100%)');
+      }
+      else if ( $.browser.msie ) {
+        // IE.
+        $('#primary-page').css('background-image', '-ms-linear-gradient(top, ' + c[0] + ' 0%, ' + c[1] + ' 40%, ' + c[2] + ' 70%, ' + c[3] + ' 100%)');
+      }
+      // CSS3 standard.
+      $('#primary-page').css('background-image', 'linear-gradient(top, ' + c[0] + ' 0%, ' + c[1] + ' 40%, ' + c[2] + ' 70%, ' + c[3] + ' 100%)');
     }
     else {
       // old browsers only get single colour bg change
@@ -171,15 +182,15 @@ var iJK_Sky = {
     ];
     var coloursLow = [
       [219, 240, 255],
-      [142, 208, 255],
-      [194, 189, 152],
+      [156, 212, 252],
+      [228, 224, 195],
       [ 43,  60,  73],
       [  8,  36,  66]
     ];
     var coloursHorizon = [
       [237, 246, 252],
       [199, 231, 255],
-      [233, 128,  31],
+      [238, 152,  42],
       [100,  91,  72],
       [ 39,  60,  77]
     ];
