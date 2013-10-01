@@ -9,10 +9,20 @@
   overflow: hidden;
   width: 100% !important;
   height: auto !important;
-}
 
+  .nivo-caption {
+    background: $white;
+    padding: 10px;
+    font-family: $headingsFontFamily;
+    font-size: 1.2em;
 
-#views-nivo-slider-slider-panel_pane_1 img {
-  //width: 100% !important;
-  height: auto !important;
+    a {
+      font-weight: normal !important;
+    }
+  }
+
+  img {
+    //width: 100% !important;
+    height: auto !important;
+  }
 }
