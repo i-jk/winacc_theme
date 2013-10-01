@@ -17,6 +17,51 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: 'Asap';
+  src: url('../fonts/asap/asap-regular-webfont.eot');
+  src: url('../fonts/asap/asap-regular-webfont.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/asap/asap-regular-webfont.woff') format('woff'),
+       url('../fonts/asap/asap-regular-webfont.ttf') format('truetype'),
+       url('../fonts/asap/asap-regular-webfont.svg#asapregular') format('svg');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Asap';
+  src: url('../fonts/asap/asap-italic-webfont.eot');
+  src: url('../fonts/asap/asap-italic-webfont.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/asap/asap-italic-webfont.woff') format('woff'),
+       url('../fonts/asap/asap-italic-webfont.ttf') format('truetype'),
+       url('../fonts/asap/asap-italic-webfont.svg#asapregular') format('svg');
+  font-weight: 400;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Asap';
+  src: url('../fonts/asap/asap-bold-webfont.eot');
+  src: url('../fonts/asap/asap-bold-webfont.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/asap/asap-bold-webfont.woff') format('woff'),
+       url('../fonts/asap/asap-bold-webfont.ttf') format('truetype'),
+       url('../fonts/asap/asap-bold-webfont.svg#asapregular') format('svg');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Asap';
+  src: url('../fonts/asap/asap-bolditalic-webfont.eot');
+  src: url('../fonts/asap/asap-bolditalic-webfont.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/asap/asap-bolditalic-webfont.woff') format('woff'),
+       url('../fonts/asap/asap-bolditalic-webfont.ttf') format('truetype'),
+       url('../fonts/asap/asap-bolditalic-webfont.svg#asapregular') format('svg');
+  font-weight: 700;
+  font-style: italic;
+}
+
+
 a {
   font-weight: bold;
 }

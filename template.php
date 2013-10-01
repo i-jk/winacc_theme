@@ -65,7 +65,7 @@ function winacc_theme_js_alter(&$js) {
  * Implements template_process_page().
  */
 function winacc_theme_process_page(&$variables) {
-  drupal_add_css('http://fonts.googleapis.com/css?family=Asap:400,700,700italic,400italic', 'external');
+  //drupal_add_css('http://fonts.googleapis.com/css?family=Asap:400,700,700italic,400italic', 'external');
   // Hook into color.module.
   if (module_exists('color')) {
     _color_page_alter($variables);
