@@ -9,6 +9,7 @@
 select[multiple] {
   height: 180px;
 }
+select,
 textarea,
 input[type="text"],
 input[type="password"],
@@ -25,6 +26,7 @@ input[type="search"],
 input[type="tel"],
 input[type="color"],
 .uneditable-input {
+  color: $grayDark;
   padding: 7px 6px;
   border: 2px solid $greenLighter;
   margin: 0;
@@ -107,4 +109,17 @@ legend {
 
 
 // OVERRIDES
+// --------------------------------------------------
 #edit-field-tags-und { width: 95%; }
+
+
+// WYSIWYG
+// --------------------------------------------------
+#tinymce {
+  ol {
+    list-style-type: decimal;
+  }
+  ul {
+    list-style-type: disc;
+  }
+}
