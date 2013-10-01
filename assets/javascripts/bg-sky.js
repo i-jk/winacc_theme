@@ -45,7 +45,7 @@ var iJK_Sky = {
     var dn = d.getDate();
     var d1 = new Date(yn,0,1,12,0,0); // noon on Jan. 1
     var d2 = new Date(yn,mn,dn,12,0,0); // noon on input date
-    var ddiff = Math.round((d2-d1)/864e5);
+    var ddiff = Math.round((d2-d1)/86400000);
     // Solar vs calendar offset (tropical year)
     const tropicalYearOffset = -0.028044764;
     var daysInYear = 365;
