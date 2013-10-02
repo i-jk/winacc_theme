@@ -45,6 +45,14 @@ div#navigation {
   .page-header {
     margin-bottom: 8px;
   }
+
+  .pane-content {
+    margin-bottom: 1em;
+  }
+
+  .pane-entity-field .pane-content {
+    margin-bottom: 0;
+  }
 }
 
 .sidebar {

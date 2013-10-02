@@ -93,10 +93,12 @@
 
 @media (min-width: 980px) {
   .navbar {
+
     input.search-query {
         width: 160px;
     }
     .nav > li > a {
+      font-size: 16px;
       padding: 10px 8px;
     }
   }
@@ -105,11 +107,13 @@
 @media (min-width: 1200px) {
 
   .navbar {
+
     input.search-query {
         width: 200px;
     }
     .nav > li > a {
-      padding: 10px;
+      font-size: 18px !important;
+      padding: 12px 11px;
     }
   }
 

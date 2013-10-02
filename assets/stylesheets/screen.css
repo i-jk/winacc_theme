@@ -8876,6 +8876,7 @@ html.js input.throbbing {
     width: 160px;
   }
   .navbar .nav > li > a {
+    font-size: 16px;
     padding: 10px 8px;
   }
 }
@@ -8884,7 +8885,8 @@ html.js input.throbbing {
     width: 200px;
   }
   .navbar .nav > li > a {
-    padding: 10px;
+    font-size: 18px !important;
+    padding: 12px 11px;
   }
 }
 body {
@@ -8929,6 +8931,12 @@ div#navigation {
 }
 #content .page-header {
   margin-bottom: 8px;
+}
+#content .pane-content {
+  margin-bottom: 1em;
+}
+#content .pane-entity-field .pane-content {
+  margin-bottom: 0;
 }
 
 .sidebar .item-list h3 {
@@ -9742,7 +9750,7 @@ p {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  margin: 10.5px 0;
+  margin: .618em 0 0.382em;
   font-family: "BorisBlackBloxxRegular", "Helvetica Neue", "Arial Black", Verdana, sans-serif;
   font-weight: normal !important;
   line-height: 21px;
