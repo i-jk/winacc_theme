@@ -273,7 +273,15 @@ div.subnav {
 }
 
 #search-form {
-  padding: 10px;
+  margin: 0;
+  input.form-text {
+    padding: 6px 6px;
+    margin-right: -3px;
+  }
+
+  input.submit {
+    margin-top: 0;
+  }
 }
 
 // -------------

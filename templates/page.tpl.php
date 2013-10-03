@@ -24,26 +24,21 @@
             </a>
           <?php endif; ?>
 
-          <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
           <div data-toggle="collapse" class="hidden-desktop pull-left btn-collapse-wrapper">
-          <a class="btn btn-navbar btn-navbar-menu" data-toggle="collapse" data-target=".nav-menu-collapse">
-            <?php print t('Menu'); ?>
-            <span class="icon-reorder"></span>
-          </a>
-          <!-- .btn-navbar-topics for collapsed topic menu content -->
-          <?php if ($topic_menu_expanded): ?>
-            <a class="btn btn-navbar btn-navbar-topics" data-toggle="collapse" data-target=".nav-topics-collapse">
-              <?php print t('Topics'); ?>
-              <span class="icon-lightbulb"></span>
+            <!-- .btn-navbar-topics for collapsed topic menu content -->
+            <?php if ($topic_menu_expanded): ?>
+              <a class="btn btn-navbar btn-navbar-topics" data-toggle="collapse" data-target=".nav-topics-collapse">
+                <?php print t('Topics'); ?>
+                <span class="icon-lightbulb"></span>
+              </a>
+            <?php endif; ?>
+
+            <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+            <a class="btn btn-navbar btn-navbar-menu" data-toggle="collapse" data-target=".nav-menu-collapse">
+              <?php print t('Menu'); ?>
+              <span class="icon-reorder"></span>
             </a>
-          <?php endif; ?>
-          <!-- .btn-navbar-search for collapsed search form -->
-          <?php if ($search_form): ?>
-            <a class="btn btn-navbar btn-navbar-searcher" data-toggle="collapse" data-target=".nav-search-collapse">
-              <?php print t('Search'); ?>
-              <span class="icon-search"></span>
-            </a>
-          <?php endif; ?>
+
           </div>
 
           <div class="nav-collapse nav-menu-collapse">
@@ -85,13 +80,7 @@
               </div>
             </div>
           <?php endif; ?>
-          <div class="nav-collapse nav-search-collapse">
-            <div class="inner">
-              <?php if ($search_form): ?>
-                <?php print $search_form; ?>
-              <?php endif; ?>
-            </div>
-          </div>
+
         </div>
       </div>
     </div> <!-- /#navigation -->
@@ -109,33 +98,48 @@
       <div id="content">
         <a id="main-content"></a>
         <div id="page-header">
-            <div class="container">
-              <?php if ($breadcrumb): ?>
-                <div id="breadcrumb" class="visible-desktop">
-                  <div class="container">
-                    <?php print $breadcrumb; ?>
+          <div class="container">
+            <?php if ($breadcrumb): ?>
+              <?php if ($search_form): ?>            <!-- .btn-navbar-search for collapsed search form -->
+                <?php if ($search_form): ?>
+                  <a class="btn btn-navbar btn-navbar-searcher pull-right hidden-desktop" data-toggle="collapse" data-target=".nav-search-collapse">
+                    <?php print t('Search'); ?>
+                    <span class="icon-search"></span>
+                  </a>
+                <?php endif; ?>
+                <div class="pull-right nav-collapse nav-search-collapse">
+                  <div class="inner">
+                    <?php print $search_form; ?>
                   </div>
                 </div>
               <?php endif; ?>
-              <?php if ($title): ?>
-                <div class="page-header">
-                  <h1 class="title"><?php print $title; ?></h1>
+              <div id="breadcrumb" class="visible-desktop">
+                <div class="container">
+                  <?php print $breadcrumb; ?>
                 </div>
-              <?php endif; ?>
-              <?php if ($tabs): ?>
-                <div class="tabs">
-                  <?php print render($tabs); ?>
-                </div>
-              <?php endif; ?>
-              <?php if ($action_links): ?>
-                <ul class="nav nav-pills action-links">
-                  <?php print render($action_links); ?>
-                </ul>
-              <?php endif; ?>
-            </div>
+              </div>
+            <?php endif; ?>
+            <?php if ($title): ?>
+              <div class="page-header">
+                <h1 class="title"><?php print $title; ?></h1>
+              </div>
+            <?php endif; ?>
+            <?php if ($tabs): ?>
+              <div class="tabs">
+                <?php print render($tabs); ?>
+              </div>
+            <?php endif; ?>
+            <?php if ($action_links): ?>
+              <ul class="nav nav-pills action-links">
+                <?php print render($action_links); ?>
+              </ul>
+            <?php endif; ?>
+          </div>
         </div>
-        <?php print render($page['content']); ?>
-        <div class="clearfix"></div>
+        <div id="page-body">
+          <?php print render($page['content']); ?>
+          <div class="clearfix"></div>
+        </div>
       </div>
     </div>
   </div> <!-- /#main-wrapper -->

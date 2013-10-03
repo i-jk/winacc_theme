@@ -9419,7 +9419,14 @@ div.subnav .nav > .active > a:hover {
 }
 
 #search-form {
-  padding: 10px;
+  margin: 0;
+}
+#search-form input.form-text {
+  padding: 6px 6px;
+  margin-right: -3px;
+}
+#search-form input.submit {
+  margin-top: 0;
 }
 
 .contextual-links-region {
@@ -9648,7 +9655,7 @@ legend {
   background-color: #005c40;
 }
 
-#content form {
+#page-body form {
   background: white;
   background: rgba(255, 255, 255, 0.75);
   -webkit-border-radius: 5px;

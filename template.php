@@ -144,4 +144,25 @@ function winacc_theme_process_page(&$variables) {
   if (!isset($variables['page']['content']['system_main']['main']['#markup']) || (strpos($variables['page']['content']['system_main']['main']['#markup'], 'panel-panel') === FALSE)) {
     $variables['no_panels'] = TRUE;
   }
+
+  // form
+  if (module_exists('search') && user_access('search content')) {
+    $search_box_form = drupal_get_form('search_form');
+    $search_box_form['#id'] = 'search-form';
+    //print_r($search_box_form);
+    $search_box_form['basic']['#attributes']['class'][] = 'input-append';
+    $search_box_form['basic']['keys']['#title'] = '';
+    $search_box_form['basic']['keys']['#attributes'] = array('placeholder' => 'Search WinACC');
+    $search_box_form['basic']['keys']['#attributes']['class'][] = 'search-query';
+    //$search_box_form['basic']['submit']
+    $search_box_form['basic']['submit']['#access'] = FALSE;
+    $search_box_form['basic']['submit2']['#prefix'] = '<button type="submit" class="btn btn-success" title="Search  WinACC">';
+    $search_box_form['basic']['submit2']['#suffix'] = '</button>';
+    $search_box_form['basic']['submit2']['#markup'] = '<i class="icon-search"></i>';
+    //$search_box_form['basic']['submit']['#value'] = '<span class="icon-search"></span>';
+
+    $search_box_form['#attributes']['class'] = array ('search-form');
+    $search_box = drupal_render($search_box_form);
+    $variables['search_form'] = (user_access('search content')) ? $search_box : NULL;
+  }
 }
