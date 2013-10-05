@@ -297,4 +297,8 @@ div.subnav {
 
 #admin-menu {
   z-index: $zindexFixedNavbar + 3
+  a {
+    font-size: 10px;
+    line-height: 13px;
+  }
 }
