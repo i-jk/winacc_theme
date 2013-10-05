@@ -9462,6 +9462,11 @@ div.subnav .nav > .active > a:hover {
   height: auto !important;
 }
 
+.calendar a {
+  font-size: 1.1em;
+  line-height: 1em;
+}
+
 .views-row {
   margin-bottom: 20px;
 }
