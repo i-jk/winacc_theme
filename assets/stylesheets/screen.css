@@ -9438,9 +9438,11 @@ div.subnav .nav > .active > a:hover {
 }
 
 #admin-menu {
-  z-index: 933 a;
-  z-index-font-size: 10px;
-  z-index-line-height: 13px;
+  z-index: 933;
+}
+#admin-menu li a {
+  font-size: 10px;
+  line-height: 13px;
 }
 
 #views-nivo-slider-slider-panel_pane_1 {
