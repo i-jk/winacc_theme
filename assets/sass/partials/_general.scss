@@ -18,7 +18,7 @@ div#main-wrapper {
 
 div#main,
 div#navigation {
-  outline: 7px solid rgba(255, 255, 255, 0.618);
+  outline: 6px solid rgba(255, 255, 255, 0.618);
 }
 
 #grass-bright, #grass-dark {
@@ -38,7 +38,7 @@ div#navigation {
 
 
 #content {
-  @include bg-trans-white(0.91);
+  @include bg-trans-white(0.95);
   padding: $paddingLarge;
   @include border-radius(0);
 

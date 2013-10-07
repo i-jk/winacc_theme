@@ -8870,6 +8870,12 @@ html.js input.throbbing {
     margin-top: 30px;
     float: left;
   }
+
+  .hewston-slider,
+  .hewston-slider-gutter {
+    clear: both;
+    width: 100%;
+  }
 }
 @media (min-width: 980px) {
   .navbar input.search-query {
@@ -8903,7 +8909,7 @@ div#main-wrapper {
 
 div#main,
 div#navigation {
-  outline: 7px solid rgba(255, 255, 255, 0.618);
+  outline: 6px solid rgba(255, 255, 255, 0.618);
 }
 
 #grass-bright, #grass-dark {
@@ -8923,7 +8929,7 @@ div#navigation {
 
 #content {
   background: white;
-  background: rgba(255, 255, 255, 0.91);
+  background: rgba(255, 255, 255, 0.95);
   padding: 11px 19px;
   -webkit-border-radius: 0;
   -moz-border-radius: 0;

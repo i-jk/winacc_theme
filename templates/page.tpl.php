@@ -102,7 +102,7 @@
             <?php if ($breadcrumb): ?>
               <?php if ($search_form): ?>            <!-- .btn-navbar-search for collapsed search form -->
                 <?php if ($search_form): ?>
-                  <a class="btn btn-navbar btn-navbar-searcher pull-right hidden-desktop" data-toggle="collapse" data-target=".nav-search-collapse">
+                  <a class="btn btn-navbar btn-navbar-searcher btn-info pull-right hidden-desktop" data-toggle="collapse" data-target=".nav-search-collapse">
                     <?php print t('Search'); ?>
                     <span class="icon-search"></span>
                   </a>

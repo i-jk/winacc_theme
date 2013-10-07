@@ -7,6 +7,7 @@
 // MEDIA QUERIES
 // --------------------------------------------------
 
+// TINY
 @media (max-width: 530px) {
 
   .navbar {
@@ -18,6 +19,7 @@
 }
 
 
+// MOBILE
 @media (max-width: 767px) {
 
   div.subnav {
@@ -43,6 +45,8 @@
 
 }
 
+
+// TABLET
 @media (max-width: 979px) {
 
   .nav-collapse.in {
@@ -87,10 +91,16 @@
     }
   }
 
+  .hewston-slider,
+  .hewston-slider-gutter {
+    clear: both;
+    width: 100%;
+  }
+
 }
 
 
-
+// DESKTOP
 @media (min-width: 980px) {
   .navbar {
 
@@ -104,6 +114,8 @@
   }
 }
 
+
+// WIDESCREEN
 @media (min-width: 1200px) {
 
   .navbar {
