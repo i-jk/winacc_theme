@@ -153,7 +153,7 @@
   <div class="container">
     <small class="copyright pull-left">&copy; <?php print date('Y'); ?>
       WinACC - Winchester Action on Climate Change Ltd. | <a href="/contact">Contact</a> |
-      <a href="/privacy-policy">Privacy Policy</a>
+      <a href="/privacy-policy">Privacy Statement</a>
     </small>
     <small class="copyright pull-right">Powered by
       <a href="http://drupal.org">Drupal</a> | Website by
