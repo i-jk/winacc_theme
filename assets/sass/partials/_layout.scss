@@ -109,7 +109,15 @@
     }
     .nav > li > a {
       font-size: 16px;
-      padding: 10px 8px;
+      padding: 10px 7px;
+    }
+    a.brand {
+      margin: 20px 10px 16px 3px;
+
+      #logo {
+        height: 65px;
+        width: 161px;
+      }
     }
   }
 }
@@ -127,6 +135,14 @@
       font-size: 18px !important;
       padding: 12px 11px;
     }
-  }
 
+    a.brand {
+      margin: 20px 20px 20px 5px;
+
+      #logo {
+        height: 75px;
+        width: 186px;
+      }
+    }
+  }
 }

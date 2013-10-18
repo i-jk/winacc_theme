@@ -24,16 +24,10 @@ body #header #navigation {
   .brand {
     float: right;
     text-shadow: none;
-    margin: 20px;
     padding: 0;
 
     &:hover {
       opacity: 0.8;
-    }
-
-    #logo {
-      height: 75px;
-      width: 186px;
     }
   }
 
@@ -59,6 +53,7 @@ body #header #navigation {
     font-size: $baseFontSize + 1;
     font-weight: bold;
     margin-top: 10px;
+    @include border-radius(3px);
   }
 
   .nav > .active > a,

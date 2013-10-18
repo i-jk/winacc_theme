@@ -8883,7 +8883,14 @@ html.js input.throbbing {
   }
   .navbar .nav > li > a {
     font-size: 16px;
-    padding: 10px 8px;
+    padding: 10px 7px;
+  }
+  .navbar a.brand {
+    margin: 20px 10px 16px 3px;
+  }
+  .navbar a.brand #logo {
+    height: 65px;
+    width: 161px;
   }
 }
 @media (min-width: 1200px) {
@@ -8893,6 +8900,13 @@ html.js input.throbbing {
   .navbar .nav > li > a {
     font-size: 18px !important;
     padding: 12px 11px;
+  }
+  .navbar a.brand {
+    margin: 20px 20px 20px 5px;
+  }
+  .navbar a.brand #logo {
+    height: 75px;
+    width: 186px;
   }
 }
 body {
@@ -9216,15 +9230,10 @@ body #header #navigation {
 .navbar .brand {
   float: right;
   text-shadow: none;
-  margin: 20px;
   padding: 0;
 }
 .navbar .brand:hover {
   opacity: 0.8;
-}
-.navbar .brand #logo {
-  height: 75px;
-  width: 186px;
 }
 .navbar .navbar-main {
   top: 0;
@@ -9251,6 +9260,9 @@ body #header #navigation {
   font-size: 16px;
   font-weight: bold;
   margin-top: 10px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
 }
 .navbar .nav > .active > a,
 .navbar .nav > .active > a:hover,
