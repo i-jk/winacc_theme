@@ -8921,6 +8921,11 @@ div#main-wrapper {
   margin-bottom: 50px;
 }
 
+#logo {
+  height: 75px;
+  width: 186px;
+}
+
 div#main,
 div#navigation {
   outline: 6px solid rgba(255, 255, 255, 0.618);
@@ -9229,6 +9234,7 @@ body #header #navigation {
 }
 .navbar .brand {
   float: right;
+  margin: 20px 20px 20px 5px;
   text-shadow: none;
   padding: 0;
 }
