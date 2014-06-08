@@ -10,6 +10,10 @@
   width: 100% !important;
   height: auto !important;
 
+  .nivo-slice {
+    max-width: auto;
+  }
+
   .nivo-caption {
     background: $white;
     padding: 10px;
