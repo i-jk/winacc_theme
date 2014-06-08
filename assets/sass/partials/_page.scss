@@ -10,10 +10,6 @@
   width: 100% !important;
   height: auto !important;
 
-  .nivo-imageLink img {
-    max-width: none;
-  }
-
   .nivo-caption {
     background: $white;
     padding: 10px;
@@ -27,7 +23,7 @@
   }
 
   img {
-    //width: 100% !important;
+    max-width: none;
     height: auto !important;
   }
 }
