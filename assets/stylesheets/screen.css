@@ -7218,7 +7218,7 @@ select[size] {
 }
 
 html.js input.form-autocomplete {
-  background: url('../images/throbber.gif?1378303408') no-repeat right 8px white !important;
+  background: url('../images/throbber.gif?1402256289') no-repeat right 8px white !important;
 }
 
 html.js input.throbbing {
@@ -8934,13 +8934,13 @@ div#navigation {
 #grass-bright, #grass-dark {
   height: 200px;
   margin-top: 0;
-  background: transparent url('../images/bg-grass-bright.png?1378303408') center top repeat-x;
+  background: transparent url('../images/bg-grass-bright.png?1402256289') center top repeat-x;
   position: relative;
   z-index: 1;
 }
 
 #grass-dark {
-  background-image: url('../images/bg-grass-dark.png?1378303408');
+  background-image: url('../images/bg-grass-dark.png?1402256289');
   margin-top: -200px;
   z-index: 0;
   opacity: 0.3;
@@ -9469,22 +9469,22 @@ div.subnav .nav > .active > a:hover {
   line-height: 13px;
 }
 
-#views-nivo-slider-slider-panel_pane_1 {
+.views-nivo-slider {
   overflow: hidden;
   width: 100% !important;
   height: auto !important;
 }
-#views-nivo-slider-slider-panel_pane_1 .nivo-caption {
+.views-nivo-slider .nivo-caption {
   background: white;
   padding: 10px;
   font-family: "BorisBlackBloxxRegular", "Helvetica Neue", "Arial Black", Verdana, sans-serif;
   font-size: 1.33em;
   letter-spacing: 1px;
 }
-#views-nivo-slider-slider-panel_pane_1 .nivo-caption a {
+.views-nivo-slider .nivo-caption a {
   font-weight: normal !important;
 }
-#views-nivo-slider-slider-panel_pane_1 img {
+.views-nivo-slider img {
   height: auto !important;
 }
 
