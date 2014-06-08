@@ -8874,7 +8874,8 @@ html.js input.throbbing {
   .hewston-slider,
   .hewston-slider-gutter {
     clear: both;
-    width: 100%;
+    width: 100% !important;
+    margin: 0 !important;
   }
 }
 @media (min-width: 980px) {
