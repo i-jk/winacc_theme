@@ -9475,7 +9475,7 @@ div.subnav .nav > .active > a:hover {
   height: auto !important;
 }
 .views-nivo-slider .nivo-imageLink img {
-  max-width: auto;
+  max-width: none;
 }
 .views-nivo-slider .nivo-caption {
   background: white;
